@@ -1,0 +1,26 @@
+'use strict';
+const {test}=require('node:test');
+const assert=require('node:assert/strict');
+const fs=require('node:fs');
+const os=require('node:os');
+const path=require('node:path');
+test('migration preserves every field, is repeatable, rolls back and survives restart',async t=>{
+ const {migrate,openDatabase}=require('../../Backend/storage.cjs');
+ const dir=fs.mkdtempSync(path.join(os.tmpdir(),'ttech-storage-'));
+ const source=path.join(dir,'db.json'),target=path.join(dir,'store.sqlite');
+ const original={products:[{id:1,name:'Laptop',price:100}],users:[{id:'u',email:'u@example.com'}],authSessions:[],orders:[{id:'old',userId:'u',paymentStatus:'unpaid',items:[{productId:'1',quantity:1,price:100,subtotal:100}],total:100}]};
+ const bytes=JSON.stringify(original);fs.writeFileSync(source,bytes);
+ let db;
+ t.after(()=>{db?.close();fs.rmSync(dir,{recursive:true});});
+ const result=await migrate(source,target);assert.equal(result.counts.orders,1);assert.equal(fs.readFileSync(source,'utf8'),bytes);assert.equal(fs.readFileSync(result.backup,'utf8'),bytes);
+ assert.equal((await migrate(source,target)).alreadyMigrated,true);
+ db=openDatabase(target);let data=await db.read();for(const key of Object.keys(original))assert.deepEqual(data[key],original[key]);
+ await assert.rejects(db.update(d=>{d.orders[0].paymentStatus='paid';throw Error('write failed')}));
+ assert.equal((await db.read()).orders[0].paymentStatus,'unpaid');
+ await assert.rejects(db.update(d=>{d.payments.push({id:'7'},{id:'7'});}));
+ assert.equal((await db.read()).payments.length,0);
+ await db.update(d=>{d.products.push({id:2,name:'Second',price:200});});
+ await db.update(d=>{d.products.reverse();});assert.deepEqual((await db.read()).products.map(p=>p.id),[2,1]);
+ await db.update(d=>{d.orders[0].note='durable';});db.close();db=openDatabase(target);
+ assert.equal((await db.read()).orders[0].note,'durable');
+});

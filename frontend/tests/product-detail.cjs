@@ -1,0 +1,124 @@
+const { chromium } = require('playwright');
+const assert = require('node:assert/strict');
+const fs = require('node:fs');
+const path = require('node:path');
+const crypto = require('node:crypto');
+const db = path.resolve(__dirname, '../../Backend/db.json');
+const products = JSON.parse(fs.readFileSync(db,'utf8')).products;
+const firstAsus = products.find(p => p.brand === 'ASUS');
+const hash = () => crypto.createHash('sha256').update(fs.readFileSync(db)).digest('hex');
+
+(async () => {
+  const original = hash();
+  const browser = await chromium.launch();
+  try {
+    const page = await browser.newPage({ viewport:{width:1440,height:1000} });
+    // Product regression only; real authentication is covered by auth-ui.cjs.
+    await page.route('**/api/auth/session', route => route.fulfill({ json: { user: { id: 'fixture', name: 'Product tester', email: 'fixture@example.com', role: 'user', status: 'active' } } }));
+    const errors = [];
+    page.on('pageerror',e => errors.push(e.message));
+    await page.goto('http://127.0.0.1:8000/#products');
+    await page.waitForSelector('#product-grid .product-card');
+    await page.locator('[data-brand="ASUS"]').click();
+    await page.locator('#product-grid .product-title a').first().click();
+    await page.waitForSelector('#detail-title');
+    assert.equal(new URL(page.url()).hash, '#product/' + firstAsus.id);
+    assert.equal(await page.locator('#catalog-view').isHidden(),true);
+    assert.match(await page.locator('#detail-title').innerText(),/ASUS/);
+    await page.locator('.gallery-thumbnail').last().click();
+    await page.waitForFunction(() => [...document.querySelectorAll('.gallery-thumbnail')].at(-1).getAttribute('aria-pressed') === 'true');
+    assert.match(await page.locator('.gallery-image.is-active').getAttribute('src'),/^data:image\/svg/);
+    await page.locator('.gallery-stage').focus();
+    await page.keyboard.press('Home');
+    await page.waitForFunction(() => document.querySelector('[data-gallery-index="0"]').getAttribute('aria-pressed') === 'true');
+    await page.locator('[data-detail-qty="1"]').click();
+    await page.locator('.detail-purchase [data-add]').click();
+    assert.equal(await page.locator('#cart-count').innerText(),'2');
+    await page.locator('.detail-purchase [data-favorite]').click();
+    assert.equal(await page.locator('.detail-purchase [data-favorite]').getAttribute('aria-pressed'),'true');
+    await page.locator('#detail-quantity').fill('99');
+    await page.locator('.detail-purchase [data-add]').click();
+    assert.equal(await page.locator('#cart-count').innerText(),'2', 'Enforce combined cart limit');
+    await page.locator('#detail-quantity').fill('1');
+    await page.locator('.detail-purchase [data-buy]').click();
+    await page.locator('#cart-modal').waitFor();
+    assert.equal(await page.locator('#cart-modal').isVisible(),true);
+    assert.equal(await page.locator('#cart-count').innerText(),'3');
+    await page.keyboard.press('Escape');
+    await page.waitForFunction(() => !document.querySelector('#cart-modal').open);
+    await page.goBack();
+    await page.waitForFunction(() => !document.querySelector('#catalog-view').hidden);
+    assert.equal(await page.locator('[data-brand="ASUS"]').getAttribute('aria-pressed'),'true');
+    await page.goForward();
+    await page.waitForSelector('#detail-title');
+    await page.reload();
+    await page.waitForSelector('#detail-title');
+    assert.equal(await page.locator('.detail-purchase [data-favorite]').getAttribute('aria-pressed'),'true');
+    assert.equal(await page.locator('#cart-count').innerText(),'3');
+    await page.locator('.related-products .product-title a').first().click();
+    await page.waitForFunction(id => location.hash !== '#product/' + id,String(firstAsus.id));
+    await page.locator('#header-search').fill('Katana');
+    await page.locator('#header-search').press('Enter');
+    await page.waitForFunction(() => !document.querySelector('#catalog-view').hidden);
+    assert.equal(await page.locator('#search').inputValue(),'Katana');
+
+    // Menu focus, hover bridge, Escape, brand selection, touch.
+    await page.locator('#mega-toggle').focus();
+    await page.keyboard.press('ArrowDown');
+    assert.equal(await page.locator('#mega-toggle').getAttribute('aria-expanded'),'true');
+    await page.locator('[data-mega-brand="MSI"]').click();
+    assert.equal(await page.locator('[data-brand="MSI"]').getAttribute('aria-pressed'),'true');
+    assert.equal(await page.locator('#mega-toggle').getAttribute('aria-expanded'),'false');
+    await page.locator('#mega-toggle').hover();
+    await page.waitForTimeout(160);
+    await page.locator('#mega-panel h2').first().hover();
+    assert.equal(await page.locator('#mega-toggle').getAttribute('aria-expanded'),'true');
+    await page.locator('#mega-toggle').focus();
+    await page.keyboard.press('Escape');
+    assert.equal(await page.locator('#mega-panel').evaluate(e => e.inert),true);
+
+    await page.goto('http://127.0.0.1:8000/#product/13');
+    await page.waitForSelector('#detail-title');
+    assert.ok((await page.locator('.detail-specifications').innerText()).includes(products.find(p => String(p.id) === '13').cpu));
+    await page.locator('[data-gallery-index="1"]').hover();
+    await page.waitForTimeout(220);
+    assert.equal(await page.locator('[data-gallery-index="1"]').evaluate(e => getComputedStyle(e).transform),'matrix(1, 0, 0, 1, 0, -1)');
+    assert.equal(await page.locator('.gallery-image.is-active').evaluate(e => getComputedStyle(e).transitionDuration),'0.22s');
+    await page.mouse.move(0,0);
+    await page.evaluate(() => document.fonts.ready);
+    await page.screenshot({path:'docs/ui-reference/ttech-product-detail-desktop.png',fullPage:true});
+    for (const width of [1024,768,390,360]) {
+      await page.setViewportSize({width,height:844});
+      assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth),true,`No overflow at ${width}`);
+    }
+    await page.setViewportSize({width:390,height:844});
+    await page.screenshot({path:'docs/ui-reference/ttech-product-detail-mobile.png',fullPage:true});
+    await page.emulateMedia({reducedMotion:'reduce'});
+    await page.locator('[data-gallery-index="1"]').click();
+    await page.waitForFunction(() => document.querySelector('[data-gallery-index="1"]').getAttribute('aria-pressed') === 'true');
+    assert.equal(await page.locator('.gallery-image.is-active').evaluate(e => getComputedStyle(e).transitionDuration),'0s');
+    await page.goto('http://127.0.0.1:8000/#product/no-such-id');
+    await page.getByRole('heading',{name:'Không tìm thấy sản phẩm'}).waitFor();
+    await page.route('http://localhost:3000/products',route => route.abort());
+    await page.goto('http://127.0.0.1:8000/#product/13');
+    await page.reload();
+    await page.locator('[data-detail-retry]').waitFor();
+    assert.doesNotMatch(await page.locator('#product-detail').innerText(),/localhost|JSON Server|Failed to fetch/);
+    await page.unroute('http://localhost:3000/products');
+    await page.locator('[data-detail-retry]').click();
+    await page.waitForSelector('#detail-title');
+    assert.deepEqual(errors,[]);
+
+    const mobile = await browser.newPage({viewport:{width:390,height:844},isMobile:true,hasTouch:true});
+    await mobile.goto('http://127.0.0.1:8000/#product/13');
+    await mobile.waitForSelector('#detail-title');
+    await mobile.locator('#menu-toggle').tap();
+    await mobile.locator('#mega-toggle').tap();
+    await mobile.locator('[data-mega-brand="Dell"]').tap();
+    assert.equal(await mobile.locator('#catalog-view').isVisible(),true);
+    assert.equal(await mobile.locator('[data-brand="Dell"]').getAttribute('aria-pressed'),'true');
+    assert.equal(await mobile.locator('#menu-toggle').getAttribute('aria-expanded'),'false');
+    assert.equal(hash(),original);
+    console.log('PASS: detail links/deep links/back/reload, gallery/thumbnails/keyboard, quantity/cart/favorites, related products, header search, mega menu mouse/keyboard/touch, responsive/reduced motion, not-found/error/retry, unchanged database.');
+  } finally { await browser.close(); }
+})().catch(e => {console.error(e);process.exitCode=1;});

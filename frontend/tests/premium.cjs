@@ -1,0 +1,90 @@
+// Run with the existing API at :3000 and frontend at :8000.
+const { chromium } = require('playwright');
+const assert = require('node:assert/strict');
+const fs = require('node:fs');
+const path = require('node:path');
+const crypto = require('node:crypto');
+const dbPath = path.resolve(__dirname, '../../Backend/db.json');
+const checksum = () => crypto.createHash('sha256').update(fs.readFileSync(dbPath)).digest('hex');
+
+(async () => {
+  const before = checksum();
+  const products = JSON.parse(fs.readFileSync(dbPath,'utf8')).products;
+  const officeCount = products.filter(p => !/RTX|GTX/i.test(p.gpu || '')).length;
+  const browser = await chromium.launch();
+  try {
+    const page = await browser.newPage({ viewport: { width: 1440, height: 1000 } });
+    const errors = [];
+    page.on('pageerror', error => errors.push(error.message));
+    await page.clock.install();
+    await page.goto('http://127.0.0.1:8000');
+    await page.waitForSelector('#featured-products .product-card');
+    const active = () => page.locator('.hero-slide.is-active').getAttribute('aria-label');
+    const heroSize = () => page.locator('.hero').evaluate(e => [e.offsetWidth,e.offsetHeight]);
+    const initial = await heroSize();
+    assert.match(await active(), /^1 /);
+    await page.clock.fastForward(6600);
+    assert.match(await active(), /^2 /, 'Carousel rotates automatically');
+    await page.locator('.hero').hover();
+    await page.clock.fastForward(14000);
+    assert.match(await active(), /^2 /, 'Hover pauses rotation');
+    await page.locator('.slider-pause').click();
+    await page.locator('#header-search').focus();
+    await page.mouse.move(0, 0);
+    await page.clock.fastForward(14000);
+    assert.match(await active(), /^2 /, 'Explicit pause persists after hover/focus ends');
+    await page.locator('.slider-dot').nth(2).click();
+    assert.match(await active(), /^3 /);
+    assert.deepEqual(await heroSize(), initial, 'Slide changes do not shift layout');
+    assert.equal(await page.locator('.hero-slide[inert]').count(), 2);
+    await page.locator('.hero').focus();
+    await page.keyboard.press('ArrowRight');
+    assert.match(await active(), /^1 /);
+    await page.locator('.slider-pause').click();
+    await page.emulateMedia({ reducedMotion: 'reduce' });
+    await page.locator('#header-search').focus();
+    await page.mouse.move(0, 0);
+    await page.clock.fastForward(14000);
+    assert.match(await active(), /^1 /, 'Reduced motion disables autoplay');
+
+    await page.locator('#main-nav [data-collection="office"]').click();
+    assert.equal(await page.locator('#product-grid .product-card').count(), officeCount);
+    assert.match(await page.locator('#active-filters').innerText(), /văn phòng/);
+    await page.locator('[data-clear-filter="collection"]').click();
+    assert.equal(await page.locator('#product-grid .product-card').count(), products.length);
+    await page.locator('#main-nav [data-collection="deals"]').click();
+    assert.equal(await page.locator('#product-grid .discount-tag').count(), await page.locator('#product-grid .product-card').count());
+    await page.locator('#reset-filters').click();
+    await page.locator('#product-grid [data-favorite]').first().click();
+    assert.equal(await page.locator('#wishlist-count').innerText(), '1');
+    await page.locator('#wishlist-open').click();
+    assert.equal(await page.locator('#wishlist-items .product-card').count(), 1);
+    await page.locator('#wishlist-items [data-add]').click();
+    assert.equal(await page.locator('#cart-count').innerText(), '1');
+    assert.equal(await page.locator('#wishlist-feedback').isVisible(),true);
+    await page.locator('#wishlist-items [data-favorite]').click();
+    assert.equal(await page.locator('#wishlist-empty').isVisible(), true);
+    await page.keyboard.press('Escape');
+    assert.equal(await page.locator('#wishlist-items .product-card').count(), 0);
+    for (const [width, columns] of [[1440,4],[1280,4],[1024,3],[768,3],[390,2],[360,2],[320,1]]) {
+      await page.setViewportSize({width,height:900});
+      assert.equal(await page.locator('#product-grid').evaluate(e => getComputedStyle(e).gridTemplateColumns.split(' ').length), columns);
+      assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), true, `No overflow at ${width}px`);
+    }
+    await page.setViewportSize({width:390,height:844});
+    await page.goto('http://127.0.0.1:8000/#home');
+    await page.waitForSelector('#featured-products .product-card');
+    await page.evaluate(() => scrollTo({top:0,behavior:'instant'}));
+    await page.locator('.hero').dispatchEvent('pointerdown',{pointerType:'touch',clientX:300,clientY:600});
+    await page.locator('.hero').dispatchEvent('pointerup',{pointerType:'touch',clientX:90,clientY:605});
+    assert.match(await active(), /^2 /, 'Horizontal touch gesture changes slide');
+    await page.locator('.hero').dispatchEvent('pointerdown',{pointerType:'touch',clientX:150,clientY:550});
+    await page.locator('.hero').dispatchEvent('pointerup',{pointerType:'touch',clientX:145,clientY:700});
+    assert.match(await active(), /^2 /, 'Vertical scrolling does not change slide');
+    const heroImages = await page.locator('.hero-visual img').evaluateAll(imgs => Promise.all(imgs.map(async img => { await img.decode(); return img.naturalWidth; })));
+    assert.ok(heroImages.every(width => width >= 600), 'Real, high-resolution hero assets load');
+    assert.equal(checksum(),before,'Database unchanged');
+    assert.deepEqual(errors,[]);
+    console.log('PASS: autoplay/hover/pause/dots/keyboard/swipe/reduced motion; collection/deal filters; wishlist/cart; responsive 320–1440; real hero images; unchanged database.');
+  } finally { await browser.close(); }
+})().catch(error => { console.error(error); process.exitCode = 1; });

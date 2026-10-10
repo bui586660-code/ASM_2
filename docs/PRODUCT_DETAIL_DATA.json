@@ -1,0 +1,4637 @@
+{
+  "records": [
+    {
+      "ids": [
+        1
+      ],
+      "source": "https://cellphones.com.vn/laptop-lenovo-loq-15arp10e-83s000devn.html",
+      "sourceName": "Laptop Lenovo LOQ 15ARP10E 83S000DEVN",
+      "verifiedAt": "2026-10-10",
+      "specifications": [
+        {
+          "label": "Loại card đồ họa",
+          "value": "NVIDIA GeForce RTX 3050 6GB GDDR6, Boost Clock 990MHz, TGP 65W"
+        },
+        {
+          "label": "Dung lượng RAM",
+          "value": "16GB"
+        },
+        {
+          "label": "Loại RAM",
+          "value": "SODIMM DDR5-4800"
+        },
+        {
+          "label": "Số khe ram",
+          "value": "2 khe (Tối đa 16GB DDR5-4800)"
+        },
+        {
+          "label": "Ổ cứng",
+          "value": "512GB SSD M.2 2242 PCIe 4.0x4 NVMe (Hỗ trợ tối đa hai ổ đĩa, 2 ổ SSD M.2, tối đa 1TB)"
+        },
+        {
+          "label": "Công nghệ màn hình",
+          "value": "Độ sáng 300nits\nMàn hình chống chói\nĐộ phủ màu 100% sRGB\nFreeSync"
+        },
+        {
+          "label": "Hệ điều hành khi ra mắt",
+          "value": "Windows 11 Home Single Language, English"
+        },
+        {
+          "label": "Loại CPU",
+          "value": "AMD Ryzen 7 170 (8 lõi / 16 luồng, 3.2 / 4.75GHz, 4MB L2 / 16MB L3)"
+        },
+        {
+          "label": "Kích thước màn hình",
+          "value": "15.6 inches"
+        },
+        {
+          "label": "Độ phân giải màn hình",
+          "value": "1920 x 1080 pixels (FullHD)"
+        },
+        {
+          "label": "Pin",
+          "value": "57.5Wh, 135W Slim Tip (3-pin)"
+        },
+        {
+          "label": "Cổng giao tiếp",
+          "value": "2 x USB-A (USB 3.2 Gen 1, 5Gbps)\n1 x USB-C (USB 3.2 Gen 1, 5Gbps, PD 3.0)\n1 x HDMI 2.1 (tối đa 8K/60Hz)\n1 x Jack tai nghe/micro 3,5mm\n1 x Ethernet (RJ-45)\n1 x Khe đọc thẻ\n1 x Cổng nguồn Slim Tip"
+        },
+        {
+          "label": "Tần số quét",
+          "value": "144 Hz"
+        },
+        {
+          "label": "Chất liệu tấm nền",
+          "value": "Tấm nền IPS"
+        },
+        {
+          "label": "Công nghệ âm thanh",
+          "value": "Âm thanh HD, codec Realtek ALC3287\nLoa stereo 2W x2\nTối ưu âm thanh với Nahimic Audio"
+        },
+        {
+          "label": "Chất liệu",
+          "value": "Vỏ nhựa"
+        },
+        {
+          "label": "Chất liệu vỏ trên",
+          "value": "Nhựa"
+        },
+        {
+          "label": "Chất liệu vỏ dưới",
+          "value": "Nhựa"
+        },
+        {
+          "label": "Tính năng đặc biệt",
+          "value": "Wi-Fi 6"
+        },
+        {
+          "label": "Loại đèn bàn phím",
+          "value": "Đèn nền trắng"
+        },
+        {
+          "label": "Bảo mật",
+          "value": "Firmware TPM 2.0 Enabled"
+        },
+        {
+          "label": "Webcam",
+          "value": "Độ phân giải HD 720p với màn trập camera"
+        },
+        {
+          "label": "Wi-Fi",
+          "value": "Wi-Fi 6, 802.11ax 2x2"
+        },
+        {
+          "label": "Bluetooth",
+          "value": "Bluetooth 5.2"
+        },
+        {
+          "label": "Kích thước",
+          "value": "359.2 x 236 x 19.9-22.95 mm (Dài x Rộng x Dày)"
+        },
+        {
+          "label": "Trọng lượng",
+          "value": "1.8 kg"
+        }
+      ],
+      "images": [
+        {
+          "path": "./assets/images/laptop-lenovo-loq-15arp10e-83s000devn-angle-1.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/s/s/ssss_1__1_69.png",
+          "galleryIndex": 4,
+          "sha256": "d7938d658e171f12b114ff1dea79f35dbf1742ffc0c21b0cf9e553cba92ee753"
+        },
+        {
+          "path": "./assets/images/laptop-lenovo-loq-15arp10e-83s000devn-angle-2.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/s/s/ssss_2_122.png",
+          "galleryIndex": 5,
+          "sha256": "c9580ecedc08a5721223a07bc51ed1ccdc559db80f3c82a969723111bb671a0f"
+        },
+        {
+          "path": "./assets/images/laptop-lenovo-loq-15arp10e-83s000devn-angle-3.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/s/s/ssss_7__90.png",
+          "galleryIndex": 10,
+          "sha256": "dbd278e1813631b4c6875aaeb222b8bb5b7771e788df3ca47be6286651193470"
+        },
+        {
+          "path": "./assets/images/laptop-lenovo-loq-15arp10e-83s000devn-angle-4.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/s/s/ssss_10__50.png",
+          "galleryIndex": 16,
+          "sha256": "5b78fb6537d7fbcd9eb2e5f39caef922e81f2e99b617659000ddfa6934dd8098"
+        }
+      ]
+    },
+    {
+      "ids": [
+        2
+      ],
+      "source": "https://cellphones.com.vn/laptop-lenovo-loq-15irx9-83dv003cvn-cu-tray-xuoc.html",
+      "sourceName": "Laptop Lenovo LOQ 15IRX9 83DV003CVN - Cũ Trầy Xước",
+      "verifiedAt": "2026-10-10",
+      "specifications": [
+        {
+          "label": "Chip AI",
+          "value": "AI Chip LA1"
+        },
+        {
+          "label": "Loại card đồ họa",
+          "value": "NVIDIA GeForce RTX 3050, 6 GB"
+        },
+        {
+          "label": "Dung lượng RAM",
+          "value": "16GB"
+        },
+        {
+          "label": "Loại RAM",
+          "value": "DDR5 4800 MHz (Hỗ trợ RAM tối đa: 32GB)"
+        },
+        {
+          "label": "Số khe ram",
+          "value": "2 khe (1 khe 16GB + 1 khe rời)"
+        },
+        {
+          "label": "Ổ cứng",
+          "value": "512GB SSD NVMe PCIe 4.0\nCó thể tháo ra, lắp thanh khác tối đa 1TB"
+        },
+        {
+          "label": "Kích thước màn hình",
+          "value": "15.6 inches"
+        },
+        {
+          "label": "Công nghệ màn hình",
+          "value": "Full HD (1920 x 1080)\nĐộ phủ màu 100% sRGB\nLow Blue Light\nG-Sync\nChống chói Anti Glare\nBản lề mở 180 độ"
+        },
+        {
+          "label": "Pin",
+          "value": "Wh"
+        },
+        {
+          "label": "Hệ điều hành",
+          "value": "Windows 11 Home SL"
+        },
+        {
+          "label": "Độ phân giải màn hình",
+          "value": "1920 x 1080 pixels (FullHD)"
+        },
+        {
+          "label": "Loại CPU",
+          "value": "Intel Core i5 Raptor Lake - 13450HX 10 nhân 16 luồng 2.40 GHz (Lên đến 4.60 GHz khi tải nặng)"
+        },
+        {
+          "label": "Cổng giao tiếp",
+          "value": "Jack tai nghe 3.5 mm\n3 x USB 3.2\nHDMI\n1 x USB-C 3.2 (hỗ trợ truyền dữ liệu, Power Delivery 140W và DisplayPort 1.4)\nLAN (RJ45)"
+        },
+        {
+          "label": "Tần số quét",
+          "value": "144Hz"
+        },
+        {
+          "label": "Công nghệ âm thanh",
+          "value": "Nahimic Audio"
+        },
+        {
+          "label": "Chất liệu",
+          "value": "Vỏ nhựa"
+        },
+        {
+          "label": "Kích thước",
+          "value": "Dài 359.86 mm - Rộng 258.7 mm - Dày 23.9 mm"
+        },
+        {
+          "label": "Trọng lượng",
+          "value": "2.38 kg"
+        },
+        {
+          "label": "Tính năng đặc biệt",
+          "value": "Wi-Fi 6"
+        },
+        {
+          "label": "Loại đèn bàn phím",
+          "value": "Đơn sắc - Trắng"
+        },
+        {
+          "label": "Bảo mật",
+          "value": "TPM 2.0\nCông tắc khoá camera"
+        },
+        {
+          "label": "Webcam",
+          "value": "HD webcam"
+        },
+        {
+          "label": "Hãng sản xuất",
+          "value": "Lenovo"
+        },
+        {
+          "label": "Wi-Fi",
+          "value": "Wi-Fi 6 (802.11ax)"
+        },
+        {
+          "label": "Bluetooth",
+          "value": "Bluetooth 5.2"
+        },
+        {
+          "label": "Loại máy",
+          "value": "In Laser đen trắng"
+        }
+      ],
+      "images": [
+        {
+          "path": "./assets/images/laptop-lenovo-loq-15irx9-83dv003cvn-cu-tray-xuoc-angle-1.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/l/a/laptop-lenovo-loq-15irx9-83dv003cvn_7_.png",
+          "galleryIndex": 2,
+          "sha256": "7c41bea7de4c90b524521d59ba6177f43e8972957d769fe4c4b4e66ad19a6159"
+        },
+        {
+          "path": "./assets/images/laptop-lenovo-loq-15irx9-83dv003cvn-cu-tray-xuoc-angle-2.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/l/a/laptop-lenovo-loq-15irx9-83dv003cvn_2_.png",
+          "galleryIndex": 4,
+          "sha256": "53582a20712c7d3cbd849dd654a21f27bd794f71f57350547af4e54f1a20e136"
+        },
+        {
+          "path": "./assets/images/laptop-lenovo-loq-15irx9-83dv003cvn-cu-tray-xuoc-angle-3.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/l/a/laptop-lenovo-loq-15irx9-83dv003cvn.png",
+          "galleryIndex": 6,
+          "sha256": "1aca5b1854e2779ebc2a5d1382aad57f04253df438827acba7102b75ca64a808"
+        },
+        {
+          "path": "./assets/images/laptop-lenovo-loq-15irx9-83dv003cvn-cu-tray-xuoc-angle-4.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/l/a/laptop-lenovo-loq-15irx9-83dv003cvn_6_.png",
+          "galleryIndex": 7,
+          "sha256": "0eab5285ecfdbaeba380485b62d17a6c383127e65382556cd1c87a08c2202c7e"
+        }
+      ]
+    },
+    {
+      "ids": [
+        3
+      ],
+      "source": "https://cellphones.com.vn/laptop-lenovo-loq-15arp10e-83s0007avn.html",
+      "sourceName": "Laptop Lenovo LOQ 15ARP10E 83S0007AVN",
+      "verifiedAt": "2026-10-10",
+      "specifications": [
+        {
+          "label": "Loại card đồ họa",
+          "value": "NVIDIA GeForce RTX 3050 6GB GDDR6, Boost Clock 990MHz, TGP 65W"
+        },
+        {
+          "label": "Dung lượng RAM",
+          "value": "16GB"
+        },
+        {
+          "label": "Loại RAM",
+          "value": "SODIMM DDR5-4800"
+        },
+        {
+          "label": "Số khe ram",
+          "value": "2 khe (1 x 16GB)"
+        },
+        {
+          "label": "Ổ cứng",
+          "value": "512GB SSD M.2 2242 PCIe 4.0x4 NVMe (Tối đa hai ổ đĩa, 2x SSD M.2 dung lượng tối đa 1TB mỗi ổ)"
+        },
+        {
+          "label": "Công nghệ màn hình",
+          "value": "Độ sáng 300nits\nMàn hình chống chói\nĐộ phủ màu 100% sRGB\nFreeSync"
+        },
+        {
+          "label": "Hệ điều hành khi ra mắt",
+          "value": "Windows 11 Home Single Language, English"
+        },
+        {
+          "label": "Loại CPU",
+          "value": "AMD Ryzen 7 7735HS (8 lõi / 16 luồng, 3.2 / 4.75GHz, 4MB L2 / 16MB L3)"
+        },
+        {
+          "label": "Kích thước màn hình",
+          "value": "15.6 inches"
+        },
+        {
+          "label": "Độ phân giải màn hình",
+          "value": "1920 x 1080 pixels (FullHD)"
+        },
+        {
+          "label": "Pin",
+          "value": "57.5Wh, 135W Slim Tip (3-pin)"
+        },
+        {
+          "label": "Cổng giao tiếp",
+          "value": "2x USB-A (USB 5Gbps / USB 3.2 Gen 1)\n1x USB-C (USB 5Gbps / USB 3.2 Gen 1, hỗ trợ PD 3.0)\n1x HDMI 2.1 (hỗ trợ tối đa 8K/60Hz)\n1x jack tai nghe/mic 3.5mm\n1x cổng Ethernet RJ-45\n1x khe đọc thẻ\n1x cổng nguồn"
+        },
+        {
+          "label": "Tần số quét",
+          "value": "144 Hz"
+        },
+        {
+          "label": "Chất liệu tấm nền",
+          "value": "Tấm nền IPS"
+        },
+        {
+          "label": "Công nghệ âm thanh",
+          "value": "Âm thanh độ nét cao (HD)\ncodec Realtek ALC3287\nLoa stereo, 2W x2\nNahimic Audio"
+        },
+        {
+          "label": "Khe đọc thẻ nhớ",
+          "value": "Có"
+        },
+        {
+          "label": "Chất liệu",
+          "value": "Vỏ nhựa"
+        },
+        {
+          "label": "Chất liệu vỏ trên",
+          "value": "Nhựa"
+        },
+        {
+          "label": "Chất liệu vỏ dưới",
+          "value": "Nhựa"
+        },
+        {
+          "label": "Tính năng đặc biệt",
+          "value": "Wi-Fi 6"
+        },
+        {
+          "label": "Loại đèn bàn phím",
+          "value": "Đèn nền trắng"
+        },
+        {
+          "label": "Bảo mật",
+          "value": "Microsoft Pluton TPM 2.0 Enabled"
+        },
+        {
+          "label": "Webcam",
+          "value": "HD 720p với Màn trập camera"
+        },
+        {
+          "label": "Wi-Fi",
+          "value": "Wi-Fi 6, 802.11ax 2x2"
+        },
+        {
+          "label": "Bluetooth",
+          "value": "Bluetooth 5.2"
+        },
+        {
+          "label": "Kích thước",
+          "value": "359.2 x 236 x 19.9-22.95 mm (Dài x Rộng x Dày)"
+        },
+        {
+          "label": "Trọng lượng",
+          "value": "1.8 kg"
+        }
+      ],
+      "images": [
+        {
+          "path": "./assets/images/laptop-lenovo-loq-15arp10e-83s0007avn-angle-1.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/s/s/ssss_1_40.png",
+          "galleryIndex": 4,
+          "sha256": "ba74d8dca071c7aba82c5355c253371734d5099f8dd5dc82654b0e3f3586ce67"
+        },
+        {
+          "path": "./assets/images/laptop-lenovo-loq-15arp10e-83s0007avn-angle-2.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/s/s/ssss_1__39.png",
+          "galleryIndex": 5,
+          "sha256": "1ca35aea10757b36291caaf92d137248c1d6be4ebae93e0c0707b4ba4da1141f"
+        },
+        {
+          "path": "./assets/images/laptop-lenovo-loq-15arp10e-83s0007avn-angle-3.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/s/s/ssss_7__23.png",
+          "galleryIndex": 9,
+          "sha256": "2feebf5f78f1b6a5f6ad6d2ebdeb5af308a040f9ee711d8bdfc7b7e21f54db8d"
+        },
+        {
+          "path": "./assets/images/laptop-lenovo-loq-15arp10e-83s0007avn-angle-4.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/s/s/ssss_10__18.png",
+          "galleryIndex": 15,
+          "sha256": "aeaa6181ad5773500f2247db937209a653e1180b014d3ac94915c3e5a1f1405b"
+        }
+      ]
+    },
+    {
+      "ids": [
+        4
+      ],
+      "source": "https://cellphones.com.vn/laptop-lenovo-loq-essential-15arp10e-83s0000dvn.html",
+      "sourceName": "Laptop Lenovo LOQ Essential 15ARP10E 83S0000DVN",
+      "verifiedAt": "2026-10-10",
+      "specifications": [
+        {
+          "label": "Loại card đồ họa",
+          "value": "NVIDIA GeForce RTX 3050 6GB GDDR6, Boost Clock 990MHz, TGP 65W"
+        },
+        {
+          "label": "Dung lượng RAM",
+          "value": "16GB"
+        },
+        {
+          "label": "Loại RAM",
+          "value": "SODIMM DDR5-4800"
+        },
+        {
+          "label": "Số khe ram",
+          "value": "2 khe (1 x 16GB)"
+        },
+        {
+          "label": "Ổ cứng",
+          "value": "512GB SSD M.2 2242 PCIe 4.0x4 NVMe (Tối đa hai ổ đĩa, 2 ổ SSD M.2, SSD M.2 dung lượng tối đa 1TB mỗi ổ)"
+        },
+        {
+          "label": "Công nghệ màn hình",
+          "value": "Độ sáng 300 nits\nMàn hình chống chói\nĐộ phủ màu 100% sRGB\nAMD FreeSync"
+        },
+        {
+          "label": "Hệ điều hành khi ra mắt",
+          "value": "Windows 11 Home Single Language, English"
+        },
+        {
+          "label": "Loại CPU",
+          "value": "AMD Ryzen 5 7535HS (6 lõi / 12 luồng, 3.3 / 4.55GHz, 3MB L2 / 16MB L3)"
+        },
+        {
+          "label": "Kích thước màn hình",
+          "value": "15.6 inches"
+        },
+        {
+          "label": "Độ phân giải màn hình",
+          "value": "1920 x 1080 pixels (FullHD)"
+        },
+        {
+          "label": "Pin",
+          "value": "57.5Wh, 135W Slim Tip (3-pin)"
+        },
+        {
+          "label": "Cổng giao tiếp",
+          "value": "2 x USB-A (USB 3.2 Gen 1, 5Gbps)\n1 x USB-C (USB 5Gbps, PD 65–100W)\n1 x HDMI 2.1 (tối đa 8K/60Hz)\n1 x Jack tai nghe/mic 3.5 mm\n1 x Ethernet (RJ-45)\n1 x Khe đọc thẻ\n1 x Cổng nguồn Slim tip"
+        },
+        {
+          "label": "Tần số quét",
+          "value": "144 Hz"
+        },
+        {
+          "label": "Chất liệu tấm nền",
+          "value": "Tấm nền IPS"
+        },
+        {
+          "label": "Công nghệ âm thanh",
+          "value": "Âm thanh HD, codec Realtek ALC3287\nLoa stereo 2W x2\nTối ưu với Nahimic Audio"
+        },
+        {
+          "label": "Khe đọc thẻ nhớ",
+          "value": "Có"
+        },
+        {
+          "label": "Chất liệu",
+          "value": "Vỏ nhựa"
+        },
+        {
+          "label": "Chất liệu vỏ trên",
+          "value": "Nhựa"
+        },
+        {
+          "label": "Chất liệu vỏ dưới",
+          "value": "Nhựa"
+        },
+        {
+          "label": "Tính năng đặc biệt",
+          "value": "Wi-Fi 6"
+        },
+        {
+          "label": "Loại đèn bàn phím",
+          "value": "Đèn nền trắng"
+        },
+        {
+          "label": "Bảo mật",
+          "value": "Firmware TPM 2.0 Enabled"
+        },
+        {
+          "label": "Webcam",
+          "value": "HD 720p với màn trập camera"
+        },
+        {
+          "label": "Wi-Fi",
+          "value": "Wi-Fi 6, 802.11ax 2x2"
+        },
+        {
+          "label": "Bluetooth",
+          "value": "Bluetooth 5.2"
+        },
+        {
+          "label": "Kích thước",
+          "value": "359.2 x 236 x 19.9-22.95 mm (Dài x Rộng x Dày)"
+        },
+        {
+          "label": "Trọng lượng",
+          "value": "1.8 kg"
+        }
+      ],
+      "images": [
+        {
+          "path": "./assets/images/laptop-lenovo-loq-essential-15arp10e-83s0000dvn-angle-1.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/s/s/sssxs_5.png",
+          "galleryIndex": 4,
+          "sha256": "47de1d54bd8736e6b0e51f4827feeda40bf5dc68ae239cb16d8ca778157d302a"
+        },
+        {
+          "path": "./assets/images/laptop-lenovo-loq-essential-15arp10e-83s0000dvn-angle-2.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/s/s/sssxs_1__3.png",
+          "galleryIndex": 5,
+          "sha256": "ecedf0300232d262cfff9d8656d179b8b3d6cb8f3ff03d24a9907ab6191aecc6"
+        },
+        {
+          "path": "./assets/images/laptop-lenovo-loq-essential-15arp10e-83s0000dvn-angle-3.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/s/s/sssxs_7__3.png",
+          "galleryIndex": 10,
+          "sha256": "a14fe39be7a85145b6f8696bd1699245ccc9f7d84c9a2607a07a6545aa83465a"
+        },
+        {
+          "path": "./assets/images/laptop-lenovo-loq-essential-15arp10e-83s0000dvn-angle-4.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/s/s/sssxs_10__2.png",
+          "galleryIndex": 17,
+          "sha256": "37cd0fbd75ac0d98d4a54e27b3400b4e9076ad11c7bbb7c47214285adeb098b2"
+        }
+      ]
+    },
+    {
+      "ids": [
+        5
+      ],
+      "source": "https://cellphones.com.vn/laptop-lenovo-loq-15ahp11-83tn0040vn.html",
+      "sourceName": "Laptop Lenovo LOQ 15AHP11 83TN0040VN",
+      "verifiedAt": "2026-10-10",
+      "specifications": [
+        {
+          "label": "Chip AI",
+          "value": "AMD Ryzen AI, up to 16 TOPS"
+        },
+        {
+          "label": "Loại card đồ họa",
+          "value": "NVIDIA GeForce RTX 5050 8GB GDDR7, Boost Clock 2662MHz, TGP 115W, 440 AI TOPS"
+        },
+        {
+          "label": "Dung lượng RAM",
+          "value": "16GB"
+        },
+        {
+          "label": "Loại RAM",
+          "value": "DDR5-5600"
+        },
+        {
+          "label": "Số khe ram",
+          "value": "2 khe (1 x 16GB, nâng cấp tối đa 32GB DDR5-5600)"
+        },
+        {
+          "label": "Ổ cứng",
+          "value": "512GB SSD M.2 2242 PCIe 4.0x4 NVMe (Tối đa hai ổ đĩa, 2 ổ SSD M.2, SSD M.2 2242 dung lượng tối đa 2TB mỗi ổ)"
+        },
+        {
+          "label": "Kích thước màn hình",
+          "value": "15.3 inches"
+        },
+        {
+          "label": "Công nghệ màn hình",
+          "value": "Độ sáng 300 nits\nMàn hình chống chói\nĐộ phủ màu 100% sRGB\nAMD FreeSync\nNVIDIA G-Sync\nLow Blue Light"
+        },
+        {
+          "label": "Pin",
+          "value": "60Wh, 245W Slim Tip (3-pin)"
+        },
+        {
+          "label": "Hệ điều hành",
+          "value": "Windows 11 Home Single Language, English"
+        },
+        {
+          "label": "Độ phân giải màn hình",
+          "value": "1920 x 1200 pixels (WUXGA)"
+        },
+        {
+          "label": "Loại CPU",
+          "value": "AMD Ryzen 7 250 (8 lõi / 16 luồng, 3.3 / 5.1GHz, 8MB L2 / 16MB L3)"
+        },
+        {
+          "label": "Cổng giao tiếp",
+          "value": "2 x USB-A (USB 5Gbps)\n1 x USB-A (USB 10Gbps)\n1 x USB-C (USB4 40Gbps, PD 65–100W, DisplayPort 1.4)\n1 x HDMI 2.1 (tối đa 8K/60Hz)\n1 x Jack tai nghe/mic 3.5 mm\n1 x Ethernet (RJ-45)\n1 x Cổng nguồn Slim tip"
+        },
+        {
+          "label": "Tần số quét",
+          "value": "165 Hz"
+        },
+        {
+          "label": "Chất liệu tấm nền",
+          "value": "Tấm nền IPS"
+        },
+        {
+          "label": "Công nghệ âm thanh",
+          "value": "Âm thanh độ nét cao (HD)\ncodec Realtek ALC3287\nLoa stereo, 2W x2\nNahimic Audio"
+        },
+        {
+          "label": "Khe đọc thẻ nhớ",
+          "value": "Không"
+        },
+        {
+          "label": "Wi-Fi",
+          "value": "Wi-Fi 6, 802.11ax 2x2"
+        },
+        {
+          "label": "Bluetooth",
+          "value": "Bluetooth 5.3"
+        },
+        {
+          "label": "Chất liệu",
+          "value": "Vỏ nhựa"
+        },
+        {
+          "label": "Chất liệu vỏ trên",
+          "value": "Nhựa"
+        },
+        {
+          "label": "Chất liệu vỏ dưới",
+          "value": "Nhựa"
+        },
+        {
+          "label": "Kích thước",
+          "value": "344.9 x 254.83 x 20.9-23.25 mm (Dài x Rộng x Dày)"
+        },
+        {
+          "label": "Trọng lượng",
+          "value": "2.1 kg"
+        },
+        {
+          "label": "Tính năng đặc biệt",
+          "value": "Wi-Fi 6"
+        },
+        {
+          "label": "Loại đèn bàn phím",
+          "value": "Đèn nền RGB 1 vùng"
+        },
+        {
+          "label": "Bảo mật",
+          "value": "Firmware TPM 2.0 Enabled"
+        },
+        {
+          "label": "Webcam",
+          "value": "5.0MP với E-shutter"
+        }
+      ],
+      "images": [
+        {
+          "path": "./assets/images/laptop-lenovo-loq-15ahp11-83tn0040vn-angle-1.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/s/s/ssss_1__1_117.png",
+          "galleryIndex": 4,
+          "sha256": "b0dcf59746b8b0b6310938d79a7fc8481d647f434dda75a1729c66e6283b95aa"
+        },
+        {
+          "path": "./assets/images/laptop-lenovo-loq-15ahp11-83tn0040vn-angle-2.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/s/s/ssss_2_176.png",
+          "galleryIndex": 5,
+          "sha256": "fac3b1e5a9877ca918d5fdad50aff4e32b77eebb73e65859628f54159b2d86c5"
+        },
+        {
+          "path": "./assets/images/laptop-lenovo-loq-15ahp11-83tn0040vn-angle-3.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/s/s/ssss_8__91.png",
+          "galleryIndex": 9,
+          "sha256": "545c686965c5a46de8e2995633c04758aa2898551ee25700b6df9c711e9f119e"
+        },
+        {
+          "path": "./assets/images/laptop-lenovo-loq-15ahp11-83tn0040vn-angle-4.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/s/s/ssss_12__1_21.png",
+          "galleryIndex": 16,
+          "sha256": "63b6cd3a3e44b6775e5459150729b2144f3ba3fff3443c00acf107ff9d9fd50e"
+        }
+      ]
+    },
+    {
+      "ids": [
+        6
+      ],
+      "source": "https://cellphones.com.vn/laptop-lenovo-loq-15iph11-83sl000lvn.html",
+      "sourceName": "Laptop Lenovo LOQ 15IPH11 83SL000LVN",
+      "verifiedAt": "2026-10-10",
+      "specifications": [
+        {
+          "label": "Chip AI",
+          "value": "Up to 50 TOPS"
+        },
+        {
+          "label": "Loại card đồ họa",
+          "value": "NVIDIA GeForce RTX 5060 8GB GDDR7, Boost Clock 1455MHz, TGP 115W, 572 AI TOPS"
+        },
+        {
+          "label": "Dung lượng RAM",
+          "value": "16GB"
+        },
+        {
+          "label": "Loại RAM",
+          "value": "SODIMM DDR5-5600"
+        },
+        {
+          "label": "Số khe ram",
+          "value": "2 khe (1 x 16GGB, nâng cấp tối đa 32GB)"
+        },
+        {
+          "label": "Ổ cứng",
+          "value": "512GB SSD M.2 2242 PCIe 4.0x4 NVMe (Hỗ trợ tối đa hai ổ đĩa, 2 ổ SSD M.2, dung lượng lên đến 1TB)"
+        },
+        {
+          "label": "Công nghệ màn hình",
+          "value": "Độ sáng 300 nits\nMàn hình chống chói\nĐộ phủ màu 100% sRGB\nFreeSync\nG-SYNC\nLow Blue Light"
+        },
+        {
+          "label": "Hệ điều hành",
+          "value": "Windows 11 Home Single Language, English"
+        },
+        {
+          "label": "Loại CPU",
+          "value": "Intel Core Ultra 7 356H, 16 lõi (4P + 8E + 4LPE) / 16 luồng, Max Turbo up to 4.7GHz, 18MB Intel Smart Cache"
+        },
+        {
+          "label": "Kích thước màn hình",
+          "value": "15.3 inches"
+        },
+        {
+          "label": "Độ phân giải màn hình",
+          "value": "1920 x 1200 pixels (WUXGA)"
+        },
+        {
+          "label": "Pin",
+          "value": "60Wh, 245W Slim Tip (3-pin)"
+        },
+        {
+          "label": "Cổng giao tiếp",
+          "value": "2x USB-A (5Gbps)\n1x USB-A (10Gbps)\n1x Thunderbolt 4 (PD 65–100W, DisplayPort 2.1)\n1x HDMI 2.1 (tối đa 8K/60Hz)\n1x jack tai nghe/micro 3.5mm\n1x Ethernet (RJ-45)\n1x cổng nguồn Slim Tip"
+        },
+        {
+          "label": "Tần số quét",
+          "value": "165Hz"
+        },
+        {
+          "label": "Chất liệu tấm nền",
+          "value": "Tấm nền IPS"
+        },
+        {
+          "label": "Công nghệ âm thanh",
+          "value": "Âm thanh HD, codec Realtek ALC3287\nLoa stereo 2W x2\nTối ưu với Nahimic Audio"
+        },
+        {
+          "label": "Khe đọc thẻ nhớ",
+          "value": "Không"
+        },
+        {
+          "label": "Chất liệu",
+          "value": "Vỏ nhựa"
+        },
+        {
+          "label": "Chất liệu vỏ trên",
+          "value": "Nhựa"
+        },
+        {
+          "label": "Chất liệu vỏ dưới",
+          "value": "Nhựa"
+        },
+        {
+          "label": "Tính năng đặc biệt",
+          "value": "Wi-Fi 6, Nhận diện khuôn mặt"
+        },
+        {
+          "label": "Loại đèn bàn phím",
+          "value": "1-Zone RGB"
+        },
+        {
+          "label": "Bảo mật",
+          "value": "Firmware TPM 2.0 Enabled"
+        },
+        {
+          "label": "Webcam",
+          "value": "5.0MP + Hồng ngoại với màn trập camera"
+        },
+        {
+          "label": "Wi-Fi",
+          "value": "Wi-Fi 6, 802.11ax 2x2"
+        },
+        {
+          "label": "Bluetooth",
+          "value": "Bluetooth 5.3"
+        },
+        {
+          "label": "Kích thước",
+          "value": "344.9 x 254.83 x 20.9-23.25 mm (Dài x Rộng x Dày)"
+        },
+        {
+          "label": "Trọng lượng",
+          "value": "2.1 kg"
+        }
+      ],
+      "images": [
+        {
+          "path": "./assets/images/laptop-lenovo-loq-15iph11-83sl000lvn-angle-1.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/x/_/x_m_1__1_34.png",
+          "galleryIndex": 4,
+          "sha256": "8d79acc43f75d285fa7d9c59cf7f8e5f384e44d342c5ce030feb0dda2d132503"
+        },
+        {
+          "path": "./assets/images/laptop-lenovo-loq-15iph11-83sl000lvn-angle-2.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/x/_/x_m_2_52.png",
+          "galleryIndex": 5,
+          "sha256": "cd69eb3162919db328384360c5b7acd76e0233a6badfe8fd933cfabc05086011"
+        },
+        {
+          "path": "./assets/images/laptop-lenovo-loq-15iph11-83sl000lvn-angle-3.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/x/_/x_m_7__9.png",
+          "galleryIndex": 11,
+          "sha256": "d69b9fc775226b40afe94b94c59cbe807abb5e7015562ab68e098261fbd3aabb"
+        },
+        {
+          "path": "./assets/images/laptop-lenovo-loq-15iph11-83sl000lvn-angle-4.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/x/_/x_m_12__4.png",
+          "galleryIndex": 16,
+          "sha256": "b80578561d3161eed69226b4de0c97b9c5f8158ac31c81fb8bccea8208e2caaa"
+        }
+      ]
+    },
+    {
+      "ids": [
+        7
+      ],
+      "source": "https://cellphones.com.vn/laptop-lenovo-legion-7-16iax10-83ky001uvn.html",
+      "sourceName": "Laptop Lenovo Legion 7 16IAX10 83KY001UVN",
+      "verifiedAt": "2026-10-10",
+      "specifications": [
+        {
+          "label": "Chip AI",
+          "value": "Intel AI Boost, up to 13 TOPS"
+        },
+        {
+          "label": "Loại card đồ họa",
+          "value": "NVIDIA GeForce RTX 5060 8GB GDDR7, Boost Clock 2497MHz, TGP 115W, 572 AI TOPS"
+        },
+        {
+          "label": "Dung lượng RAM",
+          "value": "32GB"
+        },
+        {
+          "label": "Loại RAM",
+          "value": "DDR5-5600"
+        },
+        {
+          "label": "Số khe ram",
+          "value": "2 khe (2 x 16GB, tối đa 32GB)"
+        },
+        {
+          "label": "Ổ cứng",
+          "value": "1TB SSD M.2 2242 PCIe 4.0x4 NVMe (Tối đa hai ổ đĩa, 2x SSD M.2, mỗi ổ có dung lượng tối đa 1TB)"
+        },
+        {
+          "label": "Công nghệ màn hình",
+          "value": "Độ sáng 500nits (Điển hình) / 1100nits (Cao)\nĐộ phủ màu 100% DCI-P3\nDisplayHDR True Black 1000\nDolby Vision\nG-SYNC\nÁnh sáng xanh thấp\nHiệu suất chơi game cao\nKhông nhấp nháy"
+        },
+        {
+          "label": "Hệ điều hành khi ra mắt",
+          "value": "Windows 11 Home Single Language, English + Office Home 2024 + Lenovo AI Now"
+        },
+        {
+          "label": "Loại CPU",
+          "value": "Intel Core Ultra 9 275HX, 24 lõi (8P + 16E) / 24 luồng, Max Turbo up to 5.4GHz, 36MB"
+        },
+        {
+          "label": "Kích thước màn hình",
+          "value": "16 inches"
+        },
+        {
+          "label": "Độ phân giải màn hình",
+          "value": "2560 x 1600 (WQXGA)"
+        },
+        {
+          "label": "Pin",
+          "value": "84Wh, 245W Slim Tip (3-pin)"
+        },
+        {
+          "label": "Cổng giao tiếp",
+          "value": "2x USB-A (5Gbps)\n1x USB-C (10Gbps), USB PD 65-100W và DP 2.1\n1x USB-C (Thunderbolt 4 / 40Gbps), USB PD 65-100W và DP 2.1\n1x HDMI 2.1, lên đến 8K/60Hz\n1x Giắc cắm kết hợp tai nghe/micrô (3.5mm)\n1x Đầu đọc thẻ\n1x Đầu nối nguồn"
+        },
+        {
+          "label": "Tần số quét",
+          "value": "240 Hz"
+        },
+        {
+          "label": "Chất liệu tấm nền",
+          "value": "Tấm nền Oled"
+        },
+        {
+          "label": "Công nghệ âm thanh",
+          "value": "Âm thanh độ nét cao (HD)\ncodec Realtek ALC3306\nLoa stereo, 2W x2\nÂm thanh của HARMAN\nNahimic Audio\nBộ khuếch đại thông minh (AMP)"
+        },
+        {
+          "label": "Khe đọc thẻ nhớ",
+          "value": "Có"
+        },
+        {
+          "label": "Chất liệu",
+          "value": "Vỏ kim loại"
+        },
+        {
+          "label": "Chất liệu vỏ màn hình",
+          "value": "Lắng đọng điện di anodize"
+        },
+        {
+          "label": "Chất liệu vỏ trên",
+          "value": "Nhôm"
+        },
+        {
+          "label": "Chất liệu vỏ dưới",
+          "value": "Nhôm"
+        },
+        {
+          "label": "Tính năng đặc biệt",
+          "value": "Màn hình Oled, Wi-Fi 7"
+        },
+        {
+          "label": "Loại đèn bàn phím",
+          "value": "Per-key RGB Backlit, English"
+        },
+        {
+          "label": "Bảo mật",
+          "value": "Firmware TPM 2.0 Enabled"
+        },
+        {
+          "label": "Webcam",
+          "value": "5.0MP + IR với E-shutter"
+        },
+        {
+          "label": "Wi-Fi",
+          "value": "Wi-Fi 7, 802.11be 2x2"
+        },
+        {
+          "label": "Bluetooth",
+          "value": "Bluetooth 5.4"
+        },
+        {
+          "label": "Kích thước",
+          "value": "361.7 x 263.4 x 15.9-17.9 mm (Dài x Rộng x Dày)"
+        },
+        {
+          "label": "Trọng lượng",
+          "value": "2.0 kg"
+        }
+      ],
+      "images": [
+        {
+          "path": "./assets/images/laptop-lenovo-legion-7-16iax10-83ky001uvn-angle-1.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/t/e/text_ng_n_4__8_101.png",
+          "galleryIndex": 4,
+          "sha256": "cc2d67455a17eca222fae3d13a9c1a5f5b5eb2386479ce3b64e37c94fa36cf24"
+        },
+        {
+          "path": "./assets/images/laptop-lenovo-legion-7-16iax10-83ky001uvn-angle-2.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/t/e/text_ng_n_2__10_112.png",
+          "galleryIndex": 5,
+          "sha256": "c17300cea70fc3634d751af5bea3d75a2e9b3709c589bc314b2ef90b31eddf13"
+        },
+        {
+          "path": "./assets/images/laptop-lenovo-legion-7-16iax10-83ky001uvn-angle-3.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/t/e/text_ng_n_5__10_89.png",
+          "galleryIndex": 10,
+          "sha256": "f3728a8f84b5878dd749b760b88f2c77ac6028e50648522634978e8f36258b85"
+        },
+        {
+          "path": "./assets/images/laptop-lenovo-legion-7-16iax10-83ky001uvn-angle-4.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/t/e/text_ng_n_12__8_175.png",
+          "galleryIndex": 14,
+          "sha256": "b8146a5e8da4827c07e84cce8e129b90e7939c5db8d36ed34d2b4f123aa40754"
+        }
+      ]
+    },
+    {
+      "ids": [
+        8
+      ],
+      "source": "https://cellphones.com.vn/laptop-lenovo-legion-5-15ahp11-83q7001jvn.html",
+      "sourceName": "Laptop Lenovo Legion 5 15AHP11 83Q7001JVN",
+      "verifiedAt": "2026-10-10",
+      "specifications": [
+        {
+          "label": "Chip AI",
+          "value": "AMD Ryzen AI, up to 16 TOPS"
+        },
+        {
+          "label": "Loại card đồ họa",
+          "value": "NVIDIA GeForce RTX 5060 8GB GDDR7, Boost Clock 2497MHz, TGP 115W, 572 AI TOPS"
+        },
+        {
+          "label": "Dung lượng RAM",
+          "value": "16GB"
+        },
+        {
+          "label": "Loại RAM",
+          "value": "SODIMM DDR5-5600"
+        },
+        {
+          "label": "Số khe ram",
+          "value": "2 khe (1 x 16GB, nâng cấp tối đa 32GB DDR5-5600)"
+        },
+        {
+          "label": "Ổ cứng",
+          "value": "512GB SSD M.2 2242 PCIe 4.0x4 NVMe (Tối đa hai ổ đĩa, 2 ổ SSD M.2, SSD M.2 2242 dung lượng tối đa 2TB mỗi ổ)"
+        },
+        {
+          "label": "Công nghệ màn hình",
+          "value": "Độ sáng 500 nits (typical), 1000 nits (peak)\nĐộ phủ 100% DCI-P3\nNVIDIA G-Sync\nDisplayHDR True Black 1000"
+        },
+        {
+          "label": "Hệ điều hành khi ra mắt",
+          "value": "Windows 11 Home Single Language, English + Office Home 2024 + Lenovo AI Now"
+        },
+        {
+          "label": "Loại CPU",
+          "value": "AMD Ryzen 7 250 (8 lõi / 16 luồng, 3.3 / 5.1GHz, 8MB L2 / 16MB L3)"
+        },
+        {
+          "label": "Kích thước màn hình",
+          "value": "15.1 inches"
+        },
+        {
+          "label": "Độ phân giải màn hình",
+          "value": "2560 x 1600 (WQXGA)"
+        },
+        {
+          "label": "Pin",
+          "value": "80Wh, 245W Slim Tip (3-pin)"
+        },
+        {
+          "label": "Cổng giao tiếp",
+          "value": "2 x USB-A (USB 5Gbps)\n1 x USB-A (USB 5Gbps, Always On)\n2 x USB-C (USB4 40Gbps, PD 65–100W, DisplayPort 1.4)\n1 x HDMI 2.1 (tối đa 8K/60Hz)\n1 x Jack tai nghe/mic 3.5 mm\n1 x Ethernet (RJ-45)\n1 x Cổng nguồn Slim tip"
+        },
+        {
+          "label": "Tần số quét",
+          "value": "165 Hz"
+        },
+        {
+          "label": "Chất liệu tấm nền",
+          "value": "Tấm nền Oled"
+        },
+        {
+          "label": "Công nghệ âm thanh",
+          "value": "Âm thanh HD, codec Realtek ALC3287\nLoa stereo 2W x2\nÂm thanh bởi HARMAN\nTối ưu với Nahimic Audio"
+        },
+        {
+          "label": "Khe đọc thẻ nhớ",
+          "value": "Không"
+        },
+        {
+          "label": "Chất liệu",
+          "value": "Vỏ nhựa - nắp lưng kim loại"
+        },
+        {
+          "label": "Chất liệu vỏ trên",
+          "value": "Nhôm"
+        },
+        {
+          "label": "Chất liệu vỏ dưới",
+          "value": "Nhựa"
+        },
+        {
+          "label": "Tính năng đặc biệt",
+          "value": "Màn hình Oled, Wi-Fi 7"
+        },
+        {
+          "label": "Loại đèn bàn phím",
+          "value": "1-Zone RGB"
+        },
+        {
+          "label": "Bảo mật",
+          "value": "Firmware TPM 2.0 Enabled"
+        },
+        {
+          "label": "Webcam",
+          "value": "5.0MP với E-shutter"
+        },
+        {
+          "label": "Wi-Fi",
+          "value": "Wi-Fi 7, 802.11be 2x2"
+        },
+        {
+          "label": "Bluetooth",
+          "value": "Bluetooth 5.4"
+        },
+        {
+          "label": "Kích thước",
+          "value": "344 x 244.5 x 18.95-19.95 mm (Dài x Rộng x Dày)"
+        },
+        {
+          "label": "Trọng lượng",
+          "value": "1.87 kg"
+        }
+      ],
+      "images": [
+        {
+          "path": "./assets/images/laptop-lenovo-legion-5-15ahp11-83q7001jvn-angle-1.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/s/s/ssss_6__145.png",
+          "galleryIndex": 4,
+          "sha256": "acfca7695b01b2fb958e6a29e5a8a931b09fb18e5c465aaf18b83484af8fd8e7"
+        },
+        {
+          "path": "./assets/images/laptop-lenovo-legion-5-15ahp11-83q7001jvn-angle-2.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/s/s/ssss_5__1_89.png",
+          "galleryIndex": 5,
+          "sha256": "f8ce97e655be5df4389e58aeeba97605302bfa9763cabf70b4002d6643ab1da2"
+        },
+        {
+          "path": "./assets/images/laptop-lenovo-legion-5-15ahp11-83q7001jvn-angle-3.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/s/s/ssss_4__1_98.png",
+          "galleryIndex": 9,
+          "sha256": "e9930b53c4d944710f9a52c44849f61e6cef5e8af8a49ca02731a2341b35e5fd"
+        },
+        {
+          "path": "./assets/images/laptop-lenovo-legion-5-15ahp11-83q7001jvn-angle-4.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/s/s/ssss_8__102.png",
+          "galleryIndex": 14,
+          "sha256": "25b5919df2e180ea17d0bb713923d976624f1c7e610a0ff87517bdb787d6faee"
+        }
+      ]
+    },
+    {
+      "ids": [
+        9
+      ],
+      "source": "https://cellphones.com.vn/laptop-lenovo-legion-5-15iph11-83rw0023vn.html",
+      "sourceName": "Laptop Lenovo Legion 5 15IPH11 83RW0023VN",
+      "verifiedAt": "2026-10-10",
+      "specifications": [
+        {
+          "label": "Chip AI",
+          "value": "Up to 50 TOPS"
+        },
+        {
+          "label": "Loại card đồ họa",
+          "value": "NVIDIA GeForce RTX 5060 8GB GDDR7, Boost Clock 2497MHz, TGP 115W, 572 AI TOPS"
+        },
+        {
+          "label": "Dung lượng RAM",
+          "value": "16GB"
+        },
+        {
+          "label": "Loại RAM",
+          "value": "SODIMM DDR5-5600"
+        },
+        {
+          "label": "Số khe ram",
+          "value": "2 khe (1 x 16GB, nâng cấp tối đa 32GB DDR5-5600)"
+        },
+        {
+          "label": "Ổ cứng",
+          "value": "512GB SSD M.2 2242 PCIe 4.0x4 NVMe (Hỗ trợ tối đa hai ổ đĩa, 2 ổ SSD M.2, dung lượng lên đến 2TB)"
+        },
+        {
+          "label": "Công nghệ màn hình",
+          "value": "Độ sáng 500 nits (typical), 1000 nits (peak)\nĐộ phủ màu 100% DCI-P3\nG-SYNC\nDisplayHDR True Black 1000"
+        },
+        {
+          "label": "Hệ điều hành khi ra mắt",
+          "value": "Windows 11 Home Single Language, English + Office Home 2024 + Lenovo AI Now"
+        },
+        {
+          "label": "Loại CPU",
+          "value": "Intel Core Ultra 7 356H, 16 lõi (4P + 8E + 4LPE) / 16 luồng, Max Turbo up to 4.7GHz, 18MB Intel Smart Cache"
+        },
+        {
+          "label": "Kích thước màn hình",
+          "value": "15.3 inches"
+        },
+        {
+          "label": "Độ phân giải màn hình",
+          "value": "2560 x 1600 (WQXGA)"
+        },
+        {
+          "label": "Pin",
+          "value": "80Wh, 245W Slim Tip (3-pin)"
+        },
+        {
+          "label": "Cổng giao tiếp",
+          "value": "1 x USB-A\n1 x USB-A (Always On)\n1 x USB-A\n1 x USB-C (PD 65–100W, DisplayPort 2.1)\n1 x Thunderbolt 4 (PD 65–100W, DisplayPort 2.1)\n1 x HDMI 2.1 (tối đa 8K/60Hz)\n1 x jack tai nghe/micro 3.5mm\n1 x RJ-45\n1 x Cổng nguồn"
+        },
+        {
+          "label": "Tần số quét",
+          "value": "165 Hz"
+        },
+        {
+          "label": "Chất liệu tấm nền",
+          "value": "Tấm nền Oled"
+        },
+        {
+          "label": "Công nghệ âm thanh",
+          "value": "Âm thanh HD, codec Realtek ALC3287\nLoa stereo 2W x2\nÂm thanh tinh chỉnh bởi HARMAN\nTối ưu với Nahimic Audio"
+        },
+        {
+          "label": "Khe đọc thẻ nhớ",
+          "value": "Không"
+        },
+        {
+          "label": "Chất liệu",
+          "value": "Vỏ nhựa - nắp lưng kim loại"
+        },
+        {
+          "label": "Chất liệu vỏ trên",
+          "value": "Nhôm"
+        },
+        {
+          "label": "Chất liệu vỏ dưới",
+          "value": "Nhựa"
+        },
+        {
+          "label": "Tính năng đặc biệt",
+          "value": "Nhận diện khuôn mặt, Màn hình Oled, Wi-Fi 7"
+        },
+        {
+          "label": "Loại đèn bàn phím",
+          "value": "24-Zone RGB"
+        },
+        {
+          "label": "Bảo mật",
+          "value": "Firmware TPM 2.0 Enabled"
+        },
+        {
+          "label": "Webcam",
+          "value": "5.0MP + IR với E-shutter"
+        },
+        {
+          "label": "Wi-Fi",
+          "value": "Wi-Fi 7, 802.11be 2x2"
+        },
+        {
+          "label": "Bluetooth",
+          "value": "Bluetooth 5.4"
+        },
+        {
+          "label": "Kích thước",
+          "value": "344 x 244.5 x 18.95-19.95 mm (Dài x Rộng x Dày)"
+        },
+        {
+          "label": "Trọng lượng",
+          "value": "1.87 kg"
+        }
+      ],
+      "images": [
+        {
+          "path": "./assets/images/laptop-lenovo-legion-5-15iph11-83rw0023vn-angle-1.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/s/s/sssxs_1__37.png",
+          "galleryIndex": 4,
+          "sha256": "4af63f4f80d77d82f77968802f3f96553496fe48c6703a5272a8a831311e4121"
+        },
+        {
+          "path": "./assets/images/laptop-lenovo-legion-5-15iph11-83rw0023vn-angle-2.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/s/s/sssxs_60.png",
+          "galleryIndex": 5,
+          "sha256": "289230d63aa31ae9070350e0ed1df923dcbec6be3c0117ddc7c3970cff8f1f2f"
+        },
+        {
+          "path": "./assets/images/laptop-lenovo-legion-5-15iph11-83rw0023vn-angle-3.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/s/s/sssxs_3__35.png",
+          "galleryIndex": 11,
+          "sha256": "0fc4956591d36cd6c42dc6eb63db95250fc4a955a671d153a44bdfc867402d00"
+        },
+        {
+          "path": "./assets/images/laptop-lenovo-legion-5-15iph11-83rw0023vn-angle-4.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/s/s/sssxs_8__21.png",
+          "galleryIndex": 15,
+          "sha256": "d368f0b93ee33ac21c172592c15ce4eb06ef8cfd21c1de3b3cf614eb0041c450"
+        }
+      ]
+    },
+    {
+      "ids": [
+        10
+      ],
+      "source": "https://cellphones.com.vn/laptop-lenovo-legion-5-15iax11-83vk00a2vn.html",
+      "sourceName": "Laptop Lenovo Legion 5 15IAX11 83VK00A2VN",
+      "verifiedAt": "2026-10-10",
+      "specifications": [
+        {
+          "label": "Chip AI",
+          "value": "Integrated Intel AI Boost, up to 13 TOPS"
+        },
+        {
+          "label": "Loại card đồ họa",
+          "value": "NVIDIA GeForce RTX 5060 8GB GDDR7, Boost Clock 2497MHz, TGP 115W, 572 AI TOPS"
+        },
+        {
+          "label": "Dung lượng RAM",
+          "value": "24GB"
+        },
+        {
+          "label": "Loại RAM",
+          "value": "SODIMM DDR5-5600"
+        },
+        {
+          "label": "Số khe ram",
+          "value": "2 khe (1 x 24GB, nâng cấp tối đa 32GB DDR5-5600)"
+        },
+        {
+          "label": "Ổ cứng",
+          "value": "512GB SSD M.2 2242 PCIe 4.0x4 NVMe (Hỗ trợ tối đa hai ổ đĩa, dung lượng lên đến 2TB)"
+        },
+        {
+          "label": "Công nghệ màn hình",
+          "value": "Độ sáng 1000 nits (tối đa), 500 nits (thông thường)\nMàn hình gương (Glossy)\nĐộ phủ màu 100% DCI-P3\nG-SYNC\nDisplayHDR True Black 1000"
+        },
+        {
+          "label": "Hệ điều hành khi ra mắt",
+          "value": "Windows 11 Home Single Language, English + Office Home 2024 + Lenovo AI Now"
+        },
+        {
+          "label": "Loại CPU",
+          "value": "Intel Core Ultra 7 251HX, 18 lõi (6P + 12E) / 18 luồng, Max Turbo up to 5.1GHz, 30MB Intel Smart Cache"
+        },
+        {
+          "label": "Kích thước màn hình",
+          "value": "15.3 inches"
+        },
+        {
+          "label": "Độ phân giải màn hình",
+          "value": "2560 x 1600 (WQXGA)"
+        },
+        {
+          "label": "Pin",
+          "value": "80Wh, 245W Slim Tip (3-pin)"
+        },
+        {
+          "label": "Cổng giao tiếp",
+          "value": "2x USB-A 3.2 Gen 1\n1x USB-A 3.2 Gen 1 (5Gbps, Always On)\n1x USB-C 3.2 Gen 2 (DisplayPort 2.1, Sạc, 10Gbps)\n1x Thunderbolt 4 (DisplayPort 2.1, Sạc)\n1x HDMI 2.1 (8K@60Hz)\n1x jack tai nghe/micro 3.5mm\n1x RJ-45\n1x Cổng nguồn"
+        },
+        {
+          "label": "Tần số quét",
+          "value": "165 Hz"
+        },
+        {
+          "label": "Chất liệu tấm nền",
+          "value": "Tấm nền Oled"
+        },
+        {
+          "label": "Công nghệ âm thanh",
+          "value": "Âm thanh HD, codec Realtek ALC3287\nLoa stereo 2W x2, âm thanh HARMAN, tối ưu với Nahimic Audio"
+        },
+        {
+          "label": "Khe đọc thẻ nhớ",
+          "value": "Không"
+        },
+        {
+          "label": "Chất liệu",
+          "value": "Vỏ nhựa - nắp lưng kim loại"
+        },
+        {
+          "label": "Chất liệu vỏ trên",
+          "value": "Nhôm"
+        },
+        {
+          "label": "Chất liệu vỏ dưới",
+          "value": "Nhựa"
+        },
+        {
+          "label": "Tính năng đặc biệt",
+          "value": "Màn hình Oled, Wi-Fi 7"
+        },
+        {
+          "label": "Loại đèn bàn phím",
+          "value": "24-Zone RGB"
+        },
+        {
+          "label": "Bảo mật",
+          "value": "Firmware TPM 2.0 Enabled"
+        },
+        {
+          "label": "Webcam",
+          "value": "5.0MP với E-shutter"
+        },
+        {
+          "label": "Wi-Fi",
+          "value": "Wi-Fi 7, 802.11be 2x2"
+        },
+        {
+          "label": "Bluetooth",
+          "value": "Bluetooth 5.4"
+        },
+        {
+          "label": "Kích thước",
+          "value": "344 x 244.5 x 18.95-19.95 mm (Dài x Rộng x Dày)"
+        },
+        {
+          "label": "Trọng lượng",
+          "value": "1.93 kg"
+        }
+      ],
+      "images": [
+        {
+          "path": "./assets/images/laptop-lenovo-legion-5-15iax11-83vk00a2vn-angle-1.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/x/_/x_m_6__105.png",
+          "galleryIndex": 6,
+          "sha256": "b2cca4a1ffee09597b85e677ee7bd0bf0eae468851b5456009a9f69ea7386c05"
+        },
+        {
+          "path": "./assets/images/laptop-lenovo-legion-5-15iax11-83vk00a2vn-angle-2.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/x/_/x_m_7__99.png",
+          "galleryIndex": 7,
+          "sha256": "880c7ea83c5eeac6bea6419cb203cae690a260c7601792ea62b25f3246751147"
+        },
+        {
+          "path": "./assets/images/laptop-lenovo-legion-5-15iax11-83vk00a2vn-angle-3.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/x/_/x_m_5__120.png",
+          "galleryIndex": 12,
+          "sha256": "2119d392bb0cf272debb9582c70ff122f54ce84d2e24132c6ff334eab2832651"
+        },
+        {
+          "path": "./assets/images/laptop-lenovo-legion-5-15iax11-83vk00a2vn-angle-4.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/x/_/x_m_10__52.png",
+          "galleryIndex": 18,
+          "sha256": "29e5f5d8d814d5a324635cb4c6b59d26fb90814f440bfaa3cb6e27b98a2d1f0a"
+        }
+      ]
+    },
+    {
+      "ids": [
+        11
+      ],
+      "source": "https://cellphones.com.vn/laptop-asus-rog-strix-g16-g614ph-s5101w.html",
+      "sourceName": "Laptop ASUS ROG Strix G16 G614PH-S5101W",
+      "verifiedAt": "2026-10-10",
+      "specifications": [
+        {
+          "label": "Loại card đồ họa",
+          "value": "NVIDIA GeForce RTX 5050 8GB GDDR7\nAMD Radeon Graphics"
+        },
+        {
+          "label": "Dung lượng RAM",
+          "value": "16GB"
+        },
+        {
+          "label": "Loại RAM",
+          "value": "DDR5-5200 SO-DIMM"
+        },
+        {
+          "label": "Số khe ram",
+          "value": "2 khe (1 x 16GB, nâng cấp tối đa 64GB)"
+        },
+        {
+          "label": "Ổ cứng",
+          "value": "512GB PCIe 4.0 NVMe M.2 SSD (2 Khe cắm M.2 hỗ trợ cả SATA hoặc NVMe, tối đa 2TB)"
+        },
+        {
+          "label": "Công nghệ màn hình",
+          "value": "Độ sáng 500 nits\nTỷ lệ tương phản 1200:1\nĐộ phủ màu DCI-P3 100%\nMàn hình chống chói\nCông nghệ Adaptive-Sync G-Sync\nChứng nhận Pantone Validated\nROG Nebula Display\nDolby Vision HDR\nTản nhiệt ROG Intelligent Cooling"
+        },
+        {
+          "label": "Hệ điều hành khi ra mắt",
+          "value": "Windows 11 Home"
+        },
+        {
+          "label": "Loại CPU",
+          "value": "AMD Ryzen 9 8940HX 2.4GHz (80MB Cache, up to 5.3GHz, 16 lõi, 32 luồng)"
+        },
+        {
+          "label": "Kích thước màn hình",
+          "value": "16 inches"
+        },
+        {
+          "label": "Độ phân giải màn hình",
+          "value": "2560 x 1600 (WQXGA)"
+        },
+        {
+          "label": "Pin",
+          "value": "90WHrs, 4S1P, 4-cell Li-ion, Sạc từ 0-50% trong 30 phút"
+        },
+        {
+          "label": "Cổng giao tiếp",
+          "value": "1 x RJ45 LAN\n1 x USB 4 Type-C hỗ trợ DisplayPort / G-Sync (40Gbps)\n1 x USB 4 Type-C hỗ trợ DisplayPort / Power Delivery / G-Sync (40Gbps)\n2 x USB 3.2 Gen 2 Type-A (10Gbps)\n1 x HDMI 2.1 FRL\n1 x Jack âm thanh 3.5mm combo"
+        },
+        {
+          "label": "Tần số quét",
+          "value": "240 Hz"
+        },
+        {
+          "label": "Chất liệu tấm nền",
+          "value": "Tấm nền IPS"
+        },
+        {
+          "label": "Công nghệ âm thanh",
+          "value": "Hệ thống 2 loa với công nghệ khuếch đại thông minh\nCông nghệ khử ồn AI\nDolby Atmos\nChứng nhận Hi-Res (cho tai nghe)\nCông nghệ Smart Amp"
+        },
+        {
+          "label": "Tính năng đặc biệt",
+          "value": "Wi-Fi 6, MUX Switch"
+        },
+        {
+          "label": "Loại đèn bàn phím",
+          "value": "Bàn phím Chiclet có đèn nền RGB 4 vùng Có phím Copilot\nAura Sync"
+        },
+        {
+          "label": "Bảo mật",
+          "value": "Mật khẩu Quản trị viên BIOS và bảo vệ mật khẩu người dùng\nMô-đun TPM (Firmware TPM)"
+        },
+        {
+          "label": "Webcam",
+          "value": "1080P FHD camera"
+        },
+        {
+          "label": "Wi-Fi",
+          "value": "Wi-Fi 6E(802.11ax) (Triple band) 2*2"
+        },
+        {
+          "label": "Bluetooth",
+          "value": "Bluetooth 5.3"
+        },
+        {
+          "label": "Kích thước",
+          "value": "35.4 x 26.4 x 2.26 ~ 3.04 cm (Dài x Rộng x Dày)"
+        },
+        {
+          "label": "Trọng lượng",
+          "value": "2.50 kg"
+        }
+      ],
+      "images": [
+        {
+          "path": "./assets/images/laptop-asus-rog-strix-g16-g614ph-s5101w-angle-1.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/s/s/ssss_4__64.png",
+          "galleryIndex": 5,
+          "sha256": "81dcc63b6d7e048226594669a36dc1d16d87f956cdeda3de91229a264b859487"
+        },
+        {
+          "path": "./assets/images/laptop-asus-rog-strix-g16-g614ph-s5101w-angle-2.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/s/s/ssss_14__8.png",
+          "galleryIndex": 6,
+          "sha256": "cdff538540f33c77c6b64416c3cdf571653e0567de621a916b6029fb00b1444b"
+        },
+        {
+          "path": "./assets/images/laptop-asus-rog-strix-g16-g614ph-s5101w-angle-3.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/s/s/ssss_8__27.png",
+          "galleryIndex": 8,
+          "sha256": "5cba71a3f1597969e0ffd32e0efe9526b9e50846cc3d0a956df4753f9dbb5a3a"
+        },
+        {
+          "path": "./assets/images/laptop-asus-rog-strix-g16-g614ph-s5101w-angle-4.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/s/s/ssss_6__42.png",
+          "galleryIndex": 13,
+          "sha256": "dc79379bb23db92a3305b9917b508d507058de606b4896c52e9616eed9608c8e"
+        }
+      ]
+    },
+    {
+      "ids": [
+        12
+      ],
+      "source": "https://cellphones.com.vn/laptop-asus-rog-zephyrus-g16-gu606aw-tb121w.html",
+      "sourceName": "Laptop ASUS ROG Zephyrus G16 GU606AW-TB121W",
+      "verifiedAt": "2026-10-10",
+      "specifications": [
+        {
+          "label": "Chip AI",
+          "value": "Intel NPU up to 50TOPS"
+        },
+        {
+          "label": "Loại card đồ họa",
+          "value": "NVIDIA GeForce RTX 5080 16GB GDDR7\nIntel Graphics"
+        },
+        {
+          "label": "Dung lượng RAM",
+          "value": "32GB"
+        },
+        {
+          "label": "Loại RAM",
+          "value": "LPDDR5X 8533 Onboard"
+        },
+        {
+          "label": "Số khe ram",
+          "value": "Không nâng cấp"
+        },
+        {
+          "label": "Ổ cứng",
+          "value": "1TB PCIe 4.0 NVMe M.2 SSD (2 Khe cắm M.2 hỗ trợ cả SATA hoặc NVMe, tối đa 2TB)"
+        },
+        {
+          "label": "Công nghệ màn hình",
+          "value": "Độ sáng tối đa 1100 nits (Peak)\nTỷ lệ tương phản 1.000.000:1\nMàn hình chống chói\nNVIDIA G-SYNC\nChứng nhận màu sắc Pantone Validated\nROG Nebula HDR Display\nHỗ trợ Dolby Vision HDR"
+        },
+        {
+          "label": "Hệ điều hành khi ra mắt",
+          "value": "Windows 11 Home"
+        },
+        {
+          "label": "Loại CPU",
+          "value": "Intel Core Ultra 9 386H 2.1 GHz (18MB Cache, up to 4.9 GHz, 16 lõi, 16 luồng)"
+        },
+        {
+          "label": "Kích thước màn hình",
+          "value": "16 inches"
+        },
+        {
+          "label": "Độ phân giải màn hình",
+          "value": "2560 x 1600 pixels (2.5K)"
+        },
+        {
+          "label": "Pin",
+          "value": "90WHrs, 4S1P, 4-cell Li-ion\nSạc từ 0-50% trong 30 phút"
+        },
+        {
+          "label": "Cổng giao tiếp",
+          "value": "1x Thunderbolt 4 (DisplayPort, Sạc, 40Gbps)\n1x USB-C 3.2 Gen 2 (DisplayPort, Sạc, G-SYNC, 10Gbps)\n2x USB-A 3.2 Gen 2 (10Gbps)\n1x đầu đọc thẻ SD (UHS-II, tốc độ lên đến 312MB/s)\n1x HDMI 2.1 FRL\n1x jack âm thanh 3.5mm Combo Audio"
+        },
+        {
+          "label": "Tần số quét",
+          "value": "240 Hz"
+        },
+        {
+          "label": "Chất liệu tấm nền",
+          "value": "Tấm nền Oled"
+        },
+        {
+          "label": "Công nghệ âm thanh",
+          "value": "Hệ thống 4 loa (2 loa trầm Dual-Force Woofer + 2 loa Tweeter)\nCông nghệ Smart Amplifier (Smart Amp Technology)\nCông nghệ khử tiếng ồn AI (AI Noise-Canceling Technology)\nÂm thanh Dolby Atmos\nSmart Amp Technology hỗ trợ tăng cường chất lượng"
+        },
+        {
+          "label": "Khe đọc thẻ nhớ",
+          "value": "Có"
+        },
+        {
+          "label": "Chất liệu",
+          "value": "Vỏ kim loại"
+        },
+        {
+          "label": "Chất liệu vỏ màn hình",
+          "value": "Nhựa"
+        },
+        {
+          "label": "Chất liệu vỏ trên",
+          "value": "Nhôm"
+        },
+        {
+          "label": "Chất liệu vỏ dưới",
+          "value": "Nhôm"
+        },
+        {
+          "label": "Tính năng đặc biệt",
+          "value": "Nhận diện khuôn mặt, Màn hình Oled, Wi-Fi 7, MUX Switch"
+        },
+        {
+          "label": "Loại đèn bàn phím",
+          "value": "Bàn phím Chiclet có đèn nền RGB 1 vùng Với phím Copilot"
+        },
+        {
+          "label": "Bảo mật",
+          "value": "Mật khẩu quản trị viên BIOS và mật khẩu người dùng\nBộ xử lý bảo mật Microsoft Pluton (Pluton Security Processor)\nChuẩn bảo mật Secured-core PC cấp độ 3 (Level 3)"
+        },
+        {
+          "label": "Webcam",
+          "value": "Camera hồng ngoại FHD 1080P dành cho Windows Hello"
+        },
+        {
+          "label": "Wi-Fi",
+          "value": "Wi-Fi 7(802.11be) (Triple band) 2*2"
+        },
+        {
+          "label": "Bluetooth",
+          "value": "Bluetooth 6.0"
+        },
+        {
+          "label": "Kích thước",
+          "value": "35.4 x 24.6 x 1.49 ~ 1.79 cm (Dài x Rộng x Dày)"
+        },
+        {
+          "label": "Trọng lượng",
+          "value": "1.95 Kg"
+        }
+      ],
+      "images": [
+        {
+          "path": "./assets/images/laptop-asus-rog-zephyrus-g16-gu606aw-tb121w-angle-1.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/x/_/x_m_3__76_2.png",
+          "galleryIndex": 5,
+          "sha256": "ed0a80767ede856d9d5ad6fb734de1cd94394594efcbab5c1ec0a54580b10910"
+        },
+        {
+          "path": "./assets/images/laptop-asus-rog-zephyrus-g16-gu606aw-tb121w-angle-2.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/x/_/x_m_2__76_2.png",
+          "galleryIndex": 6,
+          "sha256": "841890f348ede95c36fd0b038f4be90082953522e8c8df2ff0729c6cb715f37a"
+        },
+        {
+          "path": "./assets/images/laptop-asus-rog-zephyrus-g16-gu606aw-tb121w-angle-3.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/x/_/x_m_6__45_2.png",
+          "galleryIndex": 8,
+          "sha256": "cf88bd690b238448e34833429e8f16d1bd8ac420a97f7594df3c0f585e22cf7c"
+        },
+        {
+          "path": "./assets/images/laptop-asus-rog-zephyrus-g16-gu606aw-tb121w-angle-4.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/x/_/x_m_9__28_2.png",
+          "galleryIndex": 13,
+          "sha256": "cd4ca98c3d29fe0d235f16b193e5e22fe72edbd95c41274c08a44521f9f178ac"
+        }
+      ]
+    },
+    {
+      "ids": [
+        13
+      ],
+      "source": "https://cellphones.com.vn/laptop-asus-rog-zephyrus-g14-gu405aw-sy029w.html",
+      "sourceName": "Laptop ASUS ROG Zephyrus G14 GU405AW-SY029W",
+      "verifiedAt": "2026-10-10",
+      "specifications": [
+        {
+          "label": "Chip AI",
+          "value": "Intel NPU up to 50TOPS"
+        },
+        {
+          "label": "Loại card đồ họa",
+          "value": "NVIDIA GeForce RTX 5080 16GB GDDR7\nIntel Graphics"
+        },
+        {
+          "label": "Dung lượng RAM",
+          "value": "32GB"
+        },
+        {
+          "label": "Loại RAM",
+          "value": "LPDDR5X 8533 On board"
+        },
+        {
+          "label": "Số khe ram",
+          "value": "Không nâng cấp"
+        },
+        {
+          "label": "Ổ cứng",
+          "value": "1TB PCIe 4.0 NVMe M.2 SSD (1 Khe cắm M.2 hỗ trợ cả SATA hoặc NVMe, tối đa 2TB)"
+        },
+        {
+          "label": "Công nghệ màn hình",
+          "value": "Độ sáng 1100 nits (tối đa)\nTỷ lệ tương phản: 1,000,000:1\nMàn hình chống chói\nG-Sync\nPantone Validated (Đã chứng nhận bởi Pantone)\nMàn hình ROG Nebula HDR\nHỗ trợ Dolby Vision HDR"
+        },
+        {
+          "label": "Hệ điều hành khi ra mắt",
+          "value": "Windows 11 Home"
+        },
+        {
+          "label": "Loại CPU",
+          "value": "Intel Core Ultra 9 386H 2.1 GHz (18MB Cache, up to 4.9 GHz, 16 lõi, 16 luồng)"
+        },
+        {
+          "label": "Kích thước màn hình",
+          "value": "14 inches"
+        },
+        {
+          "label": "Độ phân giải màn hình",
+          "value": "2880 x 1800 pixels"
+        },
+        {
+          "label": "Pin",
+          "value": "73WHrs, 4S1P, 4-cell Li-ion\nSạc từ 0-50% trong 30 phút"
+        },
+        {
+          "label": "Cổng giao tiếp",
+          "value": "1x Thunderbolt 4 hỗ trợ DisplayPort / Sạc (40Gbps)\n1x USB 3.2 Gen 2 Type-C hỗ trợ DisplayPort / Sạc / G-SYNC (10Gbps)\n2x USB 3.2 Gen 2 Type-A (10Gbps)\n1x Khe đọc thẻ nhớ (SD) (UHS-II, 312MB/s)\n1x HDMI 2.1 FRL\n1x Jack âm thanh 3.5mm"
+        },
+        {
+          "label": "Tần số quét",
+          "value": "120 Hz"
+        },
+        {
+          "label": "Chất liệu tấm nền",
+          "value": "Tấm nền Oled"
+        },
+        {
+          "label": "Công nghệ âm thanh",
+          "value": "Hệ thống 4 loa (loa trầm kép) với công nghệ khuếch đại thông minh (Smart Amp), 2 loa Tweeter\nCông nghệ khử tiếng ồn bằng AI\nDolby Atmos\nCông nghệ khuếch đại thông minh (Smart Amp)"
+        },
+        {
+          "label": "Khe đọc thẻ nhớ",
+          "value": "Có"
+        },
+        {
+          "label": "Tính năng đặc biệt",
+          "value": "Nhận diện khuôn mặt, Màn hình Oled, Wi-Fi 7, MUX Switch"
+        },
+        {
+          "label": "Loại đèn bàn phím",
+          "value": "Bàn phím Chiclet có đèn nền RGB 1 vùng Với phím Copilot\nAura Sync\nMUX Switch + NVIDIA Advanced Optimus"
+        },
+        {
+          "label": "Bảo mật",
+          "value": "Bảo vệ bằng mật khẩu quản trị viên BIOS và mật khẩu người dùng\nBộ xử lý bảo mật Pluton\nMáy tính lõi bảo mật (Secured-core PC Level 3)"
+        },
+        {
+          "label": "Webcam",
+          "value": "Camera hồng ngoại FHD 1080P dành cho Windows Hello"
+        },
+        {
+          "label": "Wi-Fi",
+          "value": "Wi-Fi 7(802.11be) (Triple band) 2*2"
+        },
+        {
+          "label": "Bluetooth",
+          "value": "Bluetooth 6.0"
+        },
+        {
+          "label": "Kích thước",
+          "value": "31.1 x 22.0 x 1.59 ~ 1.83 cm (Dài x Rộng x Dày)"
+        },
+        {
+          "label": "Trọng lượng",
+          "value": "1.58 Kg"
+        }
+      ],
+      "images": [
+        {
+          "path": "./assets/images/laptop-asus-rog-zephyrus-g14-gu405aw-sy029w-angle-1.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/x/_/x_m_2_65.png",
+          "galleryIndex": 5,
+          "sha256": "62555fbaa8531852593be271ca5191332fd2cf4ade0e1ab297158f03fff969cc"
+        },
+        {
+          "path": "./assets/images/laptop-asus-rog-zephyrus-g14-gu405aw-sy029w-angle-2.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/x/_/x_m_1__1_46.png",
+          "galleryIndex": 6,
+          "sha256": "ef933af5dde3a5d103777cfc051bb9e4b79927b0e6f385d66142781bfd657fe0"
+        },
+        {
+          "path": "./assets/images/laptop-asus-rog-zephyrus-g14-gu405aw-sy029w-angle-3.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/x/_/x_m_5__28.png",
+          "galleryIndex": 8,
+          "sha256": "263dac04a052e49a4d8686a971cd61ef72373da29cf9ce96276a3dff33b247c9"
+        },
+        {
+          "path": "./assets/images/laptop-asus-rog-zephyrus-g14-gu405aw-sy029w-angle-4.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/x/_/x_m_7__21.png",
+          "galleryIndex": 15,
+          "sha256": "0f544a087bad2736ab6ec519edac865d5b33a40f244db7c233d875a16b61c6d2"
+        }
+      ]
+    },
+    {
+      "ids": [
+        14
+      ],
+      "source": "https://cellphones.com.vn/laptop-asus-tuf-gaming-a15-fa506ncg-hn329w.html",
+      "sourceName": "Laptop ASUS TUF Gaming A15 FA506NCG-HN329W",
+      "verifiedAt": "2026-10-10",
+      "specifications": [
+        {
+          "label": "Chip AI",
+          "value": "AMD XDNA NPU up to 16TOPS"
+        },
+        {
+          "label": "Loại card đồ họa",
+          "value": "NVIDIA GeForce RTX 3050 4GB GDDR6\nAMD Radeon Graphics"
+        },
+        {
+          "label": "Dung lượng RAM",
+          "value": "16GB"
+        },
+        {
+          "label": "Loại RAM",
+          "value": "DDR5-5600 SO-DIMM"
+        },
+        {
+          "label": "Số khe ram",
+          "value": "2 khe (Nâng cấp tối đa 64GB)"
+        },
+        {
+          "label": "Ổ cứng",
+          "value": "512GB PCIe 4.0 NVMe M.2 SSD (2 Khe cắm M.2 hỗ trợ cả SATA hoặc NVMe, tối đa 1TB)"
+        },
+        {
+          "label": "Công nghệ màn hình",
+          "value": "Độ sáng 250 nits\nTỷ lệ tương phản: 1000:1\nĐộ phủ màu NTSC 45% / sRGB 62.5% / Adobe RGB 47.34%\nMàn hình chống chói\nAdaptive-Sync"
+        },
+        {
+          "label": "Hệ điều hành",
+          "value": "Windows 11 Home"
+        },
+        {
+          "label": "Loại CPU",
+          "value": "AMD Ryzen 7 8845HS 3.8GHz (24MB Cache, up to 5.1 GHz, 8 lõi, 16 luồng)"
+        },
+        {
+          "label": "Kích thước màn hình",
+          "value": "15.6 inches"
+        },
+        {
+          "label": "Độ phân giải màn hình",
+          "value": "1920 x 1080 pixels (FullHD)"
+        },
+        {
+          "label": "Pin",
+          "value": "48WHrs, 3S1P, 3-cell Li-ion"
+        },
+        {
+          "label": "Cổng giao tiếp",
+          "value": "1x RJ45 (LAN)\n1x USB-C 3.2 Gen 2 (10Gbps, hỗ trợ DisplayPort)\n3x USB-A 3.2 Gen 1 (5Gbps)\n1x HDMI 2.1 TMDS\n1x jack tai nghe/micro 3.5mm\nMicro tích hợp (array)"
+        },
+        {
+          "label": "Tần số quét",
+          "value": "144Hz"
+        },
+        {
+          "label": "Chất liệu tấm nền",
+          "value": "Tấm nền IPS"
+        },
+        {
+          "label": "Công nghệ âm thanh",
+          "value": "Khử ồn AI\nDTS Audio Processing\nChứng nhận Hi-Res (tai nghe)"
+        },
+        {
+          "label": "Khe đọc thẻ nhớ",
+          "value": "Không"
+        },
+        {
+          "label": "Tính năng đặc biệt",
+          "value": "Wi-Fi 6"
+        },
+        {
+          "label": "Loại đèn bàn phím",
+          "value": "Bàn phím Chiclet có đèn nền RGB 1 vùng"
+        },
+        {
+          "label": "Bảo mật",
+          "value": "Mật khẩu BIOS (Admin & User)\nKhe khóa Kensington Security Slot\nTrusted Platform Module (Firmware TPM)"
+        },
+        {
+          "label": "Webcam",
+          "value": "720P HD camera"
+        },
+        {
+          "label": "Wi-Fi",
+          "value": "Wi-Fi 6(802.11ax) (Dual band) 2*2"
+        },
+        {
+          "label": "Bluetooth",
+          "value": "Bluetooth 5.3"
+        },
+        {
+          "label": "Kích thước",
+          "value": "35.9 x 25.6 x 2.28 ~ 2.45 cm (Dài x Rộng x Dày)"
+        },
+        {
+          "label": "Trọng lượng",
+          "value": "2.30 Kg"
+        }
+      ],
+      "images": [
+        {
+          "path": "./assets/images/laptop-asus-tuf-gaming-a15-fa506ncg-hn329w-angle-1.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/s/s/sssxs_4__31.png",
+          "galleryIndex": 7,
+          "sha256": "24cca9380cb86054938473030b59b80f451274c33e12754c285b91346f939770"
+        },
+        {
+          "path": "./assets/images/laptop-asus-tuf-gaming-a15-fa506ncg-hn329w-angle-2.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/s/s/sssxs_5__28.png",
+          "galleryIndex": 8,
+          "sha256": "2e7772c15199221f6a176bb135b624974f5779d18e04306debfafeebb29e05b7"
+        },
+        {
+          "path": "./assets/images/laptop-asus-tuf-gaming-a15-fa506ncg-hn329w-angle-3.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/s/s/sssxs_12__10.png",
+          "galleryIndex": 10,
+          "sha256": "d0bf39e1874df043ffc7671619adedbb3f753b610ffcc84ffe0962e90932028c"
+        },
+        {
+          "path": "./assets/images/laptop-asus-tuf-gaming-a15-fa506ncg-hn329w-angle-4.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/s/s/sssxs_15__7.png",
+          "galleryIndex": 19,
+          "sha256": "004f5edc0f7205ee40493410db83728931b557d4437ce7405881c346c125b3db"
+        }
+      ]
+    },
+    {
+      "ids": [
+        15
+      ],
+      "source": "https://cellphones.com.vn/laptop-asus-tuf-gaming-a15-fa506ncg-hn390w.html",
+      "sourceName": "Laptop ASUS TUF Gaming A15 FA506NCG-HN390W",
+      "verifiedAt": "2026-10-10",
+      "specifications": [
+        {
+          "label": "Loại card đồ họa",
+          "value": "NVIDIA GeForce RTX 3050 4GB GDDR6\nAMD Radeon Graphics"
+        },
+        {
+          "label": "Dung lượng RAM",
+          "value": "16GB"
+        },
+        {
+          "label": "Loại RAM",
+          "value": "DDR5-4800 SO-DIMM"
+        },
+        {
+          "label": "Số khe ram",
+          "value": "2 khe (Nâng cấp tối đa 64GB)"
+        },
+        {
+          "label": "Ổ cứng",
+          "value": "512GB PCIe 4.0 NVMe M.2 SSD (2 Khe cắm M.2 hỗ trợ cả SATA hoặc NVMe, tối đa 1TB)"
+        },
+        {
+          "label": "Công nghệ màn hình",
+          "value": "Độ sáng 250 nits\nTỷ lệ tương phản 1000:1\nĐộ phủ màu 45% NTSC, 62.5% sRGB\nMàn hình chống chói\nCông nghệ Adaptive-Sync"
+        },
+        {
+          "label": "Hệ điều hành khi ra mắt",
+          "value": "Windows 11 Home"
+        },
+        {
+          "label": "Loại CPU",
+          "value": "AMD Ryzen 7 155 (3.00GHz up to 4.70GHz, 16MB Cache)"
+        },
+        {
+          "label": "Kích thước màn hình",
+          "value": "15.6 inches"
+        },
+        {
+          "label": "Độ phân giải màn hình",
+          "value": "1920 x 1080 pixels (FullHD)"
+        },
+        {
+          "label": "Pin",
+          "value": "48WHrs, 3S1P, 3-cell Li-ion"
+        },
+        {
+          "label": "Cổng giao tiếp",
+          "value": "1 x RJ45 LAN\n3 x USB-A 3.2 Gen 1 (5Gbps)\n1 x USB-C 3.2 Gen 2 (10Gbps, hỗ trợ DisplayPort)\n1 x HDMI 2.1 TMDS\n1 x Jack tai nghe/mic 3.5 mm\nMicro tích hợp (Built-in array microphone)"
+        },
+        {
+          "label": "Tần số quét",
+          "value": "144Hz"
+        },
+        {
+          "label": "Chất liệu tấm nền",
+          "value": "Tấm nền IPS"
+        },
+        {
+          "label": "Công nghệ âm thanh",
+          "value": "Hệ thống 2 loa\nDTS Audio Processing\nCông nghệ khử tiếng ồn AI\nChứng nhận Hi-Res Audio (tai nghe)"
+        },
+        {
+          "label": "Khe đọc thẻ nhớ",
+          "value": "Không"
+        },
+        {
+          "label": "Tính năng đặc biệt",
+          "value": "Wi-Fi 6"
+        },
+        {
+          "label": "Loại đèn bàn phím",
+          "value": "Bàn phím Chiclet có đèn nền RGB 1 vùng"
+        },
+        {
+          "label": "Bảo mật",
+          "value": "Mật khẩu BIOS (Quản trị viên & Người dùng)\nTPM (Firmware Trusted Platform Module)\nKhe khóa bảo mật Kensington Security Slot"
+        },
+        {
+          "label": "Webcam",
+          "value": "720P HD camera"
+        },
+        {
+          "label": "Wi-Fi",
+          "value": "Wi-Fi 6(802.11ax) (Dual band) 2*2"
+        },
+        {
+          "label": "Bluetooth",
+          "value": "Bluetooth 5.3"
+        },
+        {
+          "label": "Kích thước",
+          "value": "35.9 x 25.6 x 2.28 ~ 2.45 cm (Dài x Rộng x Dày)"
+        },
+        {
+          "label": "Trọng lượng",
+          "value": "2.30 Kg"
+        }
+      ],
+      "images": [
+        {
+          "path": "./assets/images/laptop-asus-tuf-gaming-a15-fa506ncg-hn390w-angle-1.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/x/_/x_m_4__86.png",
+          "galleryIndex": 5,
+          "sha256": "c9a3c428fd646778825d8b78fd747f1127b68da482e7c5213217d2a79057de88"
+        },
+        {
+          "path": "./assets/images/laptop-asus-tuf-gaming-a15-fa506ncg-hn390w-angle-2.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/x/_/x_m_5__76.png",
+          "galleryIndex": 6,
+          "sha256": "4d2dcf16e02ae42088f9e0344b074a4a805a6b6f678162943ce582a03e40c7a9"
+        },
+        {
+          "path": "./assets/images/laptop-asus-tuf-gaming-a15-fa506ncg-hn390w-angle-3.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/x/_/x_m_8__49.png",
+          "galleryIndex": 11,
+          "sha256": "dab93a57fa7240a78dbdfba70df37c1adb97b72242a4fdb16d25e647a08aba94"
+        },
+        {
+          "path": "./assets/images/laptop-asus-tuf-gaming-a15-fa506ncg-hn390w-angle-4.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/x/_/x_m_16__16.png",
+          "galleryIndex": 19,
+          "sha256": "e8149ec79b9f961eb7ee9c51015fe2b1f9f28388c155ce356efb51a47e68a90c"
+        }
+      ]
+    },
+    {
+      "ids": [
+        16
+      ],
+      "source": "https://cellphones.com.vn/laptop-asus-tuf-gaming-f16-fx608jhi-tu209w.html",
+      "sourceName": "Laptop ASUS TUF Gaming F16 FX608JHI-TU209W",
+      "verifiedAt": "2026-10-10",
+      "specifications": [
+        {
+          "label": "Loại card đồ họa",
+          "value": "NVIDIA GeForce RTX 5050 8GB GDDR7\nIntel UHD Graphics"
+        },
+        {
+          "label": "Dung lượng RAM",
+          "value": "16GB"
+        },
+        {
+          "label": "Loại RAM",
+          "value": "DDR5-5600 SO-DIMM"
+        },
+        {
+          "label": "Số khe ram",
+          "value": "2 khe (Nâng cấp tối đa 64GB)"
+        },
+        {
+          "label": "Ổ cứng",
+          "value": "512GB PCIe 4.0 NVMe M.2 SSD (2 Khe cắm M.2 hỗ trợ cả SATA hoặc NVMe, tối đa 2TB)"
+        },
+        {
+          "label": "Kích thước màn hình",
+          "value": "16 inches"
+        },
+        {
+          "label": "Công nghệ màn hình",
+          "value": "Độ sáng 400 nits\nĐộ tương phản 1000:1\nĐộ phủ màu: 72% NTSC / 100% sRGB / 75.35% AdobeRGB\nMàn hình chống chói\nNVIDIA G-Sync"
+        },
+        {
+          "label": "Pin",
+          "value": "70WHrs, 4S1P, 4-cell Li-ion"
+        },
+        {
+          "label": "Hệ điều hành",
+          "value": "Windows 11 Home"
+        },
+        {
+          "label": "Độ phân giải màn hình",
+          "value": "1920 x 1200 pixels (WUXGA)"
+        },
+        {
+          "label": "Loại CPU",
+          "value": "Intel Core i7 14650HX 2.2 GHz (30MB Cache, up to 5.2 GHz, 16 lõi, 24 luồng)"
+        },
+        {
+          "label": "Cổng giao tiếp",
+          "value": "1 x RJ45 LAN\n1 x USB 3.2 Gen 2 Type-C (DisplayPort, Power Delivery, 10Gbps)\n3 x USB 3.2 Gen 2 Type-A (10Gbps)\n1 x HDMI 2.1 FRL\n1 x Jack tai nghe/mic 3.5 mm"
+        },
+        {
+          "label": "Tần số quét",
+          "value": "144 Hz"
+        },
+        {
+          "label": "Chất liệu tấm nền",
+          "value": "Tấm nền IPS"
+        },
+        {
+          "label": "Công nghệ âm thanh",
+          "value": "Công nghệ khử ồn AI\nDolby Atmos\nChứng nhận Hi-Res Audio (cho tai nghe)"
+        },
+        {
+          "label": "Khe đọc thẻ nhớ",
+          "value": "Không"
+        },
+        {
+          "label": "Wi-Fi",
+          "value": "Wi-Fi 6E(802.11ax) (Triple band) 2*2"
+        },
+        {
+          "label": "Bluetooth",
+          "value": "Bluetooth 5.4"
+        },
+        {
+          "label": "Tính năng đặc biệt",
+          "value": "Wi-Fi 6, MUX Switch"
+        },
+        {
+          "label": "Loại đèn bàn phím",
+          "value": "Bàn phím Chiclet có đèn nền RGB 1 vùng Với phím Copilot\nAura Sync\nMUX Switch + NVIDIA Advanced Optimus"
+        },
+        {
+          "label": "Bảo mật",
+          "value": "Bảo vệ bằng mật khẩu quản trị BIOS và mật khẩu người dùng\nMô-đun nền tảng đáng tin cậy (Phần mềm TPM)"
+        },
+        {
+          "label": "Webcam",
+          "value": "1080P FHD Camera"
+        },
+        {
+          "label": "Kích thước",
+          "value": "35.4 x 26.9 x 1.79 ~ 2.73 cm (Dài x Rộng x Dày)"
+        },
+        {
+          "label": "Trọng lượng",
+          "value": "2.20 Kg"
+        }
+      ],
+      "images": [
+        {
+          "path": "./assets/images/laptop-asus-tuf-gaming-f16-fx608jhi-tu209w-angle-1.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/s/s/ssss_4__1_92_1.png",
+          "galleryIndex": 5,
+          "sha256": "87462174d85997024bb02434bb93acbfe591e0c9fdf78b751701ed1651d61ae3"
+        },
+        {
+          "path": "./assets/images/laptop-asus-tuf-gaming-f16-fx608jhi-tu209w-angle-2.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/s/s/ssss_5__1_85_1.png",
+          "galleryIndex": 6,
+          "sha256": "6efae0e740a05819ee46dface8aae79d36c0dfb0774ad067cfb53a823c14dedc"
+        },
+        {
+          "path": "./assets/images/laptop-asus-tuf-gaming-f16-fx608jhi-tu209w-angle-3.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/s/s/ssss_8__98_1.png",
+          "galleryIndex": 9,
+          "sha256": "f336205d59d8a615b0711c98bc46af7ca9a335857c20867e4eb65ab6bc807ba9"
+        },
+        {
+          "path": "./assets/images/laptop-asus-tuf-gaming-f16-fx608jhi-tu209w-angle-4.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/s/s/ssss_10__64_1.png",
+          "galleryIndex": 17,
+          "sha256": "a288d874a82733db37d91bb5ea203d6cf40243abd852ce199de72adcdde9e5d1"
+        }
+      ]
+    },
+    {
+      "ids": [
+        17
+      ],
+      "source": "https://cellphones.com.vn/laptop-msi-cyborg-15-a13uc-2082vn.html",
+      "sourceName": "Laptop MSI Cyborg 15 A13UC-2082VN",
+      "verifiedAt": "2026-10-10",
+      "specifications": [
+        {
+          "label": "Loại card đồ họa",
+          "value": "NVIDIA GeForce RTX 3050 4GB\nIntel UHD Graphics"
+        },
+        {
+          "label": "Dung lượng RAM",
+          "value": "16GB"
+        },
+        {
+          "label": "Loại RAM",
+          "value": "DDR5 5600"
+        },
+        {
+          "label": "Số khe ram",
+          "value": "2 khe (1 x 16GB, nâng tối đa 64GB)"
+        },
+        {
+          "label": "Ổ cứng",
+          "value": "512GB NVMe PCIe Gen4 (Max 4TB)"
+        },
+        {
+          "label": "Hệ điều hành khi ra mắt",
+          "value": "Windows 11 Home"
+        },
+        {
+          "label": "Loại CPU",
+          "value": "Intel Core i7-13620H Gen 13th (10 lõi / 16 luồng, 24MB Cache)"
+        },
+        {
+          "label": "Kích thước màn hình",
+          "value": "15.6 inches"
+        },
+        {
+          "label": "Độ phân giải màn hình",
+          "value": "1920 x 1080 pixels (FullHD)"
+        },
+        {
+          "label": "Pin",
+          "value": "3 Cells 53.5 Whrs"
+        },
+        {
+          "label": "Cổng giao tiếp",
+          "value": "Type-C (USB3.2 Gen1 / DisplayPort)\n2 x Type-A USB 3.2 Gen 1\n1x HDMI 2.1 (4K @ 60Hz)\nType-A USB 3.2 Gen 2"
+        },
+        {
+          "label": "Tần số quét",
+          "value": "144 Hz"
+        },
+        {
+          "label": "Chất liệu tấm nền",
+          "value": "Tấm nền IPS"
+        },
+        {
+          "label": "Công nghệ âm thanh",
+          "value": "Nahimic 3 Audio Enhancer, Hi-Res Audio Ready"
+        },
+        {
+          "label": "Chất liệu vỏ màn hình",
+          "value": "Nhựa"
+        },
+        {
+          "label": "Chất liệu vỏ trên",
+          "value": "Nhựa"
+        },
+        {
+          "label": "Chất liệu vỏ dưới",
+          "value": "Nhựa"
+        },
+        {
+          "label": "Tính năng đặc biệt",
+          "value": "Wi-Fi 6"
+        },
+        {
+          "label": "Loại đèn bàn phím",
+          "value": "Single Backlit Keyboard (Blue)"
+        },
+        {
+          "label": "Bảo mật",
+          "value": "Kensington Lock"
+        },
+        {
+          "label": "Webcam",
+          "value": "HD type (30fps@720p)"
+        },
+        {
+          "label": "Wi-Fi",
+          "value": "Intel Wi-Fi 6E AX211"
+        },
+        {
+          "label": "Bluetooth",
+          "value": "Bluetooth v5.3"
+        },
+        {
+          "label": "Kích thước",
+          "value": "359.36 x 250.34 x 21.95 mm (Dài x Rộng x Dày)"
+        },
+        {
+          "label": "Trọng lượng",
+          "value": "1.98 kg"
+        }
+      ],
+      "images": [
+        {
+          "path": "./assets/images/laptop-msi-cyborg-15-a13uc-2082vn-angle-1.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/t/e/text_ng_n_4__9_23.png",
+          "galleryIndex": 4,
+          "sha256": "bbf0bdd022a46473c6e3cb45fef3f3906163a20a73cb3753b3f965eae25bc754"
+        },
+        {
+          "path": "./assets/images/laptop-msi-cyborg-15-a13uc-2082vn-angle-2.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/t/e/text_ng_n_2__11_33.png",
+          "galleryIndex": 5,
+          "sha256": "724306feb6f53a050a5a983d9274eb301c79a716b72c66649779370440cffdd9"
+        },
+        {
+          "path": "./assets/images/laptop-msi-cyborg-15-a13uc-2082vn-angle-3.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/t/e/text_ng_n_12__8_218.png",
+          "galleryIndex": 12,
+          "sha256": "b379386cb278fedc95822586cae2c2e5ef9825cec3c20123a30efc3e22041a98"
+        },
+        {
+          "path": "./assets/images/laptop-msi-cyborg-15-a13uc-2082vn-angle-4.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/t/e/text_ng_n_23__4_12.png",
+          "galleryIndex": 23,
+          "sha256": "89b5206bad86918b6ea66205a6f9fec79257aaf81ff52a37cccc41b7f88f21e0"
+        }
+      ]
+    },
+    {
+      "ids": [
+        18
+      ],
+      "source": "https://cellphones.com.vn/laptop-msi-katana-15-b13vek-2440vn.html",
+      "sourceName": "Laptop MSI Katana 15 B13VEK-2440VN",
+      "verifiedAt": "2026-10-10",
+      "specifications": [
+        {
+          "label": "Loại card đồ họa",
+          "value": "NVIDIA GeForce RTX 4050 với 194 AI TOPS, GDDR6 6GB\nIntel UHD Graphics"
+        },
+        {
+          "label": "Dung lượng RAM",
+          "value": "16GB"
+        },
+        {
+          "label": "Loại RAM",
+          "value": "DDR5 5200MHz"
+        },
+        {
+          "label": "Số khe ram",
+          "value": "2 khe (2x 8GB, Hỗ trợ nâng cấp tối đa 64GB)"
+        },
+        {
+          "label": "Ổ cứng",
+          "value": "1TB*1, 2x M.2 SSD slot (NVMe PCIe Gen4)"
+        },
+        {
+          "label": "Công nghệ màn hình",
+          "value": "Độ phủ màu 45% NTSC\nMàn hình chống chói"
+        },
+        {
+          "label": "Hệ điều hành khi ra mắt",
+          "value": "Windows 11 Home Single Language"
+        },
+        {
+          "label": "Loại CPU",
+          "value": "Intel Core i7-13620H, 10 lõi (6 P-cores + 4 E-cores), 16 luồng, 24 MB Intel Smart Cache, Max Turbo Frequency 4.9 GHz"
+        },
+        {
+          "label": "Kích thước màn hình",
+          "value": "15.6 inches"
+        },
+        {
+          "label": "Độ phân giải màn hình",
+          "value": "1920 x 1080 pixels (FullHD)"
+        },
+        {
+          "label": "Pin",
+          "value": "3-cell, 53.5WHr"
+        },
+        {
+          "label": "Cổng giao tiếp",
+          "value": "1 x USB-C (USB 3.2 Gen 1, DisplayPort)\n2 x USB 3.2 Gen 1 Type-A\n1 x USB 2.0 Type-A\n1 x HDMI 2.1 (8K@60Hz / 4K@120Hz)\n1 x RJ45\n1 x Jack mic/tai nghe 3.5 mm"
+        },
+        {
+          "label": "Tần số quét",
+          "value": "144 Hz"
+        },
+        {
+          "label": "Chất liệu tấm nền",
+          "value": "Tấm nền IPS"
+        },
+        {
+          "label": "Công nghệ âm thanh",
+          "value": "Nahimic 3 Audio Enhancer\nHi-Res Audio Ready"
+        },
+        {
+          "label": "Khe đọc thẻ nhớ",
+          "value": "Không"
+        },
+        {
+          "label": "Chất liệu",
+          "value": "Vỏ nhựa"
+        },
+        {
+          "label": "Chất liệu vỏ màn hình",
+          "value": "Nhựa"
+        },
+        {
+          "label": "Chất liệu vỏ trên",
+          "value": "Nhựa"
+        },
+        {
+          "label": "Chất liệu vỏ dưới",
+          "value": "Nhựa"
+        },
+        {
+          "label": "Tính năng đặc biệt",
+          "value": "Wi-Fi 6"
+        },
+        {
+          "label": "Loại đèn bàn phím",
+          "value": "4-Zone RGB Gaming Keyboard"
+        },
+        {
+          "label": "Bảo mật",
+          "value": "Firmware Trusted Platform Module (fTPM) 2.0"
+        },
+        {
+          "label": "Webcam",
+          "value": "HD type (30fps@720p)"
+        },
+        {
+          "label": "Wi-Fi",
+          "value": "Intel Wi-Fi 6E AX211"
+        },
+        {
+          "label": "Bluetooth",
+          "value": "Bluetooth v5.3"
+        },
+        {
+          "label": "Kích thước",
+          "value": "359 x 259 x 24.9 mm"
+        },
+        {
+          "label": "Trọng lượng",
+          "value": "2.25 kg"
+        }
+      ],
+      "images": [
+        {
+          "path": "./assets/images/laptop-msi-katana-15-b13vek-2440vn-angle-1.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/s/s/sssxs_1__1.png",
+          "galleryIndex": 4,
+          "sha256": "a1a7c1628026357ec0223b267a83ea33bf2e5685fc97febbdb889c4f495fa0f8"
+        },
+        {
+          "path": "./assets/images/laptop-msi-katana-15-b13vek-2440vn-angle-2.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/s/s/sssxs_2__1.png",
+          "galleryIndex": 5,
+          "sha256": "e3a092c326f707c87eebe4bef5a0268f85426320faa60e1a3e14d0e2b910f66c"
+        },
+        {
+          "path": "./assets/images/laptop-msi-katana-15-b13vek-2440vn-angle-3.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/s/s/sssxs_17_.png",
+          "galleryIndex": 14,
+          "sha256": "b9d517ac2968cff5e945bfd24638b43080760dc2e68c9174531d36e7a90a89e3"
+        },
+        {
+          "path": "./assets/images/laptop-msi-katana-15-b13vek-2440vn-angle-4.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/s/s/sssxs_20_.png",
+          "galleryIndex": 24,
+          "sha256": "832d0406b9f041f3c9be46d6ed40336801d4450001b8859855a39f23835f47eb"
+        }
+      ]
+    },
+    {
+      "ids": [
+        19
+      ],
+      "source": "https://cellphones.com.vn/laptop-msi-stealth-16-ai-b3wg-008vn.html",
+      "sourceName": "Laptop MSI Stealth 16 AI+ B3WG-008VN",
+      "verifiedAt": "2026-10-10",
+      "specifications": [
+        {
+          "label": "Loại card đồ họa",
+          "value": "NVIDIA GeForce RTX 5070 GDDR7 8GB\nIntel Graphics"
+        },
+        {
+          "label": "Dung lượng RAM",
+          "value": "32GB"
+        },
+        {
+          "label": "Loại RAM",
+          "value": "DDR5-7200"
+        },
+        {
+          "label": "Số khe ram",
+          "value": "2 khe (2 x 16GB, nâng cấp tối đa 128GB)"
+        },
+        {
+          "label": "Ổ cứng",
+          "value": "1TB*1, 2x M.2 SSD slot (NVMe PCIe Gen4) Max 4TB"
+        },
+        {
+          "label": "Công nghệ màn hình",
+          "value": "Độ phủ màu 100% DCI-P3 typ"
+        },
+        {
+          "label": "Hệ điều hành khi ra mắt",
+          "value": "Windows 11 Home Single Language"
+        },
+        {
+          "label": "Loại CPU",
+          "value": "Intel Core Ultra 9 386H, 16 lõi (4 P-cores + 8 E-cores + 4 Low Power E-cores), 16 luồng, 18MB Intel Smart Cache, Max Turbo Frequency 4.9 GHz"
+        },
+        {
+          "label": "Kích thước màn hình",
+          "value": "16 inches"
+        },
+        {
+          "label": "Độ phân giải màn hình",
+          "value": "2560 x 1600 pixels (QHD+)"
+        },
+        {
+          "label": "Pin",
+          "value": "4 Cells 90 Whrs"
+        },
+        {
+          "label": "Cổng giao tiếp",
+          "value": "2 x Thunderbolt 4 (DisplayPort, Power Delivery 3.0)\n2 x USB 3.2 Gen 2 Type-A\n1 x HDMI 2.1 (8K@60Hz / 4K@120Hz)\n1 x RJ45"
+        },
+        {
+          "label": "Tần số quét",
+          "value": "240 Hz"
+        },
+        {
+          "label": "Chất liệu tấm nền",
+          "value": "Tấm nền Oled"
+        },
+        {
+          "label": "Công nghệ âm thanh",
+          "value": "Hi-Res Audio Ready\nNahimic 3 Audio Enhancer"
+        },
+        {
+          "label": "Khe đọc thẻ nhớ",
+          "value": "Không"
+        },
+        {
+          "label": "Chất liệu",
+          "value": "Vỏ kim loại"
+        },
+        {
+          "label": "Chất liệu vỏ màn hình",
+          "value": "Nhôm"
+        },
+        {
+          "label": "Chất liệu vỏ trên",
+          "value": "Nhôm"
+        },
+        {
+          "label": "Chất liệu vỏ dưới",
+          "value": "Nhôm"
+        },
+        {
+          "label": "Tính năng đặc biệt",
+          "value": "Bảo mật vân tay, Màn hình Oled, Wi-Fi 7"
+        },
+        {
+          "label": "Loại đèn bàn phím",
+          "value": "Bàn phím chơi game RGB 4 vùng với phím Copilot"
+        },
+        {
+          "label": "Bảo mật",
+          "value": "Cảm biến vân tay\nfTPM 2.0\nKhe khóa Kensington\nSecured-core PC\nNắp che webcam"
+        },
+        {
+          "label": "Webcam",
+          "value": "Loại IR FHD (30fps@1080p) với HDR & Khử nhiễu 3D+ (3DNR+)"
+        },
+        {
+          "label": "Wi-Fi",
+          "value": "Intel Wi-Fi 7 BE213"
+        },
+        {
+          "label": "Bluetooth",
+          "value": "Bluetooth v6"
+        },
+        {
+          "label": "Kích thước",
+          "value": "354 x 246 x 16.65 - 19.99 mm (Dài x Rộng x Dày)"
+        },
+        {
+          "label": "Trọng lượng",
+          "value": "1.99 kg"
+        }
+      ],
+      "images": [
+        {
+          "path": "./assets/images/laptop-msi-stealth-16-ai-b3wg-008vn-angle-1.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/s/s/ssss_1__1_81_1.png",
+          "galleryIndex": 4,
+          "sha256": "fad1faab78a158ad42450ab004431fa07b9874ed12390a42968e89d13e4c1342"
+        },
+        {
+          "path": "./assets/images/laptop-msi-stealth-16-ai-b3wg-008vn-angle-2.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/s/s/ssss_2__1_77_1.png",
+          "galleryIndex": 5,
+          "sha256": "f422173d02229ef1f676d9f246ea5f668671c77717a77d54d3d13d1537b12f3a"
+        },
+        {
+          "path": "./assets/images/laptop-msi-stealth-16-ai-b3wg-008vn-angle-3.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/s/s/ssss_5__1_57_1.png",
+          "galleryIndex": 13,
+          "sha256": "3e1422c274b7d05d58dbe7f21d0d0b01a6ce8f0904f6a0d3ff5aecdb3667ab1c"
+        },
+        {
+          "path": "./assets/images/laptop-msi-stealth-16-ai-b3wg-008vn-angle-4.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/s/s/ssss_7__95_1.png",
+          "galleryIndex": 21,
+          "sha256": "5828263eeab74e5e536992adc5374cd3a9134320086d9968d4cd394da1cb1123"
+        }
+      ]
+    },
+    {
+      "ids": [
+        20
+      ],
+      "source": "https://cellphones.com.vn/laptop-msi-cyborg-15-a13uc-2088vn.html",
+      "sourceName": "Laptop MSI Cyborg 15 A13UC-2088VN",
+      "verifiedAt": "2026-10-10",
+      "specifications": [
+        {
+          "label": "Loại card đồ họa",
+          "value": "NVIDIA GeForce RTX 3050 4GB\nIntel UHD Graphics"
+        },
+        {
+          "label": "Dung lượng RAM",
+          "value": "16GB"
+        },
+        {
+          "label": "Loại RAM",
+          "value": "DDR5-5600"
+        },
+        {
+          "label": "Số khe ram",
+          "value": "2 khe (1 x 16GB, nâng cấp tối đa 64GB)"
+        },
+        {
+          "label": "Ổ cứng",
+          "value": "512GB*1 (NVMe SSD PCIe Gen4) - Max 4TB"
+        },
+        {
+          "label": "Công nghệ màn hình",
+          "value": "Màn hình chống chói"
+        },
+        {
+          "label": "Hệ điều hành khi ra mắt",
+          "value": "Windows 11 Home"
+        },
+        {
+          "label": "Loại CPU",
+          "value": "Intel Core i5-13420H (8 lõi) - Max Turbo Frequency: 4.60 GHz"
+        },
+        {
+          "label": "Kích thước màn hình",
+          "value": "15.6 inches"
+        },
+        {
+          "label": "Độ phân giải màn hình",
+          "value": "1920 x 1080 pixels (FullHD)"
+        },
+        {
+          "label": "Pin",
+          "value": "3-Cell"
+        },
+        {
+          "label": "Cổng giao tiếp",
+          "value": "1x USB-C (USB 3.2 Gen 1 / DisplayPort)\n2x USB-A (USB 3.2 Gen 1)\n1x HDMI 2.1 (4K @ 60Hz)"
+        },
+        {
+          "label": "Tần số quét",
+          "value": "144 Hz"
+        },
+        {
+          "label": "Chất liệu tấm nền",
+          "value": "Tấm nền IPS"
+        },
+        {
+          "label": "Công nghệ âm thanh",
+          "value": "Nahimic 3 Audio Enhancer, Hi-Res Audio Ready"
+        },
+        {
+          "label": "Chất liệu",
+          "value": "Vỏ nhựa - nắp lưng kim loại"
+        },
+        {
+          "label": "Chất liệu vỏ màn hình",
+          "value": "Nhựa"
+        },
+        {
+          "label": "Chất liệu vỏ trên",
+          "value": "Kim loại"
+        },
+        {
+          "label": "Chất liệu vỏ dưới",
+          "value": "Nhựa"
+        },
+        {
+          "label": "Tính năng đặc biệt",
+          "value": "Wi-Fi 6"
+        },
+        {
+          "label": "Loại đèn bàn phím",
+          "value": "Single Backlit Keyboard (Blue)"
+        },
+        {
+          "label": "Bảo mật",
+          "value": "Kensington Lock"
+        },
+        {
+          "label": "Webcam",
+          "value": "HD type (30fps@720p)"
+        },
+        {
+          "label": "Wi-Fi",
+          "value": "Intel Wi-Fi 6E AX211"
+        },
+        {
+          "label": "Bluetooth",
+          "value": "Bluetooth v5.3"
+        },
+        {
+          "label": "Kích thước",
+          "value": "359.36 x 250.34 x 21.95 - 22.9 mm (Dài x Rộng x Dày)"
+        },
+        {
+          "label": "Trọng lượng",
+          "value": "1.98 kg"
+        }
+      ],
+      "images": [
+        {
+          "path": "./assets/images/laptop-msi-cyborg-15-a13uc-2088vn-angle-1.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/s/s/ssss_3__29.png",
+          "galleryIndex": 4,
+          "sha256": "756bf7f1d0215d3ffb0c12e4cfb89c10cb851f1072044dae950658d14244b083"
+        },
+        {
+          "path": "./assets/images/laptop-msi-cyborg-15-a13uc-2088vn-angle-2.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/s/s/ssss_2__29.png",
+          "galleryIndex": 5,
+          "sha256": "28a22bbf06cb613f94df7b3a778359ea3b2b5403b424cb448ecd172c0ddb5203"
+        },
+        {
+          "path": "./assets/images/laptop-msi-cyborg-15-a13uc-2088vn-angle-3.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/s/s/ssss_5__27.png",
+          "galleryIndex": 7,
+          "sha256": "2a2d6f01968f22986792fd8cbcfede6873350e0664eaf004c71bf3f4239b0e19"
+        },
+        {
+          "path": "./assets/images/laptop-msi-cyborg-15-a13uc-2088vn-angle-4.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/s/s/ssss_4__29.png",
+          "galleryIndex": 8,
+          "sha256": "e9e74270afa10375150b4f5b2e5c05b7511f9dc2871ad0abe8eadf5fc8e9838f"
+        }
+      ]
+    },
+    {
+      "ids": [
+        21,
+        22
+      ],
+      "source": "https://cellphones.com.vn/laptop-acer-gaming-nitro-v-15-propanel-anv15-52-50va.html",
+      "sourceName": "Laptop Acer Gaming Nitro ProPanel ANV15-52-50VA",
+      "verifiedAt": "2026-10-10",
+      "specifications": [
+        {
+          "label": "Loại card đồ họa",
+          "value": "NVIDIA GeForce RTX 3050 6 GB GDDR6 VRAM, hỗ trợ 2560 NVIDIA CUDA Cores"
+        },
+        {
+          "label": "Dung lượng RAM",
+          "value": "16GB"
+        },
+        {
+          "label": "Loại RAM",
+          "value": "DDR5 5200 MHz"
+        },
+        {
+          "label": "Số khe ram",
+          "value": "2 khe (1 x 16GB, nâng cấp tối đa 96GB)"
+        },
+        {
+          "label": "Ổ cứng",
+          "value": "512GB PCIe NVMe SSD (Nâng cấp tối đa 4TB)"
+        },
+        {
+          "label": "Công nghệ màn hình",
+          "value": "Độ sáng 300nits\nĐộ phủ màu sRGB 100%\nAcer ComfyView LED-backlit TFT LCD\n3 ms Overdrive\nGóc nhìn rộng"
+        },
+        {
+          "label": "Hệ điều hành khi ra mắt",
+          "value": "Windows 11 Home Single Language"
+        },
+        {
+          "label": "Loại CPU",
+          "value": "Intel Core 5 210H (8 lõi / 12 luồng, Efficient-core Max Turbo Frequency :3.6 GHz, Max Turbo Frequency : 4.8GHz, 12 MB Intel Smart Cache)"
+        },
+        {
+          "label": "Kích thước màn hình",
+          "value": "15.6 inches"
+        },
+        {
+          "label": "Độ phân giải màn hình",
+          "value": "1920 x 1080 pixels (FullHD)"
+        },
+        {
+          "label": "Pin",
+          "value": "57 Wh 4-cell Li-ion batter, 135W 5.5PHY Adapter"
+        },
+        {
+          "label": "Cổng giao tiếp",
+          "value": "1x USB-C hỗ trợ USB 3.2 Gen 2 10Gbps, DP over USB-C, Thunderbolt 4\n3x USB-A gồm 1 cổng USB 3.2 Gen 1 hỗ trợ sạc khi tắt máy + 2 cổng USB 3.2 Gen 1\n1x HDMI 2.1 hỗ trợ HDCP\n1x jack tai nghe 3.5 mm hỗ trợ mic\n1x Ethernet RJ-45\n1x DC-in"
+        },
+        {
+          "label": "Tần số quét",
+          "value": "180 Hz"
+        },
+        {
+          "label": "Chất liệu tấm nền",
+          "value": "Tấm nền IPS"
+        },
+        {
+          "label": "Công nghệ âm thanh",
+          "value": "DTS X:Ultra Audio với Bass, Loudness, bảo vệ loa, 6 chế độ tùy chỉnh\nHỗ trợ Windows Spatial Sound\nDAC SNR cao, 2.1 Vrms, hỗ trợ tai nghe 600Ω\nAcer Purified.Voice AI khử ồn\nHỗ trợ Cortana\nAcer TrueHarmony"
+        },
+        {
+          "label": "Khe đọc thẻ nhớ",
+          "value": "Không"
+        },
+        {
+          "label": "Chất liệu",
+          "value": "Vỏ nhựa"
+        },
+        {
+          "label": "Tính năng đặc biệt",
+          "value": "Wi-Fi 6"
+        },
+        {
+          "label": "Loại đèn bàn phím",
+          "value": "Bàn phím có đèn nền màu hổ phách"
+        },
+        {
+          "label": "Bảo mật",
+          "value": "Firmware TPM\nMật khẩu BIOS (user, supervisor)\nKensington lock slot"
+        },
+        {
+          "label": "Webcam",
+          "value": "720p HD"
+        },
+        {
+          "label": "Wi-Fi",
+          "value": "802.11a/b/g/n/ac+ax wireless LAN"
+        },
+        {
+          "label": "Bluetooth",
+          "value": "Bluetooth 5.2"
+        },
+        {
+          "label": "Kích thước",
+          "value": "362.3 x 239.89 x 15.7/23.5 mm (Dài x Rộng x Dày)"
+        },
+        {
+          "label": "Trọng lượng",
+          "value": "2.1 kg"
+        }
+      ],
+      "images": [
+        {
+          "path": "./assets/images/laptop-acer-gaming-nitro-v-15-propanel-anv15-52-50va-angle-1.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/x/_/x_m_2__10.png",
+          "galleryIndex": 4,
+          "sha256": "3ea2b4f3b34be96286a88139dbc259f9fd6333d5f128690e1e327e8ed259c5b4"
+        },
+        {
+          "path": "./assets/images/laptop-acer-gaming-nitro-v-15-propanel-anv15-52-50va-angle-2.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/x/_/x_m_1__1_18.png",
+          "galleryIndex": 5,
+          "sha256": "41760ad171e0b77d47ae3d33623a552627a623d0afc44b9d597894871bbe52c7"
+        },
+        {
+          "path": "./assets/images/laptop-acer-gaming-nitro-v-15-propanel-anv15-52-50va-angle-3.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/t/e/text_ng_n_6__6_40_1.png",
+          "galleryIndex": 7,
+          "sha256": "419b7006c8b8db627e0e99090f735c9859b550f0b7cda5e7c4b42ea894092600"
+        },
+        {
+          "path": "./assets/images/laptop-acer-gaming-nitro-v-15-propanel-anv15-52-50va-angle-4.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/t/e/text_ng_n_9__10_33_1.png",
+          "galleryIndex": 10,
+          "sha256": "ebdcea063cd04808caa3e7970f4c2faef6ed629b322b5e3e257038274fc8e936"
+        }
+      ]
+    },
+    {
+      "ids": [
+        23
+      ],
+      "source": "https://cellphones.com.vn/laptop-acer-gaming-aspire-7-a715-59g-59rd.html",
+      "sourceName": "Laptop Acer Gaming Aspire 7 A715-59G-59RD",
+      "verifiedAt": "2026-10-10",
+      "specifications": [
+        {
+          "label": "Loại card đồ họa",
+          "value": "NVIDIA GeForce RTX 3050 4GB GDDR6, supporting 2560 NVIDIA CUDA Cores"
+        },
+        {
+          "label": "Dung lượng RAM",
+          "value": "16GB"
+        },
+        {
+          "label": "Loại RAM",
+          "value": "DDR4 3200 MHz"
+        },
+        {
+          "label": "Số khe ram",
+          "value": "2 khe (1 x 16GB, nâng cấp tối đa 32GB)"
+        },
+        {
+          "label": "Ổ cứng",
+          "value": "512GB PCIe NVMe SSD (Nâng cấp tối đa 4TB)"
+        },
+        {
+          "label": "Công nghệ màn hình",
+          "value": "Độ sáng 350 nits (chế độ HDR)\nĐộ phủ màu 45% NTSC\nAcer ComfyView LED-backlit TFT LCD\nTỷ lệ 16:9\nGóc nhìn rộng lên đến 170°\nThiết kế siêu mỏng"
+        },
+        {
+          "label": "Hệ điều hành khi ra mắt",
+          "value": "Windows 11 Home Single Language"
+        },
+        {
+          "label": "Loại CPU",
+          "value": "Intel Core 5 210H (8 lõi / 12 luồng, 1.6 GHz - 4.8 GHz, 12 MB Intel Smart Cache)"
+        },
+        {
+          "label": "Kích thước màn hình",
+          "value": "15.6 inches"
+        },
+        {
+          "label": "Độ phân giải màn hình",
+          "value": "1920 x 1080 pixels (FullHD)"
+        },
+        {
+          "label": "Pin",
+          "value": "Pin Li-ion 3 cell 54.8Wh\nSạc AC 150W"
+        },
+        {
+          "label": "Cổng giao tiếp",
+          "value": "1x USB-C 3.2 Gen 2 (Hỗ trợ DisplayPort 2.1 qua dGPU và sạc USB)\n1x USB-A 3.2 Gen 1\n1x USB-A 2.0\n1x Mini DisplayPort 1.4\n1x HDMI 2.1 (hỗ trợ HDCP)\n1x RJ-45\n1x jack tai nghe/loa 3.5mm (hỗ trợ mic)\n1x DC-in\n1x đầu đọc microSD"
+        },
+        {
+          "label": "Tần số quét",
+          "value": "144Hz"
+        },
+        {
+          "label": "Chất liệu tấm nền",
+          "value": "Tấm nền IPS"
+        },
+        {
+          "label": "Công nghệ âm thanh",
+          "value": "2 loa stereo tích hợp\n1 micro tích hợp"
+        },
+        {
+          "label": "Khe đọc thẻ nhớ",
+          "value": "Có"
+        },
+        {
+          "label": "Chất liệu",
+          "value": "Vỏ nhựa - nắp lưng kim loại"
+        },
+        {
+          "label": "Chất liệu vỏ trên",
+          "value": "Kim loại"
+        },
+        {
+          "label": "Chất liệu vỏ dưới",
+          "value": "Nhựa"
+        },
+        {
+          "label": "Tính năng đặc biệt",
+          "value": "Wi-Fi 6"
+        },
+        {
+          "label": "Loại đèn bàn phím",
+          "value": "One Zone, 15 màu"
+        },
+        {
+          "label": "Bảo mật",
+          "value": "BIOS user, supervisor"
+        },
+        {
+          "label": "Webcam",
+          "value": "720p HD"
+        },
+        {
+          "label": "Wi-Fi",
+          "value": "Wi-Fi 6 Wireless LAN"
+        },
+        {
+          "label": "Bluetooth",
+          "value": "Bluetooth 5.2"
+        },
+        {
+          "label": "Kích thước",
+          "value": "359.5 x 238 x 22.7 mm (Dài x Rộng x Dày)"
+        },
+        {
+          "label": "Trọng lượng",
+          "value": "1.99 kg"
+        }
+      ],
+      "images": [
+        {
+          "path": "./assets/images/laptop-acer-gaming-aspire-7-a715-59g-59rd-angle-1.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/x/_/x_m_1__1_105.png",
+          "galleryIndex": 4,
+          "sha256": "db0bf2577aef603e627e028cfa3e9a634c4bef0e525dddeeab01fec35b09d261"
+        },
+        {
+          "path": "./assets/images/laptop-acer-gaming-aspire-7-a715-59g-59rd-angle-2.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/x/_/x_m_2__88.png",
+          "galleryIndex": 5,
+          "sha256": "694d26a54187ea3a6441350f7525100c28bbf4fe6010f75d1a18055f7d46815a"
+        },
+        {
+          "path": "./assets/images/laptop-acer-gaming-aspire-7-a715-59g-59rd-angle-3.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/x/_/x_m_4__79.png",
+          "galleryIndex": 7,
+          "sha256": "eb440c4f2e06032d5dcc80b980871aa3b4ab6cc9c5f229271d01a4a227f78e3b"
+        },
+        {
+          "path": "./assets/images/laptop-acer-gaming-aspire-7-a715-59g-59rd-angle-4.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/x/_/x_m_7__57.png",
+          "galleryIndex": 12,
+          "sha256": "7c7e22b18126353240b253ccec8a9aa8cbacab5dc6a8d72a27719c837b03dc9b"
+        }
+      ]
+    },
+    {
+      "ids": [
+        24
+      ],
+      "source": "https://cellphones.com.vn/laptop-acer-predator-helios-neo-16s-phn16s-i51-98cx.html",
+      "sourceName": "Laptop Acer Predator Helios Neo 16S PHN16S-I51-98CX",
+      "verifiedAt": "2026-10-10",
+      "specifications": [
+        {
+          "label": "Chip AI",
+          "value": "572 TOPs"
+        },
+        {
+          "label": "Loại card đồ họa",
+          "value": "NVIDIA GeForce RTX 5060 8 GB GDDR7 VRAM, hỗ trợ 3328 NVIDIA CUDA Cores"
+        },
+        {
+          "label": "Dung lượng RAM",
+          "value": "16GB"
+        },
+        {
+          "label": "Loại RAM",
+          "value": "DDR5 6400 MHz"
+        },
+        {
+          "label": "Số khe ram",
+          "value": "2 khe (2 x 8GB, nâng cấp tối đa 96GB)"
+        },
+        {
+          "label": "Ổ cứng",
+          "value": "512GB PCIe NVMe SSD (Nâng cấp tối đa 4TB)"
+        },
+        {
+          "label": "Kích thước màn hình",
+          "value": "16 inches"
+        },
+        {
+          "label": "Công nghệ màn hình",
+          "value": "Độ sáng 500 nits\nĐộ phủ màu 100% DCI-P3 (typical)\nMàn hình Acer CineCrystal\nTỷ lệ 16:10\nChứng nhận True Black HDR 500\nHỗ trợ NVIDIA Advanced Optimus\nGóc nhìn rộng"
+        },
+        {
+          "label": "Pin",
+          "value": "92Wh 4-cell Li-ion\n230W 5.5 PHY AC adapter"
+        },
+        {
+          "label": "Hệ điều hành",
+          "value": "Windows 11 Home Single Language"
+        },
+        {
+          "label": "Độ phân giải màn hình",
+          "value": "2560 x 1600 pixels (2K)"
+        },
+        {
+          "label": "Loại CPU",
+          "value": "Intel Core Ultra 9 386H (16 lõi / 16 luồng, 2.1 GHz - 4.9 GHz, 18 MB Intel Smart Cache)"
+        },
+        {
+          "label": "Cổng giao tiếp",
+          "value": "2 x USB-C (DP 2.1, sạc, DC-in 90/100W; 1 Thunderbolt 4)\n3 x USB-A (1 x Gen 1, 2 x Gen 2, 1 cổng hỗ trợ sạc khi tắt máy)\n1 x khe thẻ microSD\n1 x Jack tai nghe 3.5 mm (hỗ trợ headset mic)\n1 x HDMI 2.1\n1 x RJ-45\n1 x Cổng nguồn"
+        },
+        {
+          "label": "Tần số quét",
+          "value": "165Hz"
+        },
+        {
+          "label": "Chất liệu tấm nền",
+          "value": "Tấm nền Oled"
+        },
+        {
+          "label": "Công nghệ âm thanh",
+          "value": "DTS X:Ultra Audio\nWindows Spatial Sound\nÂm thanh không gian qua loa & tai nghe\nDAC SNR cao, hỗ trợ tai nghe trở kháng cao (tối đa 600 ohm)\nAcer Purified.Voice\nTương thích Cortana\nAcer TrueHarmony"
+        },
+        {
+          "label": "Khe đọc thẻ nhớ",
+          "value": "Có"
+        },
+        {
+          "label": "Wi-Fi",
+          "value": "Killer Wireless Wi-Fi 6E 1675i"
+        },
+        {
+          "label": "Bluetooth",
+          "value": "Bluetooth 5.4"
+        },
+        {
+          "label": "Chất liệu",
+          "value": "Vỏ nhựa - nắp lưng kim loại"
+        },
+        {
+          "label": "Chất liệu vỏ màn hình",
+          "value": "Nhựa"
+        },
+        {
+          "label": "Chất liệu vỏ trên",
+          "value": "Nhôm"
+        },
+        {
+          "label": "Chất liệu vỏ dưới",
+          "value": "Nhôm"
+        },
+        {
+          "label": "Kích thước",
+          "value": "356.78 x 275.5 x 12/18.9 mm (Dài x Rộng x Dày)"
+        },
+        {
+          "label": "Trọng lượng",
+          "value": "2.2 kg"
+        },
+        {
+          "label": "Tính năng đặc biệt",
+          "value": "Wi-Fi 6, Nhận diện khuôn mặt, Màn hình Oled"
+        },
+        {
+          "label": "Loại đèn bàn phím",
+          "value": "4-zone RGB"
+        },
+        {
+          "label": "Bảo mật",
+          "value": "Mật khẩu BIOS (user, supervisor)\nFirmware Trusted Platform Module (TPM)"
+        },
+        {
+          "label": "Webcam",
+          "value": "FHD camera + IR camera"
+        }
+      ],
+      "images": [
+        {
+          "path": "./assets/images/laptop-acer-predator-helios-neo-16s-phn16s-i51-98cx-angle-1.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/x/_/x_m_1__1_22.png",
+          "galleryIndex": 4,
+          "sha256": "10792ae4298506f3ea4834b6cd7b5246279e5eac3c0b8b5d79af8d5b17714391"
+        },
+        {
+          "path": "./assets/images/laptop-acer-predator-helios-neo-16s-phn16s-i51-98cx-angle-2.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/x/_/x_m_2__14.png",
+          "galleryIndex": 5,
+          "sha256": "8f0319247482d92d3110a0369146c4ec17da9cbb02d0d5be8cfe7028d6921ecf"
+        },
+        {
+          "path": "./assets/images/laptop-acer-predator-helios-neo-16s-phn16s-i51-98cx-angle-3.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/x/_/x_m_5__5.png",
+          "galleryIndex": 8,
+          "sha256": "8652d64a09ea95b60823b1398b94fac91d9998c1a5191eb916e4666b8912ca88"
+        },
+        {
+          "path": "./assets/images/laptop-acer-predator-helios-neo-16s-phn16s-i51-98cx-angle-4.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/x/_/x_m_7__3.png",
+          "galleryIndex": 12,
+          "sha256": "1e8fb0c064e076c39511a1b15e0bab365ccf648ceb812bc357f76a6b46677fd1"
+        }
+      ]
+    },
+    {
+      "ids": [
+        25
+      ],
+      "source": "https://cellphones.com.vn/laptop-acer-gaming-predator-helios-neo-16s-ai-phn16s-71-95ms.html",
+      "sourceName": "Laptop Acer Gaming Predator Helios Neo 16S AI PHN16S-71-95MS",
+      "verifiedAt": "2026-10-10",
+      "specifications": [
+        {
+          "label": "Chip AI",
+          "value": "Hiệu suất AI GPU (TOPs) 992 TOPS\nHiệu suất AI NPU (TOPs) 13 TOPS"
+        },
+        {
+          "label": "Loại card đồ họa",
+          "value": "NVIDIA GeForce RTX 5070 Ti với 12 GB GDDR7 VRAM chuyên dụng, hỗ trợ 5888 lõi NVIDIA CUDA"
+        },
+        {
+          "label": "Dung lượng RAM",
+          "value": "64GB"
+        },
+        {
+          "label": "Loại RAM",
+          "value": "DDR5 Up to 6400 MT/s"
+        },
+        {
+          "label": "Số khe ram",
+          "value": "2 khe (2x 32GB, Nâng cấp tối đa 96GB)"
+        },
+        {
+          "label": "Ổ cứng",
+          "value": "2 TB M.2 NVMe (2 khe, 1TB*2)"
+        },
+        {
+          "label": "Kích thước màn hình",
+          "value": "16 inches"
+        },
+        {
+          "label": "Công nghệ màn hình",
+          "value": "AcerCineCrystal\nTrue Black HDR 500(@HDR 500\nCó khả năng Nvidia Advanced Optimus\nĐộ phủ màu 100% DCI-P3\nĐộ sáng 500nits"
+        },
+        {
+          "label": "Pin",
+          "value": "76Wh 4-cell Li-ion\n230W 5.5 PHY PCR 50% AC adapter"
+        },
+        {
+          "label": "Hệ điều hành",
+          "value": "Windows 11 Home Single Language"
+        },
+        {
+          "label": "Độ phân giải màn hình",
+          "value": "2560 x 1600 pixels (2K)"
+        },
+        {
+          "label": "Loại CPU",
+          "value": "Intel Core Ultra 9 275HX (24 lõi / 24 luồng, 4.6 GHz (e-core) 5.4 GHz 36MB Cache)"
+        },
+        {
+          "label": "Cổng giao tiếp",
+          "value": "2x USB Type-C\n3x USB-A\n1x HDMI 2.1 hỗ trợ HDCP\n1x Ethernet (RJ-45)\n1x đầu đọc thẻ Micro SD\n1x giắc cắm DC-in cho bộ đổi nguồn AC\n1x giắc cắm tai nghe/loa 3.5 mm, hỗ trợ tai nghe có tích hợp micrô"
+        },
+        {
+          "label": "Tần số quét",
+          "value": "240 Hz"
+        },
+        {
+          "label": "Chất liệu tấm nền",
+          "value": "Tấm nền Oled"
+        },
+        {
+          "label": "Công nghệ âm thanh",
+          "value": "DTS X:Ultra Audio\nDAC SNR cao\nAcer Purified.Voice\nTương thích với Cortana bằng giọng nói\nCông nghệ Acer TrueHarmony\nChứng nhận âm thanh Hi-Res của JAS"
+        },
+        {
+          "label": "Khe đọc thẻ nhớ",
+          "value": "Có"
+        },
+        {
+          "label": "Wi-Fi",
+          "value": "Killer Wireless Wi-Fi 6E 1675i"
+        },
+        {
+          "label": "Bluetooth",
+          "value": "Bluetooth 5.4"
+        },
+        {
+          "label": "Chất liệu",
+          "value": "Vỏ nhựa - nắp lưng kim loại"
+        },
+        {
+          "label": "Kích thước",
+          "value": "356.78 x 275.5 x 12/19.97 mm"
+        },
+        {
+          "label": "Trọng lượng",
+          "value": "2.3 kg"
+        },
+        {
+          "label": "Tính năng đặc biệt",
+          "value": "Wi-Fi 6, Màn hình Oled"
+        },
+        {
+          "label": "Loại đèn bàn phím",
+          "value": "Bàn phím RGB 4 vùng"
+        },
+        {
+          "label": "Bảo mật",
+          "value": "Giải pháp Firmware Trusted Platform Module (TPM) Người dùng BIOS, giám sát viên"
+        },
+        {
+          "label": "Webcam",
+          "value": "Video HD 1080p ở tốc độ 60 khung hình/giây với chức năng Giảm nhiễu theo thời gian"
+        }
+      ],
+      "images": [
+        {
+          "path": "./assets/images/laptop-acer-gaming-predator-helios-neo-16s-ai-phn16s-71-95ms-angle-1.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/t/e/text_ng_n_11__6_7.png",
+          "galleryIndex": 4,
+          "sha256": "b3b113b13d1eb7bcad31cf6f22e868012f8cc9bbc001de7daf0e04a96347568e"
+        },
+        {
+          "path": "./assets/images/laptop-acer-gaming-predator-helios-neo-16s-ai-phn16s-71-95ms-angle-2.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/t/e/text_ng_n_10__5_12.png",
+          "galleryIndex": 5,
+          "sha256": "3d04d9ab74e5f0557bdf000dca416393d85037b4f8e4a381b5bdb032c3811a21"
+        },
+        {
+          "path": "./assets/images/laptop-acer-gaming-predator-helios-neo-16s-ai-phn16s-71-95ms-angle-3.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/t/e/text_ng_n_2__9_8.png",
+          "galleryIndex": 7,
+          "sha256": "82289e69daa96bb35c6935818c5c25322869793cb86738d612a052d6c72b9a7a"
+        },
+        {
+          "path": "./assets/images/laptop-acer-gaming-predator-helios-neo-16s-ai-phn16s-71-95ms-angle-4.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/t/e/text_ng_n_6__3_9.png",
+          "galleryIndex": 10,
+          "sha256": "6d5f7c0aa3f9ef3f501b61a84e18b5a0f627cc4cbc42419cf1a528aa1a54e813"
+        }
+      ]
+    },
+    {
+      "ids": [
+        26
+      ],
+      "source": "https://cellphones.com.vn/laptop-hp-victus-15-fa2731tx-b85lnpa.html",
+      "sourceName": "Laptop HP Victus 15-FA2731TX B85LNPA",
+      "verifiedAt": "2026-10-10",
+      "specifications": [
+        {
+          "label": "Loại card đồ họa",
+          "value": "NVIDIA GeForce RTX 3050 (6GB of GDDR6 SDRAM, Bus Width: 96- bit)\nIntel UHD Graphics"
+        },
+        {
+          "label": "Dung lượng RAM",
+          "value": "16GB"
+        },
+        {
+          "label": "Loại RAM",
+          "value": "DDR4 3200MHz"
+        },
+        {
+          "label": "Số khe ram",
+          "value": "2 khe (1 x 16GB)"
+        },
+        {
+          "label": "Ổ cứng",
+          "value": "512GB SSD1 PCIe (M.2 2280)"
+        },
+        {
+          "label": "Công nghệ màn hình",
+          "value": "Màn hình chống chói"
+        },
+        {
+          "label": "Hệ điều hành khi ra mắt",
+          "value": "Windows 11 Home Single Language 64-bit"
+        },
+        {
+          "label": "Loại CPU",
+          "value": "Intel Core i5-13420H (8 lõi) - Max Turbo Frequency: 4.60 GHz"
+        },
+        {
+          "label": "Kích thước màn hình",
+          "value": "15.6 inches"
+        },
+        {
+          "label": "Độ phân giải màn hình",
+          "value": "1920 x 1080 pixels (FullHD)"
+        },
+        {
+          "label": "Pin",
+          "value": "3 Cell Int (52.5Wh)"
+        },
+        {
+          "label": "Cổng giao tiếp",
+          "value": "1 x USB 3.2 Gen 1 Type-C (hỗ trợ DisplayPort, HP Sleep and Charge)\n2 x USB 3.2 Gen 1 Type-A (một cổng hỗ trợ HP Sleep and Charge)\n1 x HDMI\n1 x RJ45 (LAN)\n1 x Giắc cắm âm thanh kết hợp tai nghe/micrô\n1 x SSD2 PCIe (M.2 2280)"
+        },
+        {
+          "label": "Tần số quét",
+          "value": "144 Hz"
+        },
+        {
+          "label": "Chất liệu tấm nền",
+          "value": "Tấm nền IPS"
+        },
+        {
+          "label": "Công nghệ âm thanh",
+          "value": "Realtek High Definition Audio"
+        },
+        {
+          "label": "Tính năng đặc biệt",
+          "value": "Wi-Fi 6"
+        },
+        {
+          "label": "Loại đèn bàn phím",
+          "value": "Bàn phím kích thước đầy đủ với bàn phím số, 6 hàng phím Fn đa phương tiện, bàn phím có đèn nền\nBàn di chuột hỗ trợ cử chỉ bốn ngón tay"
+        },
+        {
+          "label": "Bảo mật",
+          "value": "Mật khẩu quản trị viên, Mật khẩu bật nguồn, fTPM 2.0"
+        },
+        {
+          "label": "Webcam",
+          "value": "Camera HD HP Wide Vision với micrô mảng"
+        },
+        {
+          "label": "Wi-Fi",
+          "value": "802.11 ax"
+        },
+        {
+          "label": "Bluetooth",
+          "value": "Bluetooth 5.4"
+        },
+        {
+          "label": "Kích thước",
+          "value": "35.8 x 25.5 x 2.35 cm (Dài x Rộng x Dày)"
+        },
+        {
+          "label": "Trọng lượng",
+          "value": "2.185 kg"
+        }
+      ],
+      "images": [
+        {
+          "path": "./assets/images/laptop-hp-victus-15-fa2731tx-b85lnpa-angle-1.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/t/e/text_ng_n_7__5_16.png",
+          "galleryIndex": 4,
+          "sha256": "35eab3b7db4d0381c4c3045fffe7e7ec116252c34fc7a083e8cb3d2c58da783d"
+        },
+        {
+          "path": "./assets/images/laptop-hp-victus-15-fa2731tx-b85lnpa-angle-2.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/t/e/text_ng_n_8__8_15.png",
+          "galleryIndex": 5,
+          "sha256": "4517fdd2e5958b360215c02650158a7618bf0318a3933e8de46c33edceb9d9eb"
+        },
+        {
+          "path": "./assets/images/laptop-hp-victus-15-fa2731tx-b85lnpa-angle-3.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/t/e/text_ng_n_9__9_233.png",
+          "galleryIndex": 6,
+          "sha256": "8cd51b950dc69d23800b9fb26d8bcb969999d63c9ca49d73152aba6b5ee8d0c4"
+        },
+        {
+          "path": "./assets/images/laptop-hp-victus-15-fa2731tx-b85lnpa-angle-4.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/t/e/text_ng_n_10__5_239.png",
+          "galleryIndex": 7,
+          "sha256": "be2e9d1df192b808703e4d4226a6c1246c6f3b4818ae7510f27623a143d55533"
+        }
+      ]
+    },
+    {
+      "ids": [
+        27
+      ],
+      "source": "https://cellphones.com.vn/laptop-hp-victus-15-fa2451tx-d17wppa.html",
+      "sourceName": "Laptop HP Victus 15-FA2451TX D17WPPA",
+      "verifiedAt": "2026-10-10",
+      "specifications": [
+        {
+          "label": "Loại card đồ họa",
+          "value": "NVIDIA GeForce RTX 4050 (6GB of GDDR6 SDRAM, Bus Width: 96- bit)\nIntel UHD Graphics"
+        },
+        {
+          "label": "Dung lượng RAM",
+          "value": "16GB"
+        },
+        {
+          "label": "Loại RAM",
+          "value": "DDR5 5200MHz"
+        },
+        {
+          "label": "Số khe ram",
+          "value": "2 khe (1 x 16GB)"
+        },
+        {
+          "label": "Ổ cứng",
+          "value": "512GB SSD1 PCIe (M.2 2280)"
+        },
+        {
+          "label": "Công nghệ màn hình",
+          "value": "Màn hình chống chói\nViền mỏng"
+        },
+        {
+          "label": "Hệ điều hành khi ra mắt",
+          "value": "Windows 11 Home Single Language 64-bit"
+        },
+        {
+          "label": "Loại CPU",
+          "value": "Intel Core i5-13420H (8 lõi) - Max Turbo Frequency: 4.60 GHz"
+        },
+        {
+          "label": "Kích thước màn hình",
+          "value": "15.6 inches"
+        },
+        {
+          "label": "Độ phân giải màn hình",
+          "value": "1920 x 1080 pixels (FullHD)"
+        },
+        {
+          "label": "Pin",
+          "value": "4 Cell Int (70.07Wh)"
+        },
+        {
+          "label": "Cổng giao tiếp",
+          "value": "1 x USB 3.2 Gen 1 Type-C (Power Delivery, DisplayPort, HP Sleep and Charge)\n2 x USB 3.2 Gen 1 Type-A (1 cổng hỗ trợ HP Sleep and Charge)\n1 x HDMI\n1 x RJ45 (LAN)\n1 x Jack tai nghe/mic 3.5 mm\n1 x khe SSD2 PCIe (M.2 2280)"
+        },
+        {
+          "label": "Tần số quét",
+          "value": "144 Hz"
+        },
+        {
+          "label": "Chất liệu tấm nền",
+          "value": "Tấm nền IPS"
+        },
+        {
+          "label": "Công nghệ âm thanh",
+          "value": "Realtek High Definition Audio (by DTS:X Ultra)"
+        },
+        {
+          "label": "Khe đọc thẻ nhớ",
+          "value": "Có"
+        },
+        {
+          "label": "Tính năng đặc biệt",
+          "value": "Wi-Fi 6"
+        },
+        {
+          "label": "Loại đèn bàn phím",
+          "value": "Bàn phím kích thước đầy đủ màu xám ánh trăng với bàn phím số, 6 hàng phím, phím chức năng đa phương tiện (Fn), bàn phím có đèn nền\nBàn di chuột hỗ trợ cử chỉ bốn ngón tay"
+        },
+        {
+          "label": "Bảo mật",
+          "value": "Mật khẩu quản trị viên\nMật khẩu khởi động\nfTPM 2.0\nTiện ích ổ cứng"
+        },
+        {
+          "label": "Webcam",
+          "value": "Camera HP Wide Vision HD và hệ thống micro đa kênh"
+        },
+        {
+          "label": "Wi-Fi",
+          "value": "802.11 ax"
+        },
+        {
+          "label": "Bluetooth",
+          "value": "Bluetooth 5.4"
+        },
+        {
+          "label": "Kích thước",
+          "value": "35.8 x 25.5 x 2.35 cm (Dài x Rộng x Dày)"
+        },
+        {
+          "label": "Trọng lượng",
+          "value": "2.2 kg"
+        }
+      ],
+      "images": [
+        {
+          "path": "./assets/images/laptop-hp-victus-15-fa2451tx-d17wppa-angle-1.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/s/s/ssss_2__1_60.png",
+          "galleryIndex": 4,
+          "sha256": "40310d01b54899ce8991b644d94d28fcf804b164c3e4e3f3ca54e796e1ff7c0b"
+        },
+        {
+          "path": "./assets/images/laptop-hp-victus-15-fa2451tx-d17wppa-angle-2.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/s/s/ssss_1__1_64.png",
+          "galleryIndex": 5,
+          "sha256": "c34989a3b65e8ba20b270cc0a2b359ff9c27f1bad55474c891849fccdcd6fdc1"
+        },
+        {
+          "path": "./assets/images/laptop-hp-victus-15-fa2451tx-d17wppa-angle-3.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/s/s/ssss_3__1_57.png",
+          "galleryIndex": 6,
+          "sha256": "58c37a2300a98ea16acbdd8fc6a909d6ddc869b96069c338eb0ce6696ada57c0"
+        },
+        {
+          "path": "./assets/images/laptop-hp-victus-15-fa2451tx-d17wppa-angle-4.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/s/s/ssss_4__1_51.png",
+          "galleryIndex": 7,
+          "sha256": "9172db40a0352f562d30212dca1ee22a2b125dd894933cd1fa4898195805dfdc"
+        }
+      ]
+    },
+    {
+      "ids": [
+        28
+      ],
+      "source": "https://cellphones.com.vn/laptop-hp-victus-15-fb3116ax-bx8u4pa.html",
+      "sourceName": "Laptop HP Victus 15-FB3116AX BX8U4PA",
+      "verifiedAt": "2026-10-10",
+      "specifications": [
+        {
+          "label": "Loại card đồ họa",
+          "value": "NVIDIA GeForce RTX 3050 6GB GDDR6"
+        },
+        {
+          "label": "Dung lượng RAM",
+          "value": "16GB"
+        },
+        {
+          "label": "Loại RAM",
+          "value": "DDR5-5600 MT/s"
+        },
+        {
+          "label": "Số khe ram",
+          "value": "2 khe (1 x 16GB)"
+        },
+        {
+          "label": "Ổ cứng",
+          "value": "512 GB PCIe Gen4 NVMe M.2 SSD"
+        },
+        {
+          "label": "Kích thước màn hình",
+          "value": "15.6 inches"
+        },
+        {
+          "label": "Công nghệ màn hình",
+          "value": "Màn hình chống chói\nĐộ sáng 300 nits\nĐộ phủ màu 62.5% sRGB"
+        },
+        {
+          "label": "Pin",
+          "value": "3-cell, 52.5 Wh Li-ion polymer"
+        },
+        {
+          "label": "Hệ điều hành",
+          "value": "Windows 11 Home Single Language"
+        },
+        {
+          "label": "Độ phân giải màn hình",
+          "value": "1920 x 1080 pixels (FullHD)"
+        },
+        {
+          "label": "Loại CPU",
+          "value": "AMD Ryzen 7 7445HS (up to 4.7 GHz max boost clock, 16 MB L3 cache, 6 lõi, 12 luồng)"
+        },
+        {
+          "label": "Cổng giao tiếp",
+          "value": "1x USB Type-A 5Gbps (HP Sleep and Charge)\n1x USB Type-A 5Gbps\n1x AC smart pin\n1x HDMI 2.1\n1x combo tai nghe/micrô\n1x RJ-45\n1x USB Type-C 5Gbps (DisplayPort 1.4a, HP Sleep and Charge)"
+        },
+        {
+          "label": "Tần số quét",
+          "value": "144 Hz"
+        },
+        {
+          "label": "Chất liệu tấm nền",
+          "value": "Tấm nền IPS"
+        },
+        {
+          "label": "Công nghệ âm thanh",
+          "value": "DTS:X Ultra\nDual speakers\nHP Audio Boost"
+        },
+        {
+          "label": "Khe đọc thẻ nhớ",
+          "value": "Không"
+        },
+        {
+          "label": "Wi-Fi",
+          "value": "Realtek Wi-Fi 6 (2x2)"
+        },
+        {
+          "label": "Bluetooth",
+          "value": "Bluetooth v5.4"
+        },
+        {
+          "label": "Chất liệu",
+          "value": "Vỏ nhựa"
+        },
+        {
+          "label": "Chất liệu vỏ màn hình",
+          "value": "Nhựa"
+        },
+        {
+          "label": "Chất liệu vỏ trên",
+          "value": "Nhựa"
+        },
+        {
+          "label": "Chất liệu vỏ dưới",
+          "value": "Nhựa"
+        },
+        {
+          "label": "Kích thước",
+          "value": "35.79 x 25.5 x 2.35 cm (Dài x Rộng x Dày)"
+        },
+        {
+          "label": "Trọng lượng",
+          "value": "2.29 kg"
+        },
+        {
+          "label": "Tính năng đặc biệt",
+          "value": "Viền màn hình siêu mỏng, Wi-Fi 6"
+        },
+        {
+          "label": "Loại đèn bàn phím",
+          "value": "Bàn phím kích thước đầy đủ, có đèn nền RGB 1 vùng, màu xám đá mặt trăng với bàn phím số"
+        },
+        {
+          "label": "Bảo mật",
+          "value": "Màn trập riêng tư của camera; Hỗ trợ Mô-đun nền tảng đáng tin cậy (Phần mềm TPM)"
+        },
+        {
+          "label": "Webcam",
+          "value": "Camera HP Wide Vision 720p HD có chức năng giảm nhiễu tạm thời và micrô kỹ thuật số mảng kép tích hợp"
+        }
+      ],
+      "images": [
+        {
+          "path": "./assets/images/laptop-hp-victus-15-fb3116ax-bx8u4pa-angle-1.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/t/e/text_ng_n_5__10_19.png",
+          "galleryIndex": 4,
+          "sha256": "b90deabfb55e2455bbad8d40507ed69fa7b1be863038d53e43d4dc0d5d05e82d"
+        },
+        {
+          "path": "./assets/images/laptop-hp-victus-15-fb3116ax-bx8u4pa-angle-2.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/t/e/text_ng_n_3__8_21.png",
+          "galleryIndex": 5,
+          "sha256": "575b2a1e710fdb8be6ba0c7b55d88dff33cc18a75fdf597de6b0881baa80a00d"
+        },
+        {
+          "path": "./assets/images/laptop-hp-victus-15-fb3116ax-bx8u4pa-angle-3.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/t/e/text_ng_n_4__8_21.png",
+          "galleryIndex": 6,
+          "sha256": "a6258cd61cbc96568654d76a754e86d4dfd8ee9919f38d80d858fabdf27173b0"
+        },
+        {
+          "path": "./assets/images/laptop-hp-victus-15-fb3116ax-bx8u4pa-angle-4.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/t/e/text_ng_n_6__5_23.png",
+          "galleryIndex": 7,
+          "sha256": "f6125bc5295d123761ba3d6837faf256c6836374a45c6c0d51ffd7dca2f7e583"
+        }
+      ]
+    },
+    {
+      "ids": [
+        29
+      ],
+      "source": "https://cellphones.com.vn/laptop-hp-gaming-omen-16-am0176tx-bx9d3pa.html",
+      "sourceName": "Laptop HP Gaming OMEN 16-AM0176TX BX9D3PA",
+      "verifiedAt": "2026-10-10",
+      "specifications": [
+        {
+          "label": "Loại card đồ họa",
+          "value": "NVIDIA GeForce RTX 5060 (8 GB GDDR7 chuyên dụng)\nIntel Arc 140T GPU"
+        },
+        {
+          "label": "Dung lượng RAM",
+          "value": "16GB"
+        },
+        {
+          "label": "Loại RAM",
+          "value": "DDR5-5600 MT/s"
+        },
+        {
+          "label": "Số khe ram",
+          "value": "2 khe (2 x 8GB)"
+        },
+        {
+          "label": "Ổ cứng",
+          "value": "512 GB PCIe Gen4 NVMe M.2 SSD"
+        },
+        {
+          "label": "Công nghệ màn hình",
+          "value": "Thời gian phản hồi 3 ms\nMàn hình chống chói\nÁnh sáng xanh thấp\nĐộ sáng 400 nit\nĐộ phủ màu 100% sRGB"
+        },
+        {
+          "label": "Hệ điều hành khi ra mắt",
+          "value": "Windows 11 Home Single Language"
+        },
+        {
+          "label": "Loại CPU",
+          "value": "Intel Core Ultra 7 255H (up to 5.1 GHz with Intel Turbo Boost Technology, 24 MB L3 cache, 16 lõi, 16 luồng)"
+        },
+        {
+          "label": "Kích thước màn hình",
+          "value": "16 inches"
+        },
+        {
+          "label": "Độ phân giải màn hình",
+          "value": "1920 x 1200 pixels (WUXGA)"
+        },
+        {
+          "label": "Pin",
+          "value": "6-cell, 83 Wh Li-ion polymer"
+        },
+        {
+          "label": "Cổng giao tiếp",
+          "value": "1x USB Type-A 10Gbps\n2x USB Type-A 5Gbps\n1x chân cắm thông minh AC\n1x HDMI 2.1\n1x bộ tai nghe/micrô\n1x RJ-45\n1x USB Type-C 10Gbps (USB Power Delivery 3.0, DisplayPort 1.4, HP Sleep and Charge)"
+        },
+        {
+          "label": "Tần số quét",
+          "value": "165 Hz"
+        },
+        {
+          "label": "Chất liệu tấm nền",
+          "value": "Tấm nền IPS"
+        },
+        {
+          "label": "Công nghệ âm thanh",
+          "value": "DTS:X Ultra\nDual speakers\nHP Audio Boost\nHyperX"
+        },
+        {
+          "label": "Tính năng đặc biệt",
+          "value": "Viền màn hình siêu mỏng, Wi-Fi 6"
+        },
+        {
+          "label": "Loại đèn bàn phím",
+          "value": "Bàn phím full-size, đèn nền RGB 4 vùng, màu đen bóng, có bàn phím số và công nghệ Anti-Ghosting 26 phím"
+        },
+        {
+          "label": "Bảo mật",
+          "value": "Màn trập riêng tư của camera\nHỗ trợ Mô-đun nền tảng đáng tin cậy (Phần mềm TPM)"
+        },
+        {
+          "label": "Webcam",
+          "value": "Camera HP True Vision 1080p FHD với chức năng giảm nhiễu theo thời gian và micrô kỹ thuật số mảng kép tích hợp"
+        },
+        {
+          "label": "Wi-Fi",
+          "value": "Intel Wi-Fi 6E AX211 (2x2)"
+        },
+        {
+          "label": "Bluetooth",
+          "value": "Bluetooth 5.3"
+        },
+        {
+          "label": "Kích thước",
+          "value": "35.75 x 26.9 x 2.37 cm (Mặt trước)\n35.75 x 26.9 x 2.54 cm (Mặt sau)"
+        },
+        {
+          "label": "Trọng lượng",
+          "value": "2.43 kg"
+        }
+      ],
+      "images": [
+        {
+          "path": "./assets/images/laptop-hp-gaming-omen-16-am0176tx-bx9d3pa-angle-1.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/t/e/text_ng_n_6__4_262.png",
+          "galleryIndex": 4,
+          "sha256": "ffb3bc28f0119cf0b801206bdcdc5cca459cf660190aa4ecd37fa542fda2c759"
+        },
+        {
+          "path": "./assets/images/laptop-hp-gaming-omen-16-am0176tx-bx9d3pa-angle-2.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/t/e/text_ng_n_3__7_251.png",
+          "galleryIndex": 6,
+          "sha256": "6d070c48b1b477acc6f75a5d38cd6d7046a82997e3f5a214a39a37561d05960f"
+        },
+        {
+          "path": "./assets/images/laptop-hp-gaming-omen-16-am0176tx-bx9d3pa-angle-3.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/t/e/text_ng_n_7__5_2.png",
+          "galleryIndex": 7,
+          "sha256": "8b31f4baf005c824a67156f9dc5426c542cd8b51cf840cec9aaf9de40b4a9b50"
+        },
+        {
+          "path": "./assets/images/laptop-hp-gaming-omen-16-am0176tx-bx9d3pa-angle-4.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/t/e/text_ng_n_4__7_303.png",
+          "galleryIndex": 10,
+          "sha256": "8095be7d3f0694eb1be5309a0092f0a5d8d305fe7c95d555d65c0c0f01bfb079"
+        }
+      ]
+    },
+    {
+      "ids": [
+        30
+      ],
+      "source": "https://cellphones.com.vn/laptop-hp-victus-16-r0376tx-ay8z2pa.html",
+      "sourceName": "Laptop HP Victus 16-R0376TX AY8Z2PA",
+      "verifiedAt": "2026-10-10",
+      "specifications": [
+        {
+          "label": "Loại card đồ họa",
+          "value": "NVIDIA GeForce RTX 3050 Laptop GPU (6 GB GDDR6 dedicated)"
+        },
+        {
+          "label": "Dung lượng RAM",
+          "value": "16GB"
+        },
+        {
+          "label": "Loại RAM",
+          "value": "DDR5-4800 MT/s"
+        },
+        {
+          "label": "Số khe ram",
+          "value": "2 khe (2 x 8 GB)"
+        },
+        {
+          "label": "Ổ cứng",
+          "value": "512 GB PCIe Gen4 NVMeTM M.2 SSD"
+        },
+        {
+          "label": "Kích thước màn hình",
+          "value": "16.1 inches"
+        },
+        {
+          "label": "Công nghệ màn hình",
+          "value": "Độ phủ màu 100% sRGB\nĐộ sáng 300 nits\nThời gian phản hồi 7 ms\nÁnh sáng xanh thấp"
+        },
+        {
+          "label": "Pin",
+          "value": "4-cell, 70 Wh Li-ion polymer\nBộ đổi nguồn AC thông minh 200 W\nHỗ trợ sạc pin nhanh: khoảng 50% trong 30 phút"
+        },
+        {
+          "label": "Hệ điều hành",
+          "value": "Windows 11 Home Single Language"
+        },
+        {
+          "label": "Độ phân giải màn hình",
+          "value": "1920 x 1080 pixels (FullHD)"
+        },
+        {
+          "label": "Loại CPU",
+          "value": "Intel Core i7-13700HX (up to 5.0 GHz with Intel Turbo Boost Technology, 30 MB L3 cache,16 lõi, 24 luồng)"
+        },
+        {
+          "label": "Cổng giao tiếp",
+          "value": "1x USB Type-A (HP Sleep and Charge)\n1x USB Type-C (sạc nhanh, DisplayPort 1.4, HP Sleep and Charge)\n2x USB Type-A\n1x cổng HDMI 2.1\n1x RJ-45\n1x bộ chuyển đổi điện xoay chiều thông minh\n1x cổng kết hợp tai nghe/micrô"
+        },
+        {
+          "label": "Tần số quét",
+          "value": "165 Hz"
+        },
+        {
+          "label": "Chất liệu tấm nền",
+          "value": "Tấm nền IPS"
+        },
+        {
+          "label": "Công nghệ âm thanh",
+          "value": "Công nghệ âm thanh của B&O\nLoa kép\nHP Audio Boost"
+        },
+        {
+          "label": "Tính năng đặc biệt",
+          "value": "Viền màn hình siêu mỏng, Wi-Fi 6"
+        },
+        {
+          "label": "Loại đèn bàn phím",
+          "value": "Bàn phím kích thước đầy đủ, có đèn nền RGB 1 vùng, màu xám đá mặt trăng với bàn phím số"
+        },
+        {
+          "label": "Bảo mật",
+          "value": "Màn trập camera\nHỗ trợ Trusted Platform Module (Phần mềm điều khiển TPM)"
+        },
+        {
+          "label": "Webcam",
+          "value": "Camera HP True Vision 1080p FHD có chức năng giảm nhiễu theo thời gian và micrô kỹ thuật số mảng kép tích hợp"
+        },
+        {
+          "label": "Kích thước",
+          "value": "36.9 x 25.94 x 2.29 cm (mặt trước)\n36.9 x 25.94 x 2.39 cm (mặt sau)"
+        },
+        {
+          "label": "Trọng lượng",
+          "value": "2.31 kg"
+        },
+        {
+          "label": "Wi-Fi",
+          "value": "Intel Wi-Fi 6E AX211 (2x2)"
+        },
+        {
+          "label": "Bluetooth",
+          "value": "Bluetooth 5.3"
+        }
+      ],
+      "images": [
+        {
+          "path": "./assets/images/laptop-hp-victus-16-r0376tx-ay8z2pa-angle-1.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/t/e/text_ng_n_6__3_33.png",
+          "galleryIndex": 4,
+          "sha256": "b08d6a33045567ce3afa9966e90492022e99f437f9b4a30df30ce677e7107c43"
+        },
+        {
+          "path": "./assets/images/laptop-hp-victus-16-r0376tx-ay8z2pa-angle-2.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/t/e/text_ng_n_7__3_27.png",
+          "galleryIndex": 5,
+          "sha256": "4d458d2314c6cf3c2cb23e83b70628d0a94a8c05ab9df8698c46ff73cd8d1e09"
+        },
+        {
+          "path": "./assets/images/laptop-hp-victus-16-r0376tx-ay8z2pa-angle-3.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/t/e/text_ng_n_8__5_26.png",
+          "galleryIndex": 6,
+          "sha256": "5799622942ee20db834c903673ccb1bc11e214ed39474f6d5dae052cc00bea0c"
+        },
+        {
+          "path": "./assets/images/laptop-hp-victus-16-r0376tx-ay8z2pa-angle-4.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/t/e/text_ng_n_9__8.png",
+          "galleryIndex": 7,
+          "sha256": "e920aeab7ec41812eee1e2f522c0d7ebe9fa54882869d95ba1209300851700c3"
+        }
+      ]
+    },
+    {
+      "ids": [
+        31
+      ],
+      "source": "https://ttcenter.com.vn/dell-alienware-15-da15265-ryzen-5-220",
+      "sourceName": "Dell Alienware 15 DA15265 Ryzen 5 220 16GB 512GB RTX 4050",
+      "verifiedAt": "2026-10-10",
+      "specifications": [
+        {
+          "label": "CPU",
+          "value": "AMD Ryzen™ 5 220 processor (22MB cache, 6 cores, up to 4.9 GHz)"
+        },
+        {
+          "label": "RAM",
+          "value": "16GB DDR5"
+        },
+        {
+          "label": "Ổ cứng",
+          "value": "512GB SSD M.2 PCIe NVMe Gen 4"
+        },
+        {
+          "label": "Card VGA",
+          "value": "NVIDIA GeForce RTX 4050 Laptop GPU, 6GB GDDR6"
+        },
+        {
+          "label": "Màn hình",
+          "value": "15.3\" WUXGA 1920 x 1200, 165Hz, 300 nits, 62.5% sRGB"
+        },
+        {
+          "label": "Webcam",
+          "value": "HD 720p a 30 fps con micrófonos dual-array"
+        },
+        {
+          "label": "Cổng kết nối",
+          "value": "2x USB 3.2 Gen 1,\n1x USB-C 3.2 Gen 2 con Power Delivery y DisplayPort 1.4a,\n1x USB-C 3.2 Gen 1,\n1x HDMI 2.1,\n1x audio universal,\n1x RJ45,\n1x puerto de carga"
+        },
+        {
+          "label": "Trọng lượng",
+          "value": "2.20 kg"
+        },
+        {
+          "label": "Pin",
+          "value": "54Whr"
+        },
+        {
+          "label": "Hệ điều hành",
+          "value": "Windows® 11 64Bit"
+        }
+      ],
+      "images": [
+        {
+          "path": "./assets/images/dell-alienware-15-da15265-ryzen-5-220-angle-1.jpg",
+          "source": "https://ttcenter.com.vn/uploads/photos/1790394886_5972_6e8cbf14ac12af00fa5e696520890cdb.jpg",
+          "galleryIndex": 1,
+          "sha256": "c3600f43934cb889fb73a5f480487193d4be643a2371cb38504a788b3537250d"
+        },
+        {
+          "path": "./assets/images/dell-alienware-15-da15265-ryzen-5-220-angle-2.jpg",
+          "source": "https://ttcenter.com.vn/uploads/photos/1790394886_5972_b0a9b45b3abdb0c2dba79bdac4bf9ba5.jpg",
+          "galleryIndex": 2,
+          "sha256": "11b0d0d35356c9d5f277d574e309b658ca4e8cbcbd204b7fd3ceeec36b9a1cd7"
+        },
+        {
+          "path": "./assets/images/dell-alienware-15-da15265-ryzen-5-220-angle-3.jpg",
+          "source": "https://ttcenter.com.vn/uploads/photos/1790394886_5972_a9fd119c1d678d45fd83b71ec3897c3c.jpg",
+          "galleryIndex": 3,
+          "sha256": "ac2ae5a3a1dab8a6919f5f0a20bd12905d6991bc091ed05cfc21dd97c9b28077"
+        }
+      ]
+    },
+    {
+      "ids": [
+        35
+      ],
+      "source": "https://cellphones.com.vn/macbook-air-13-m5-10-cpu-8-gpu-16gb-512gb.html",
+      "sourceName": "MacBook Air M5 13 inch 2026 10CPU 8GPU 16GB 512GB | Chính hãng Apple Việt Nam",
+      "verifiedAt": "2026-10-10",
+      "specifications": [
+        {
+          "label": "Loại card đồ họa",
+          "value": "GPU 8 lõi\nNeural Accelerators\nCông nghệ dò tia tốc độ cao bằng phần cứng\nNeural Engine 16 lõi\nBăng thông bộ nhớ 153GB/s"
+        },
+        {
+          "label": "Dung lượng RAM",
+          "value": "16GB"
+        },
+        {
+          "label": "Ổ cứng",
+          "value": "512GB"
+        },
+        {
+          "label": "Công nghệ màn hình",
+          "value": "Màn hình Liquid Retina\nMàn hình có đèn nền LED với công nghệ IPS\nĐộ sáng 500 nit\nHỗ trợ một tỷ màu\nDải màu rộng (P3)\nCông nghệ True Tone\nHỗ trợ lên đến hai màn hình ngoài"
+        },
+        {
+          "label": "Hệ điều hành khi ra mắt",
+          "value": "macOS"
+        },
+        {
+          "label": "Loại CPU",
+          "value": "Chip Apple M5\nCPU 10 lõi với 4 lõi siêu xử lý và 6 lõi tiết kiệm điện"
+        },
+        {
+          "label": "Kích thước màn hình",
+          "value": "13.6 inches"
+        },
+        {
+          "label": "Độ phân giải màn hình",
+          "value": "2560 x 1664 pixels"
+        },
+        {
+          "label": "Pin",
+          "value": "Pin Li-Po 53,8 watt‑giờ tích hợp\nThời gian xem video trực tuyến lên đến 18 giờ\nThời gian duyệt web trên mạng không dây lên đến 15 giờ"
+        },
+        {
+          "label": "Cổng giao tiếp",
+          "value": "Cổng sạc MagSafe 3\nJack cắm tai nghe 3,5 mm\nHai cổng Thunderbolt 4 (USB-C) hỗ trợ Sạc / DisplayPort / Thunderbolt 4 (lên đến 40Gb/s) / USB 4 (lên đến 40Gb/s)"
+        },
+        {
+          "label": "Chất liệu tấm nền",
+          "value": "Tấm nền IPS"
+        },
+        {
+          "label": "Công nghệ âm thanh",
+          "value": "Hệ thống âm thanh bốn loa\nHỗ trợ Âm Thanh Không Gian khi phát nhạc hoặc video với Dolby Atmos trên loa tích hợp\nÂm Thanh Không Gian với khả năng theo dõi chuyển động đầu\nDãy ba micrô phối hợp\nChế độ micrô Tách Lời Nói và Âm Phổ Rộng"
+        },
+        {
+          "label": "Khe đọc thẻ nhớ",
+          "value": "Không"
+        },
+        {
+          "label": "Chất liệu",
+          "value": "Vỏ kim loại"
+        },
+        {
+          "label": "Chất liệu vỏ màn hình",
+          "value": "Nhôm"
+        },
+        {
+          "label": "Chất liệu vỏ trên",
+          "value": "Nhôm"
+        },
+        {
+          "label": "Chất liệu vỏ dưới",
+          "value": "Nhôm"
+        },
+        {
+          "label": "Tính năng đặc biệt",
+          "value": "Bảo mật vân tay, Wi-Fi 7"
+        },
+        {
+          "label": "Loại đèn bàn phím",
+          "value": "Bàn phím Magic Keyboard có đèn nền\nCảm biến ánh sáng môi trường\nBàn di chuột Force Touch để điều khiển con trỏ chính xác và cảm ứng lực; hỗ trợ Bấm Mạnh, bộ tăng tốc, vẽ cảm ứng lực, và các thao tác Multi‑Touch"
+        },
+        {
+          "label": "Bảo mật",
+          "value": "Touch ID"
+        },
+        {
+          "label": "Webcam",
+          "value": "Camera 12MP Center Stage có hỗ trợ chế độ Desk View\nQuay video HD 1080p\nBộ xử lý tín hiệu hình ảnh tiên tiến với video điện toán"
+        },
+        {
+          "label": "Wi-Fi",
+          "value": "Wi-Fi 7 (802.11be)"
+        },
+        {
+          "label": "Bluetooth",
+          "value": "Bluetooth 6"
+        },
+        {
+          "label": "Kích thước",
+          "value": "1.13 x 30.41 cm x 21.5 cm (Dày x Rộng x Dài)"
+        },
+        {
+          "label": "Trọng lượng",
+          "value": "1.23 kg"
+        }
+      ],
+      "images": [
+        {
+          "path": "./assets/images/macbook-air-13-m5-10-cpu-8-gpu-16gb-512gb-angle-1.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/0/2/02_2_.png",
+          "galleryIndex": 1,
+          "sha256": "04b775ffaedd3bc5530c16a18ace9e1938cc5cca0570727c6b33884cdf9610d0"
+        },
+        {
+          "path": "./assets/images/macbook-air-13-m5-10-cpu-8-gpu-16gb-512gb-angle-2.jpg",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/m/a/ma883f_1.jpg",
+          "galleryIndex": 5,
+          "sha256": "eb7a359cde219d666125dfbe3547ae3712c8003740ead60ab3bd2b4889f6e667"
+        }
+      ]
+    },
+    {
+      "ids": [
+        36
+      ],
+      "source": "https://cellphones.com.vn/apple-macbook-air-13-m4-10cpu-8gpu-16gb-256gb-2025.html",
+      "sourceName": "MacBook Air M4 13 inch 2025 10CPU 8GPU 16GB 256GB | Chính hãng Apple Việt Nam",
+      "verifiedAt": "2026-10-10",
+      "specifications": [
+        {
+          "label": "Loại card đồ họa",
+          "value": "GPU 8 lõi\nNeural Engine 16 lõi\nCông nghệ dò tia tốc độ cao bằng phần cứng\nBăng thông bộ nhớ 120GB/s"
+        },
+        {
+          "label": "Dung lượng RAM",
+          "value": "16GB"
+        },
+        {
+          "label": "Ổ cứng",
+          "value": "256GB"
+        },
+        {
+          "label": "Kích thước màn hình",
+          "value": "13.6 inches"
+        },
+        {
+          "label": "Công nghệ màn hình",
+          "value": "Màn hình Liquid Retina\nCó đèn nền LED\nMật độ 224 pixel mỗi inch\nĐộ sáng 500 nit\nHỗ trợ một tỷ màu\nDải màu rộng (P3)\nCông nghệ True Tone"
+        },
+        {
+          "label": "Pin",
+          "value": "Thời gian xem video trực tuyến lên đến 18 giờ\nThời gian duyệt web trên mạng không dây lên đến 15 giờ\nPin Li-Po 53.8 watt‑giờ tích hợp"
+        },
+        {
+          "label": "Hệ điều hành",
+          "value": "macOS"
+        },
+        {
+          "label": "Độ phân giải màn hình",
+          "value": "2560 x 1664 pixels"
+        },
+        {
+          "label": "Loại CPU",
+          "value": "CPU 10 lõi với 4 lõi hiệu năng và 6 lõi tiết kiệm điện"
+        },
+        {
+          "label": "Cổng giao tiếp",
+          "value": "Cổng sạc MagSafe 3\nJack cắm tai nghe 3.5 mm\nHai cổng Thunderbolt 4 (USB-C) hỗ trợ: Sạc / DisplayPort / Thunderbolt 4 (lên đến 40Gb/s) / USB 4 (lên đến 40Gb/s)"
+        },
+        {
+          "label": "Chất liệu tấm nền",
+          "value": "Tấm nền IPS"
+        },
+        {
+          "label": "Công nghệ âm thanh",
+          "value": "Hệ thống âm thanh bốn loa\nHỗ trợ Âm Thanh Không Gian khi phát nhạc hoặc video với Dolby Atmos trên loa tích hợp\nÂm Thanh Không Gian với khả năng theo dõi chuyển động đầu chủ động khi sử dụng AirPods, AirPods Pro, và AirPods Max"
+        },
+        {
+          "label": "Khe đọc thẻ nhớ",
+          "value": "Không"
+        },
+        {
+          "label": "Wi-Fi",
+          "value": "Wi-Fi 6E (802.11ax)"
+        },
+        {
+          "label": "Bluetooth",
+          "value": "Bluetooth 5.3"
+        },
+        {
+          "label": "Chất liệu",
+          "value": "Vỏ kim loại"
+        },
+        {
+          "label": "Chất liệu vỏ trên",
+          "value": "Nhôm"
+        },
+        {
+          "label": "Chất liệu vỏ dưới",
+          "value": "Nhôm"
+        },
+        {
+          "label": "Kích thước",
+          "value": "Cao: 1.13 cm x Rộng: 30.41 cm x Dài: 21.5 cm"
+        },
+        {
+          "label": "Trọng lượng",
+          "value": "1.24 kg"
+        },
+        {
+          "label": "Tính năng đặc biệt",
+          "value": "Wi-Fi 6, Bảo mật vân tay"
+        },
+        {
+          "label": "Loại đèn bàn phím",
+          "value": "Bàn phím Magic Keyboard có đèn nền\nBàn di chuột Force Touch để điều khiển con trỏ chính xác và cảm ứng lực; hỗ trợ Bấm Mạnh, bộ tăng tốc, vẽ cảm ứng lực, và các thao tác Multi‑Touch"
+        },
+        {
+          "label": "Bảo mật",
+          "value": "Touch ID"
+        },
+        {
+          "label": "Webcam",
+          "value": "Camera 12MP Center Stage có hỗ trợ chế độ Desk View\nQuay video HD 1080p\nBộ xử lý tín hiệu hình ảnh tiên tiến với video điện toán"
+        }
+      ],
+      "images": [
+        {
+          "path": "./assets/images/apple-macbook-air-13-m4-10cpu-8gpu-16gb-256gb-2025-angle-1.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/t/e/text_ng_n_3__7_25.png",
+          "galleryIndex": 1,
+          "sha256": "d224e9d88f55cb823ece098547af5b943579ec678795f48d49199df6d16be85f"
+        },
+        {
+          "path": "./assets/images/apple-macbook-air-13-m4-10cpu-8gpu-16gb-256gb-2025-angle-2.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/t/e/text_ng_n_8__5_12.png",
+          "galleryIndex": 6,
+          "sha256": "6f977e944e53aa68f5ef063e6f34a400d638fd48ce2065ead31639141dae1783"
+        }
+      ]
+    },
+    {
+      "ids": [
+        37,
+        38
+      ],
+      "source": "https://cellphones.com.vn/macbook-air-13-inch-m5-10-cpu-8-gpu-16gb-512gb-2026-sac-70w.html",
+      "sourceName": "MacBook Air M5 13 inch 2026 10CPU 8GPU 16GB 512GB Sạc 70W | Chính hãng Apple Việt Nam",
+      "verifiedAt": "2026-10-10",
+      "specifications": [
+        {
+          "label": "Loại card đồ họa",
+          "value": "GPU 8 lõi\nNeural Accelerators\nCông nghệ dò tia tốc độ cao bằng phần cứng\nNeural Engine 16 lõi\nBăng thông bộ nhớ 153GB/s"
+        },
+        {
+          "label": "Dung lượng RAM",
+          "value": "16GB"
+        },
+        {
+          "label": "Ổ cứng",
+          "value": "512GB"
+        },
+        {
+          "label": "Công nghệ màn hình",
+          "value": "Màn hình Liquid Retina\nMàn hình có đèn nền LED với công nghệ IPS\nĐộ sáng 500 nit\nHỗ trợ một tỷ màu\nDải màu rộng (P3)\nCông nghệ True Tone\nHỗ trợ lên đến hai màn hình ngoài"
+        },
+        {
+          "label": "Hệ điều hành khi ra mắt",
+          "value": "macOS"
+        },
+        {
+          "label": "Loại CPU",
+          "value": "Chip Apple M5\nCPU 10 lõi với 4 lõi siêu xử lý và 6 lõi tiết kiệm điện"
+        },
+        {
+          "label": "Kích thước màn hình",
+          "value": "13.6 inches"
+        },
+        {
+          "label": "Độ phân giải màn hình",
+          "value": "2560 x 1664 pixels"
+        },
+        {
+          "label": "Pin",
+          "value": "Pin Li-Po 53,8 watt‑giờ tích hợp\nThời gian xem video trực tuyến lên đến 18 giờ\nThời gian duyệt web trên mạng không dây lên đến 15 giờ"
+        },
+        {
+          "label": "Cổng giao tiếp",
+          "value": "Cổng sạc MagSafe 3\nJack cắm tai nghe 3,5 mm\nHai cổng Thunderbolt 4 (USB-C) hỗ trợ Sạc / DisplayPort / Thunderbolt 4 (lên đến 40Gb/s) / USB 4 (lên đến 40Gb/s)"
+        },
+        {
+          "label": "Chất liệu tấm nền",
+          "value": "Tấm nền IPS"
+        },
+        {
+          "label": "Công nghệ âm thanh",
+          "value": "Hệ thống âm thanh bốn loa\nHỗ trợ Âm Thanh Không Gian khi phát nhạc hoặc video với Dolby Atmos trên loa tích hợp\nÂm Thanh Không Gian với khả năng theo dõi chuyển động đầu\nDãy ba micrô phối hợp\nChế độ micrô Tách Lời Nói và Âm Phổ Rộng"
+        },
+        {
+          "label": "Khe đọc thẻ nhớ",
+          "value": "Không"
+        },
+        {
+          "label": "Chất liệu",
+          "value": "Vỏ kim loại"
+        },
+        {
+          "label": "Chất liệu vỏ màn hình",
+          "value": "Nhôm"
+        },
+        {
+          "label": "Chất liệu vỏ trên",
+          "value": "Nhôm"
+        },
+        {
+          "label": "Chất liệu vỏ dưới",
+          "value": "Nhôm"
+        },
+        {
+          "label": "Tính năng đặc biệt",
+          "value": "Bảo mật vân tay, Wi-Fi 7"
+        },
+        {
+          "label": "Loại đèn bàn phím",
+          "value": "Bàn phím Magic Keyboard có đèn nền\nCảm biến ánh sáng môi trường\nBàn di chuột Force Touch để điều khiển con trỏ chính xác và cảm ứng lực; hỗ trợ Bấm Mạnh, bộ tăng tốc, vẽ cảm ứng lực, và các thao tác Multi‑Touch"
+        },
+        {
+          "label": "Bảo mật",
+          "value": "Touch ID"
+        },
+        {
+          "label": "Webcam",
+          "value": "Camera 12MP Center Stage có hỗ trợ chế độ Desk View\nQuay video HD 1080p\nBộ xử lý tín hiệu hình ảnh tiên tiến với video điện toán"
+        },
+        {
+          "label": "Wi-Fi",
+          "value": "Wi-Fi 7 (802.11be)"
+        },
+        {
+          "label": "Bluetooth",
+          "value": "Bluetooth 6"
+        },
+        {
+          "label": "Kích thước",
+          "value": "1.13 x 30.41 cm x 21.5 cm (Dày x Rộng x Dài)"
+        },
+        {
+          "label": "Trọng lượng",
+          "value": "1.23 kg"
+        }
+      ],
+      "images": [
+        {
+          "path": "./assets/images/macbook-air-13-inch-m5-10-cpu-8-gpu-16gb-512gb-2026-sac-70w-angle-1.png",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/0/2/02_2__3.png",
+          "galleryIndex": 1,
+          "sha256": "04b775ffaedd3bc5530c16a18ace9e1938cc5cca0570727c6b33884cdf9610d0"
+        },
+        {
+          "path": "./assets/images/macbook-air-13-inch-m5-10-cpu-8-gpu-16gb-512gb-2026-sac-70w-angle-2.jpg",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/m/a/ma883f_1_2.jpg",
+          "galleryIndex": 5,
+          "sha256": "eb7a359cde219d666125dfbe3547ae3712c8003740ead60ab3bd2b4889f6e667"
+        }
+      ]
+    },
+    {
+      "ids": [
+        39
+      ],
+      "source": "https://cellphones.com.vn/macbook-air-m2-2022-16gb-512gb.html",
+      "sourceName": "Apple MacBook Air M2 2024 8CPU 10GPU 16GB 512GB I Chính hãng Apple Việt Nam",
+      "verifiedAt": "2026-10-10",
+      "specifications": [
+        {
+          "label": "Loại card đồ họa",
+          "value": "10 nhân GPU, 16 nhân Neural Engine"
+        },
+        {
+          "label": "Dung lượng RAM",
+          "value": "16GB"
+        },
+        {
+          "label": "Ổ cứng",
+          "value": "512GB"
+        },
+        {
+          "label": "Kích thước màn hình",
+          "value": "13.6 inches"
+        },
+        {
+          "label": "Công nghệ màn hình",
+          "value": "Liquid Retina Display"
+        },
+        {
+          "label": "Pin",
+          "value": "52,6 Wh"
+        },
+        {
+          "label": "Hệ điều hành",
+          "value": "MacOS"
+        },
+        {
+          "label": "Độ phân giải màn hình",
+          "value": "2560 x 1664 pixels"
+        },
+        {
+          "label": "Loại CPU",
+          "value": "Apple M2 8 lõi"
+        },
+        {
+          "label": "Cổng giao tiếp",
+          "value": "2 x Thunderbolt 3\nJack tai nghe 3.5 mm\nMagSafe 3"
+        },
+        {
+          "label": "Chất liệu tấm nền",
+          "value": "Tấm nền IPS"
+        },
+        {
+          "label": "Công nghệ âm thanh",
+          "value": "3 microphones, 4 Loa"
+        },
+        {
+          "label": "Chất liệu",
+          "value": "Vỏ kim loại"
+        },
+        {
+          "label": "Kích thước",
+          "value": "Dày: 1,13cm - Chiều dài: 30,41cm Chiều rộng: 21,5cm"
+        },
+        {
+          "label": "Trọng lượng",
+          "value": "1.27 kg"
+        },
+        {
+          "label": "Tính năng đặc biệt",
+          "value": "Wi-Fi 6, Bảo mật vân tay"
+        },
+        {
+          "label": "Webcam",
+          "value": "1080p FaceTime HD camera"
+        },
+        {
+          "label": "Wi-Fi",
+          "value": "802.11ax Wi-Fi 6"
+        },
+        {
+          "label": "Bluetooth",
+          "value": "5.3"
+        }
+      ],
+      "images": [
+        {
+          "path": "./assets/images/macbook-air-m2-2022-16gb-512gb-angle-1.jpg",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/v/n/vn_mac_4.jpg",
+          "galleryIndex": 2,
+          "sha256": "78a2685e8bb76ac3a4274302e5459bab267f16566bab4de6bbf4a5b2408abfa4"
+        },
+        {
+          "path": "./assets/images/macbook-air-m2-2022-16gb-512gb-angle-2.jpg",
+          "source": "https://cdn2.cellphones.com.vn/800x/media/catalog/product/v/n/vn241e_1.jpg",
+          "galleryIndex": 6,
+          "sha256": "6a78a6898b320e849145caa88f35e16c8cee561d7eca54690c544c9c1917b65f"
+        }
+      ]
+    }
+  ],
+  "unresolved": [
+    32,
+    33,
+    34
+  ]
+}

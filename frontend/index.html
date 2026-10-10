@@ -1,0 +1,1453 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#E31E24">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="vi_VN">
+    <meta property="og:site_name" content="T-TECH">
+    <meta property="og:title" content="T-TECH — Công nghệ cho mọi đam mê">
+    <meta property="og:description" content="Khám phá laptop theo thương hiệu, nhu cầu và cấu hình tại T-TECH.">
+    <meta name="description" content="T-TECH — Công nghệ cho mọi đam mê. Khám phá laptop, so sánh cấu hình và tìm lựa chọn phù hợp.">
+    <title>
+      T-TECH — Công nghệ cho mọi đam mê
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Saira:wdth,wght@100,300..800;125,300..800&amp;display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4">
+    </script>
+    <style type="text/tailwindcss">
+      @theme { --color-red-600: #E31E24; --color-red-700: #B91C1C; --color-red-50: #FEF2F2; --font-sans: 'Saira', sans-serif; }
+    </style>
+    <link rel="stylesheet" href="./assets/css/ttech.css">
+    <link rel="stylesheet" href="./assets/css/checkout.css">
+    <script src="./assets/js/auth.js" defer></script>
+    <script src="./assets/js/payments.js" defer></script>
+    <script src="./assets/js/checkout.js" defer></script>
+    <script src="./assets/js/ttech.js" defer>
+    </script>
+    <script type="application/ld+json">
+      {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Làm sao chọn đúng laptop?", "acceptedAnswer": {"@type": "Answer", "text": "Xác định nhu cầu học tập, làm việc hoặc gaming; sau đó đối chiếu CPU, GPU, RAM, SSD và màn hình theo đúng mã máy."}}, {"@type": "Question", "name": "Giỏ hàng được lưu ở đâu?", "acceptedAnswer": {"@type": "Answer", "text": "Giỏ hàng được lưu trên trình duyệt bạn đang sử dụng. Bạn có thể thêm sản phẩm và thay đổi số lượng trước khi xem tổng tiền."}}, {"@type": "Question", "name": "Có thể thanh toán ngay không?", "acceptedAnswer": {"@type": "Answer", "text": "Bạn có thể đặt hàng và xem lịch sử trong tài khoản. Các phương thức khả dụng được hiển thị tại bước đặt hàng; trạng thái thanh toán được xác nhận từ backend."}}]}
+    </script>
+  </head>
+  <body id="home">
+    <a class="skip-link" href="#products">
+      Đến danh sách sản phẩm
+    </a>
+    <svg width="0" height="0" class="absolute overflow-hidden" aria-hidden="true">
+      <defs>
+        <filter id="hero-matte" color-interpolation-filters="sRGB">
+          <feColorMatrix type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  -10 -10 -10 0 29"/>
+          <feComposite in2="SourceGraphic" operator="in"/>
+        </filter>
+      </defs>
+      <!-- Heroicons v2.1.5, MIT License
+MIT License
+
+Copyright (c) Tailwind Labs, Inc.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+-->
+      <symbol id="i-cart" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"/>
+      </symbol>
+      <symbol id="i-user" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"/>
+      </symbol>
+      <symbol id="i-search" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"/>
+      </symbol>
+      <symbol id="i-arrow" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/>
+      </symbol>
+      <symbol id="i-close" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12"/>
+      </symbol>
+      <symbol id="i-chip" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 3v1.5M4.5 8.25H3m18 0h-1.5M4.5 12H3m18 0h-1.5m-15 3.75H3m18 0h-1.5M8.25 19.5V21M12 3v1.5m0 15V21m3.75-18v1.5m0 15V21m-9-1.5h10.5a2.25 2.25 0 0 0 2.25-2.25V6.75a2.25 2.25 0 0 0-2.25-2.25H6.75A2.25 2.25 0 0 0 4.5 6.75v10.5a2.25 2.25 0 0 0 2.25 2.25Zm.75-12h9v9h-9v-9Z"/>
+      </symbol>
+      <symbol id="i-screen" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 0 1-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0 1 15 18.257V17.25m6-12V15a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 15V5.25m18 0A2.25 2.25 0 0 0 18.75 3H5.25A2.25 2.25 0 0 0 3 5.25m18 0V12a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 12V5.25"/>
+      </symbol>
+      <symbol id="i-memory" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M6 6.878V6a2.25 2.25 0 0 1 2.25-2.25h7.5A2.25 2.25 0 0 1 18 6v.878m-12 0c.235-.083.487-.128.75-.128h10.5c.263 0 .515.045.75.128m-12 0A2.25 2.25 0 0 0 4.5 9v.878m13.5-3A2.25 2.25 0 0 1 19.5 9v.878m0 0a2.246 2.246 0 0 0-.75-.128H5.25c-.263 0-.515.045-.75.128m15 0A2.25 2.25 0 0 1 21 12v6a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 18v-6c0-.98.626-1.813 1.5-2.122"/>
+      </symbol>
+      <symbol id="i-disk" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 6.375c0 2.278-3.694 4.125-8.25 4.125S3.75 8.653 3.75 6.375m16.5 0c0-2.278-3.694-4.125-8.25-4.125S3.75 4.097 3.75 6.375m16.5 0v11.25c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125V6.375m16.5 0v3.75m-16.5-3.75v3.75m16.5 0v3.75C20.25 16.153 16.556 18 12 18s-8.25-1.847-8.25-4.125v-3.75m16.5 0c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125"/>
+      </symbol>
+      <symbol id="i-check" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/>
+      </symbol>
+      <symbol id="i-mail" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"/>
+      </symbol>
+      <symbol id="i-heart" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"/>
+      </symbol>
+      <symbol id="i-filter" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6h9.75M10.5 6a1.5 1.5 0 1 1-3 0m3 0a1.5 1.5 0 1 0-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-9.75 0h9.75"/>
+      </symbol>
+      <symbol id="i-menu" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
+      </symbol>
+      <symbol id="i-shield" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z"/>
+      </symbol>
+      <symbol id="i-truck" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 18.75a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 0 1-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 0 0-3.213-9.193 2.056 2.056 0 0 0-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 0 0-10.026 0 1.106 1.106 0 0 0-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12"/>
+      </symbol>
+      <symbol id="i-mouse" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M15.042 21.672 13.684 16.6m0 0-2.51 2.225.569-9.47 5.227 7.917-3.286-.672ZM12 2.25V4.5m5.834.166-1.591 1.591M20.25 10.5H18M7.757 14.743l-1.59 1.59M6 10.5H3.75m4.007-4.243-1.59-1.59"/>
+      </symbol>
+      <symbol id="i-keyboard" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="m6.75 7.5 3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0 0 21 18V6a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 6v12a2.25 2.25 0 0 0 2.25 2.25Z"/>
+      </symbol>
+      <symbol id="i-headset" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 0 1-.825-.242m9.345-8.334a2.126 2.126 0 0 0-.476-.095 48.64 48.64 0 0 0-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0 0 11.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155"/>
+      </symbol>
+      <symbol id="i-apple" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 0 1-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0 1 15 18.257V17.25m6-12V15a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 15V5.25m18 0A2.25 2.25 0 0 0 18.75 3H5.25A2.25 2.25 0 0 0 3 5.25m18 0V12a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 12V5.25"/>
+      </symbol>
+    </svg>
+    <div class="site-frame">
+      <div class="utility-bar">
+        <div class="shell">
+          <span>
+            T-TECH • Công nghệ cho mọi đam mê.
+          </span>
+          <a href="#support">
+            Tư vấn chọn laptop
+          </a>
+          <a href="#contact">
+            Hỗ trợ khách hàng
+          </a>
+        </div>
+      </div>
+      <header class="site-header">
+        <div class="shell header-main">
+          <a href="#home" class="brand" aria-label="T-TECH — Trang chủ">
+            <span class="brand-emblem">
+              T
+            </span>
+            <span>
+              T-TECH
+              <small>
+                Công nghệ cho mọi đam mê.
+              </small>
+            </span>
+          </a>
+          <div class="mega-menu">
+            <button id="mega-toggle" class="category-nav" type="button" aria-expanded="false" aria-controls="mega-panel">
+              <svg class="icon" aria-hidden="true">
+                <use href="#i-menu"/>
+              </svg>
+              Danh mục
+            </button>
+            <div id="mega-panel" class="mega-panel" inert>
+              <div>
+                <h2>
+                  Laptop theo thương hiệu
+                </h2>
+                <div id="mega-brands" class="mega-brands">
+                </div>
+              </div>
+              <div>
+                <h2>
+                  Khám phá T-TECH
+                </h2>
+                <a href="#products">
+                  Tất cả laptop →
+                </a>
+                <a href="#support">
+                  Tư vấn chọn cấu hình
+                </a>
+                <a href="#contact">
+                  Liên hệ
+                  &
+                  hỗ trợ
+                </a>
+                <p>
+                  Tìm chiếc laptop phù hợp với công việc và đam mê của bạn.
+                </p>
+              </div>
+            </div>
+          </div>
+          <form id="header-search-form" class="header-search" role="search">
+            <label class="sr-only" for="header-search">
+              Tìm kiếm sản phẩm
+            </label>
+            <input id="header-search" type="search" maxlength="100" placeholder="Tìm kiếm laptop, thương hiệu, cấu hình...">
+            <button type="submit" aria-label="Tìm kiếm">
+              <svg class="icon" aria-hidden="true">
+                <use href="#i-search"/>
+              </svg>
+            </button>
+          </form>
+          <div class="header-actions">
+            <button id="wishlist-open" type="button" aria-label="Danh sách yêu thích" aria-haspopup="dialog">
+              <svg class="icon" aria-hidden="true">
+                <use href="#i-heart"/>
+              </svg>
+              <span class="wishlist-label">
+                Yêu thích
+              </span>
+              <small id="wishlist-count">
+                0
+              </small>
+            </button>
+            <div class="account-control">
+            <button id="auth-open" type="button" aria-label="Đăng nhập / Đăng ký" aria-haspopup="dialog">
+              <svg class="icon" aria-hidden="true">
+                <use href="#i-user"/>
+              </svg>
+              <span id="account-name">
+                Đăng nhập / Đăng ký
+              </span>
+            </button>
+              <nav id="account-menu" class="account-menu" aria-label="Tài khoản" hidden>
+                <button type="button" id="account-profile">Tài khoản của tôi</button>
+                <button type="button" id="account-orders">Lịch sử đơn hàng</button>
+                <button type="button" id="account-admin" hidden>Quản trị / Dashboard</button>
+                <button type="button" id="account-logout">Đăng xuất</button>
+              </nav>
+            </div>
+            <button id="cart-open" type="button" aria-label="Giỏ hàng, 0 sản phẩm">
+              <span class="cart-icon">
+                <svg class="icon" aria-hidden="true">
+                  <use href="#i-cart"/>
+                </svg>
+                <span id="cart-count">
+                  0
+                </span>
+              </span>
+              <span>
+                Giỏ hàng
+              </span>
+            </button>
+            <button id="menu-toggle" type="button" aria-label="Mở menu" aria-expanded="false" aria-controls="main-nav">
+              <svg class="icon" aria-hidden="true">
+                <use href="#i-menu"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="navigation">
+          <nav id="main-nav" class="shell header-nav" aria-label="Điều hướng chính">
+            <a class="nav-link" href="#home">
+              Trang chủ
+            </a>
+            <a class="nav-link" href="#products" data-show-all>
+              Sản phẩm
+            </a>
+            <a class="nav-link" href="#products" data-collection="gaming">
+              Laptop Gaming
+            </a>
+            <a class="nav-link" href="#products" data-collection="office">
+              Laptop văn phòng
+            </a>
+            <a class="nav-link" href="#categories">
+              Thương hiệu
+            </a>
+            <a class="nav-link" href="#products" data-collection="deals">
+              Khuyến mãi
+            </a>
+            <a class="nav-link" href="#blog">
+              Góc công nghệ
+            </a>
+            <a class="nav-link" href="#contact">
+              Liên hệ
+            </a>
+            <a class="nav-link" href="#support">
+              Hỗ trợ
+            </a>
+          </nav>
+        </div>
+      </header>
+      <main class="shell">
+        <section id="home-view" aria-labelledby="home-title">
+          <h1 id="home-title" class="sr-only">
+            T-TECH — Laptop cho học tập, làm việc và gaming
+          </h1>
+          <section class="hero" aria-label="Bộ sưu tập laptop" aria-roledescription="trình chiếu" tabindex="0">
+            <div class="hero-track">
+              <article class="hero-slide is-active" role="group" aria-roledescription="trang chiếu" aria-label="1 trên 3: ASUS ROG Strix G16 G614PH-S5101W" >
+                <div class="hero-copy">
+                  <span class="hero-label">
+                    <span aria-hidden="true">
+                      ●
+                    </span>
+                    GAMING COLLECTION 2026
+                  </span>
+                  <h2>
+                    Khám phá ASUS ROG.
+                    <br>
+                    <em>
+                      Bứt phá mọi giới hạn.
+                    </em>
+                  </h2>
+                  <p>
+                    Laptop Gaming hiệu năng cao dành cho Gaming, Coding và sáng tạo.
+                  </p>
+                  <div class="hero-actions">
+                    <a class="btn btn-primary" href="#product/11">
+                      Khám phá ngay
+                      <svg class="icon" aria-hidden="true">
+                        <use href="#i-arrow"/>
+                      </svg>
+                    </a>
+                    <a class="btn btn-secondary" href="#products" data-show-all>
+                      Tất cả laptop
+                    </a>
+                  </div>
+                </div>
+                <figure class="hero-visual">
+                  
+                  <img src="./assets/images/laptop-asus-rog-strix-g16-g614ph-s5101w.png" alt="ASUS ROG Strix G16 G614PH-S5101W" width="800" height="800" fetchpriority="high" decoding="async">
+                </figure>
+              </article>
+              <article class="hero-slide" role="group" aria-roledescription="trang chiếu" aria-label="2 trên 3: MSI Katana 15 B13VEK-2440VN" aria-hidden="true" inert>
+                <div class="hero-copy">
+                  <span class="hero-label">
+                    <span aria-hidden="true">
+                      ●
+                    </span>
+                    MSI · PERFORMANCE SERIES
+                  </span>
+                  <h2>
+                    MSI Katana 15.
+                    <br>
+                    <em>
+                      Sẵn sàng chiến thắng.
+                    </em>
+                  </h2>
+                  <p>
+                    Sẵn sàng cho trận đấu tiếp theo. Khám phá cấu hình MSI cho gaming và đa nhiệm.
+                  </p>
+                  <div class="hero-actions">
+                    <a class="btn btn-primary" href="#product/18">
+                      Khám phá ngay
+                      <svg class="icon" aria-hidden="true">
+                        <use href="#i-arrow"/>
+                      </svg>
+                    </a>
+                    <button type="button" class="btn btn-secondary" data-hero-brand="MSI">
+                      Khám phá MSI
+                    </button>
+                  </div>
+                </div>
+                <figure class="hero-visual">
+                  <img src="./assets/images/laptop-msi-katana-15-b13vek-2440vn.png" alt="MSI Katana 15 B13VEK-2440VN" width="800" height="800" loading="lazy" decoding="async">
+                </figure>
+              </article>
+              <article class="hero-slide" role="group" aria-roledescription="trang chiếu" aria-label="3 trên 3: Lenovo LOQ 15ARP10E 83S000DEVN" aria-hidden="true" inert>
+                <div class="hero-copy">
+                  <span class="hero-label">
+                    <span aria-hidden="true">
+                      ●
+                    </span>
+                    BACK TO SCHOOL · T-TECH
+                  </span>
+                  <h2>
+                    Lenovo LOQ.
+                    <br>
+                    <em>
+                      Chinh phục đam mê.
+                    </em>
+                  </h2>
+                  <p>
+                    Từ dòng code đầu tiên đến ý tưởng lớn. Tìm chiếc laptop đồng hành cùng bạn.
+                  </p>
+                  <div class="hero-actions">
+                    <a class="btn btn-primary" href="#product/1">
+                      Khám phá ngay
+                      <svg class="icon" aria-hidden="true">
+                        <use href="#i-arrow"/>
+                      </svg>
+                    </a>
+                    <a class="btn btn-secondary" href="#products" data-show-all>
+                      Tất cả laptop
+                    </a>
+                  </div>
+                </div>
+                <figure class="hero-visual">
+                  <img src="./assets/images/laptop-lenovo-loq-15arp10e-83s000devn.png" alt="Lenovo LOQ 15ARP10E 83S000DEVN" width="800" height="800" loading="lazy" decoding="async">
+                </figure>
+              </article>
+            </div>
+            <div class="hero-controls">
+              <span class="hero-index" aria-hidden="true">
+                01
+                <span>
+                  / 03
+                </span>
+              </span>
+              <div class="slider-dots">
+                <button type="button" class="slider-dot" aria-label="Đến banner 1" aria-pressed="true">
+                  <span>
+                  </span>
+                </button>
+                <button type="button" class="slider-dot" aria-label="Đến banner 2" aria-pressed="false">
+                  <span>
+                  </span>
+                </button>
+                <button type="button" class="slider-dot" aria-label="Đến banner 3" aria-pressed="false">
+                  <span>
+                  </span>
+                </button>
+              </div>
+              <button class="slider-pause" type="button" aria-label="Tạm dừng tự chuyển banner" aria-pressed="false">
+                Ⅱ
+              </button>
+              <button class="slider-prev" type="button" aria-label="Banner trước">
+                ‹
+              </button>
+              <button class="slider-next" type="button" aria-label="Banner tiếp theo">
+                ›
+              </button>
+            </div>
+            <p id="slider-status" class="sr-only" role="status">
+            </p>
+          </section>
+          <section id="categories" class="category-section" aria-labelledby="category-title">
+            <header class="section-heading">
+              <h2 id="category-title">
+                Thương hiệu nổi bật
+              </h2>
+            </header>
+            <nav class="category-shortcuts" aria-label="Khám phá laptop theo thương hiệu">
+              <a class="category-shortcut" href="#products" data-home-brand="ASUS">
+                <figure>
+                  <img src="./assets/images/laptop-asus-rog-strix-g16-g614ph-s5101w.png" alt="" width="640" height="480" loading="lazy" decoding="async">
+                  <figcaption>
+                    ASUS
+                  </figcaption>
+                </figure>
+              </a>
+              <a class="category-shortcut" href="#products" data-home-brand="MSI">
+                <figure>
+                  <img src="./assets/images/laptop-msi-katana-15-b13vek-2440vn.png" alt="" width="640" height="480" loading="lazy" decoding="async">
+                  <figcaption>
+                    MSI
+                  </figcaption>
+                </figure>
+              </a>
+              <a class="category-shortcut" href="#products" data-home-brand="Lenovo">
+                <figure>
+                  <img src="./assets/images/laptop-lenovo-loq-15arp10e-83s000devn.png" alt="" width="640" height="480" loading="lazy" decoding="async">
+                  <figcaption>
+                    Lenovo
+                  </figcaption>
+                </figure>
+              </a>
+              <a class="category-shortcut" href="#products" data-home-brand="Acer">
+                <figure>
+                  <img src="./assets/images/laptop-acer-gaming-aspire-7-a715-59g-59rd.png" alt="" width="640" height="480" loading="lazy" decoding="async">
+                  <figcaption>
+                    Acer
+                  </figcaption>
+                </figure>
+              </a>
+              <a class="category-shortcut" href="#products" data-home-brand="HP">
+                <figure>
+                  <img src="./assets/images/laptop-hp-victus-15-fa2731tx-b85lnpa.png" alt="" width="640" height="480" loading="lazy" decoding="async">
+                  <figcaption>
+                    HP
+                  </figcaption>
+                </figure>
+              </a>
+              <a class="category-shortcut" href="#products" data-home-brand="Dell">
+                <figure>
+                  <img src="./assets/images/dell-alienware-15-da15265-ryzen-5-220.jpg" alt="" width="640" height="480" loading="lazy" decoding="async">
+                  <figcaption>
+                    Dell
+                  </figcaption>
+                </figure>
+              </a>
+              <a class="category-shortcut" href="#products" data-home-brand="Apple">
+                <figure>
+                  <img src="./assets/images/macbook-air-13-m5-10-cpu-8-gpu-16gb-512gb.png" alt="" width="640" height="480" loading="lazy" decoding="async">
+                  <figcaption>
+                    Apple
+                  </figcaption>
+                </figure>
+              </a>
+            </nav>
+          </section>
+          <section class="home-section" aria-labelledby="featured-title">
+            <header class="section-heading">
+              <h2 id="featured-title">
+                Laptop nổi bật
+              </h2>
+              <a class="view-all" href="#products" data-show-all>
+                Xem tất cả
+                <span class="sr-only">
+                  sản phẩm
+                </span>
+              </a>
+            </header>
+            <p id="home-loading" class="home-status" role="status">
+              Đang tải những chiếc laptop dành cho bạn…
+            </p>
+            <section id="home-error" class="catalog-message error-state" aria-labelledby="home-error-title" hidden>
+              <h3 id="home-error-title">
+                Không thể tải sản phẩm
+              </h3>
+              <p>
+                Vui lòng thử lại.
+              </p>
+              <button type="button" class="btn btn-primary" id="retry-home">
+                Thử lại
+              </button>
+            </section>
+            <div id="featured-products" class="home-product-grid" aria-busy="true">
+            </div>
+          </section>
+          <section class="home-section" aria-labelledby="discover-title">
+            <header class="section-heading">
+              <h2 id="discover-title">
+                Khám phá thêm
+              </h2>
+              <a class="view-all" href="#products" data-show-all>
+                Xem tất cả
+                <span class="sr-only">
+                  sản phẩm
+                </span>
+              </a>
+            </header>
+            <div class="promotion-pair">
+              <article class="promotion-tile promotion-apple">
+                <header>
+                  <span class="promotion-brand">
+                    APPLE MACBOOK
+                  </span>
+                  <h3>
+                    Mỏng nhẹ.
+                    <br>
+                    Cảm hứng lớn.
+                  </h3>
+                  <p>
+                    Đồng hành cùng mọi ý tưởng.
+                  </p>
+                  <a class="banner-button" href="#product/35">
+                    Khám phá ngay
+                  </a>
+                </header>
+                <img src="./assets/images/macbook-air-13-m5-10-cpu-8-gpu-16gb-512gb.png" alt="MacBook Air M5 13 inch 2026 10CPU 8GPU 16GB 512GB" width="640" height="480" loading="lazy" decoding="async">
+              </article>
+              <article class="promotion-tile promotion-gaming">
+                <header>
+                  <span class="promotion-brand">
+                    LENOVO LEGION
+                  </span>
+                  <h3>
+                    Hiệu năng mạnh.
+                    <br>
+                    Chơi hết mình.
+                  </h3>
+                  <p>
+                    Không gian riêng của game thủ.
+                  </p>
+                  <a class="banner-button" href="#product/7">
+                    Xem chi tiết
+                  </a>
+                </header>
+                <img src="./assets/images/laptop-lenovo-legion-7-16iax10-83ky001uvn.png" alt="Laptop Lenovo Legion 7 16IAX10 83KY001UVN" width="640" height="480" loading="lazy" decoding="async">
+              </article>
+            </div>
+            <div id="discovery-products" class="discovery-grid" aria-label="Laptop đáng khám phá">
+            </div>
+          </section>
+          <section class="wide-promotion" aria-labelledby="wide-promotion-title">
+            <img class="promotion-side promotion-left" src="./assets/images/apple-macbook-air-13-m4-10cpu-8gpu-16gb-256gb-2025.png" alt="" width="640" height="480" loading="lazy" decoding="async">
+            <header>
+              <span class="promotion-brand">
+                APPLE MACBOOK AIR
+              </span>
+              <h2 id="wide-promotion-title">
+                Nhẹ hành trang.
+                <br>
+                Rộng khả năng.
+              </h2>
+              <p>
+                Khám phá thế giới MacBook tại T-TECH.
+              </p>
+              <a class="btn btn-primary" href="#products" data-home-brand="Apple">
+                Xem bộ sưu tập
+              </a>
+            </header>
+            <img class="promotion-side promotion-right" src="./assets/images/macbook-air-m2-2022-16gb-512gb.jpg" alt="" width="640" height="480" loading="lazy" decoding="async">
+          </section>
+          <section class="home-section" aria-labelledby="deals-title">
+            <header class="section-heading">
+              <h2 id="deals-title">
+                Ưu đãi đáng chú ý
+              </h2>
+              <a class="view-all" href="#products" data-collection="deals">
+                Xem tất cả
+                <span class="sr-only">
+                  sản phẩm
+                </span>
+              </a>
+            </header>
+            <div id="deal-products" class="home-product-grid deal-grid">
+            </div>
+          </section>
+          <section id="blog" class="home-section" aria-labelledby="blog-title">
+            <header class="section-heading">
+              <h2 id="blog-title">
+                Góc công nghệ
+              </h2>
+              <a class="view-all" href="#support">
+                Tư vấn chọn máy
+              </a>
+            </header>
+            <div class="editorial-grid">
+              <article class="editorial-card">
+                <figure>
+                  <img src="./assets/images/laptop-lenovo-loq-15arp10e-83s000devn.png" alt="Laptop Lenovo LOQ dành cho gaming" width="640" height="480" loading="lazy" decoding="async">
+                  <figcaption>
+                    LỰA CHỌN THEO NHU CẦU
+                  </figcaption>
+                </figure>
+                <h3>
+                  Chọn laptop gaming: bắt đầu từ đâu?
+                </h3>
+                <p>
+                  Cân bằng CPU, GPU và màn hình để chọn cấu hình phù hợp.
+                </p>
+                <details>
+                  <summary>
+                    Đọc tiếp
+                  </summary>
+                  <p>
+                    Xác định tựa game và độ phân giải bạn muốn chơi. So sánh GPU cùng công suất thực tế, hệ thống tản nhiệt và khả năng nâng cấp RAM. Luôn đối chiếu thông số theo đúng mã máy trước khi mua.
+                  </p>
+                </details>
+              </article>
+              <article class="editorial-card">
+                <figure>
+                  <img src="./assets/images/macbook-air-13-m5-10-cpu-8-gpu-16gb-512gb.png" alt="MacBook Air với thiết kế mỏng nhẹ" width="640" height="480" loading="lazy" decoding="async">
+                  <figcaption>
+                    HỌC TẬP
+                    &
+                    LÀM VIỆC
+                  </figcaption>
+                </figure>
+                <h3>
+                  Một chiếc laptop cho ngày năng động.
+                </h3>
+                <p>
+                  Ưu tiên sự gọn nhẹ và các ứng dụng bạn sử dụng mỗi ngày.
+                </p>
+                <details>
+                  <summary>
+                    Đọc tiếp
+                  </summary>
+                  <p>
+                    Kiểm tra khả năng tương thích phần mềm trước khi chọn hệ điều hành. Cân nhắc trọng lượng cả máy lẫn bộ sạc, cổng kết nối và kích thước màn hình khi thường xuyên di chuyển.
+                  </p>
+                </details>
+              </article>
+              <article class="editorial-card">
+                <figure>
+                  <img src="./assets/images/laptop-asus-rog-strix-g16-g614ph-s5101w.png" alt="ASUS ROG Strix G16" width="640" height="480" loading="lazy" decoding="async">
+                  <figcaption>
+                    TÌM HIỂU CẤU HÌNH
+                  </figcaption>
+                </figure>
+                <h3>
+                  RAM và SSD: chọn sao cho phù hợp?
+                </h3>
+                <p>
+                  Hiểu nhu cầu lưu trữ và đa nhiệm trước khi nâng cấp.
+                </p>
+                <details>
+                  <summary>
+                    Đọc tiếp
+                  </summary>
+                  <p>
+                    RAM phục vụ các ứng dụng đang chạy; SSD lưu trữ hệ điều hành, phần mềm và dữ liệu. Kiểm tra số khe, chuẩn tương thích và giới hạn nâng cấp của đúng mã laptop, vì một số mẫu sử dụng RAM hàn trên bo mạch.
+                  </p>
+                </details>
+              </article>
+            </div>
+          </section>
+          <h2 class="sr-only">
+            Dịch vụ và hỗ trợ T-TECH
+          </h2>
+          <section class="trust-section" aria-label="Dịch vụ T-TECH">
+            <article>
+              <svg class="icon" aria-hidden="true">
+                <use href="#i-truck"/>
+              </svg>
+              <div>
+                <h3>
+                  Giao hàng toàn quốc
+                </h3>
+                <p>
+                  Liên hệ để được tư vấn phương thức giao hàng phù hợp.
+                </p>
+              </div>
+            </article>
+            <article>
+              <svg class="icon" aria-hidden="true">
+                <use href="#i-shield"/>
+              </svg>
+              <div>
+                <h3>
+                  Bảo hành chính hãng
+                </h3>
+                <p>
+                  Tìm hiểu chính sách bảo hành theo từng sản phẩm.
+                </p>
+              </div>
+            </article>
+            <article>
+              <svg class="icon" aria-hidden="true">
+                <use href="#i-disk"/>
+              </svg>
+              <div>
+                <h3>
+                  Thanh toán linh hoạt
+                </h3>
+                <p>
+                  Kiểm tra giỏ hàng và theo dõi đơn mua của bạn.
+                </p>
+              </div>
+            </article>
+            <article>
+              <svg class="icon" aria-hidden="true">
+                <use href="#i-user"/>
+              </svg>
+              <div>
+                <h3>
+                  Tư vấn chuyên sâu
+                </h3>
+                <p>
+                  Chọn cấu hình phù hợp với học tập, công việc và giải trí.
+                </p>
+              </div>
+            </article>
+          </section>
+        </section>
+        <section id="catalog-view" aria-label="Danh sách laptop" hidden>
+          <nav class="breadcrumb" aria-label="Đường dẫn">
+            <a href="#home">
+              ⌂
+              &nbsp;
+              Trang chủ
+            </a>
+            <span>
+              /
+            </span>
+            <span aria-current="page">
+              Laptop
+            </span>
+          </nav>
+          <section id="products" aria-labelledby="catalog-title" tabindex="-1">
+            <div class="category-heading">
+              <div>
+                <div class="heading-line">
+                  <h1 id="catalog-title">
+                    Laptop nổi bật
+                    <span class="accent-dot">
+                      .
+                    </span>
+                  </h1>
+                  <span id="product-count" role="status">
+                  </span>
+                </div>
+                <p>
+                  Hiệu năng bạn cần. Phong cách bạn chọn. Khám phá chiếc laptop dành riêng cho bạn.
+                </p>
+              </div>
+              <div class="category-benefits">
+                <span>
+                  <svg class="icon" aria-hidden="true">
+                    <use href="#i-shield"/>
+                  </svg>
+                  Thông tin sản phẩm
+                </span>
+                <span>
+                  <svg class="icon" aria-hidden="true">
+                    <use href="#i-check"/>
+                  </svg>
+                  Lựa chọn phù hợp
+                </span>
+                <span>
+                  <svg class="icon" aria-hidden="true">
+                    <use href="#i-user"/>
+                  </svg>
+                  Tư vấn tận tâm
+                </span>
+              </div>
+            </div>
+            <div id="brand-filters" class="brand-selector" role="group" aria-label="Lọc thương hiệu">
+              <button type="button" class="brand-card" data-brand="" aria-pressed="true">
+                <svg class="icon" aria-hidden="true">
+                  <use href="#i-menu"/>
+                </svg>
+                Tất cả
+              </button>
+              <button type="button" class="brand-card" data-brand="ASUS" aria-pressed="false">
+                <img src="./assets/images/asus-logo.jpg" alt="" width="34" height="24">
+                ASUS
+              </button>
+              <button type="button" class="brand-card" data-brand="MSI" aria-pressed="false">
+                <img src="./assets/images/msi-logo.jpg" alt="" width="34" height="24">
+                MSI
+              </button>
+              <button type="button" class="brand-card" data-brand="Dell" aria-pressed="false">
+                <img src="./assets/images/dell-logo.jpg" alt="" width="34" height="24">
+                Dell
+              </button>
+              <button type="button" class="brand-card" data-brand="HP" aria-pressed="false">
+                <img src="./assets/images/hp-logo.jpg" alt="" width="34" height="24">
+                HP
+              </button>
+              <button type="button" class="brand-card" data-brand="Acer" aria-pressed="false">
+                <img src="./assets/images/acer-logo.jpg" alt="" width="34" height="24">
+                Acer
+              </button>
+              <button type="button" class="brand-card" data-brand="Lenovo" aria-pressed="false">
+                <img src="./assets/images/lenovo-logo.jpg" alt="" width="34" height="24">
+                Lenovo
+              </button>
+              <button type="button" class="brand-card" data-brand="Apple" aria-pressed="false">
+                <svg class="icon" aria-hidden="true">
+                  <use href="#i-apple"/>
+                </svg>
+                Apple
+              </button>
+            </div>
+            <div class="catalog-toolbar" id="catalog-results">
+              <div class="active-filter-area">
+                <div class="active-filter-line">
+                  <span>
+                    Bộ lọc áp dụng:
+                  </span>
+                  <div id="active-filters" aria-live="polite">
+                  </div>
+                </div>
+                <button id="reset-filters" type="button" class="text-action">
+                  Xóa tất cả bộ lọc
+                </button>
+              </div>
+              <div class="search-sort">
+                <form id="search-form" role="search" class="listing-search">
+                  <label for="search" class="sr-only">
+                    Tìm tên laptop, thương hiệu
+                  </label>
+                  <input id="search" type="search" maxlength="100" placeholder="Tìm tên laptop, thương hiệu...">
+                  <button type="submit" aria-label="Tìm laptop">
+                    <svg class="icon" aria-hidden="true">
+                      <use href="#i-search"/>
+                    </svg>
+                  </button>
+                </form>
+                <div class="toolbar-controls">
+                  <button id="filter-open" class="btn btn-secondary" type="button">
+                    <svg class="icon" aria-hidden="true">
+                      <use href="#i-filter"/>
+                    </svg>
+                    Bộ lọc
+                  </button>
+                  <label class="sort-control" for="sort">
+                    Sắp xếp:
+                    <select id="sort">
+                      <option value="featured">
+                        Nổi bật
+                      </option>
+                      <option value="asc">
+                        Giá tăng dần
+                      </option>
+                      <option value="desc">
+                        Giá giảm dần
+                      </option>
+                    </select>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="catalog-layout">
+              <div id="sidebar-slot">
+                <aside id="filter-sidebar" class="filter-sidebar" aria-label="Bộ lọc sản phẩm">
+                  <div class="filter-title">
+                    <svg class="icon" aria-hidden="true">
+                      <use href="#i-filter"/>
+                    </svg>
+                    <h2>
+                      Bộ lọc chi tiết
+                    </h2>
+                    <button type="button" data-reset-filters>
+                      Thiết lập lại
+                    </button>
+                  </div>
+                  <details class="filter-group" open>
+                    <summary>
+                      Khoảng giá
+                    </summary>
+                    <div class="filter-options">
+                      <label class="filter-option">
+                        <input type="radio" name="price-choice" value="all" checked>
+                        Tất cả mức giá
+                      </label>
+                      <label class="filter-option">
+                        <input type="radio" name="price-choice" value="under25" >
+                        Dưới 25 triệu
+                      </label>
+                      <label class="filter-option">
+                        <input type="radio" name="price-choice" value="25to35" >
+                        25 – dưới 35 triệu
+                      </label>
+                      <label class="filter-option">
+                        <input type="radio" name="price-choice" value="35plus" >
+                        Từ 35 triệu
+                      </label>
+                    </div>
+                    <select id="price-filter" hidden aria-label="Khoảng giá">
+                      <option value="all">
+                        Tất cả mức giá
+                      </option>
+                      <option value="under25">
+                        Dưới 25 triệu
+                      </option>
+                      <option value="25to35">
+                        25 – dưới 35 triệu
+                      </option>
+                      <option value="35plus">
+                        Từ 35 triệu
+                      </option>
+                    </select>
+                  </details>
+                  <details class="filter-group" open>
+                    <summary>
+                      Thương hiệu
+                    </summary>
+                    <div class="filter-options">
+                      <label class="filter-option">
+                        <input type="radio" name="brand-choice" value="" checked>
+                        Tất cả thương hiệu
+                      </label>
+                      <label class="filter-option">
+                        <input type="radio" name="brand-choice" value="ASUS" >
+                        ASUS
+                      </label>
+                      <label class="filter-option">
+                        <input type="radio" name="brand-choice" value="MSI" >
+                        MSI
+                      </label>
+                      <label class="filter-option">
+                        <input type="radio" name="brand-choice" value="Dell" >
+                        Dell
+                      </label>
+                      <label class="filter-option">
+                        <input type="radio" name="brand-choice" value="HP" >
+                        HP
+                      </label>
+                      <label class="filter-option">
+                        <input type="radio" name="brand-choice" value="Acer" >
+                        Acer
+                      </label>
+                      <label class="filter-option">
+                        <input type="radio" name="brand-choice" value="Lenovo" >
+                        Lenovo
+                      </label>
+                      <label class="filter-option">
+                        <input type="radio" name="brand-choice" value="Apple" >
+                        Apple
+                      </label>
+                    </div>
+                  </details>
+                  <details class="filter-group">
+                    <summary>
+                      Nhu cầu sử dụng
+                    </summary>
+                    <p class="filter-unavailable">
+                      Bộ lọc này chưa được hỗ trợ.
+                    </p>
+                  </details>
+                  <details class="filter-group">
+                    <summary>
+                      CPU / Vi xử lý
+                    </summary>
+                    <p class="filter-unavailable">
+                      Bộ lọc này chưa được hỗ trợ.
+                    </p>
+                  </details>
+                  <details class="filter-group">
+                    <summary>
+                      Card đồ họa (GPU)
+                    </summary>
+                    <p class="filter-unavailable">
+                      Bộ lọc này chưa được hỗ trợ.
+                    </p>
+                  </details>
+                  <details class="filter-group">
+                    <summary>
+                      RAM
+                    </summary>
+                    <p class="filter-unavailable">
+                      Bộ lọc này chưa được hỗ trợ.
+                    </p>
+                  </details>
+                  <details class="filter-group">
+                    <summary>
+                      SSD
+                    </summary>
+                    <p class="filter-unavailable">
+                      Bộ lọc này chưa được hỗ trợ.
+                    </p>
+                  </details>
+                  <details class="filter-group">
+                    <summary>
+                      Màn hình
+                    </summary>
+                    <p class="filter-unavailable">
+                      Bộ lọc này chưa được hỗ trợ.
+                    </p>
+                  </details>
+                  <details class="filter-group">
+                    <summary>
+                      Tần số quét
+                    </summary>
+                    <p class="filter-unavailable">
+                      Bộ lọc này chưa được hỗ trợ.
+                    </p>
+                  </details>
+                  <button class="btn btn-secondary filter-reset" type="button" data-reset-filters>
+                    Xóa bộ lọc
+                  </button>
+                </aside>
+              </div>
+              <div class="listing-content">
+                <h2 class="sr-only">
+                  Kết quả tìm kiếm laptop
+                </h2>
+                <p id="catalog-loading" class="catalog-message" role="status">
+                  Đang tải sản phẩm…
+                </p>
+                <div id="catalog-error" class="catalog-message error-state" hidden>
+                  <h2>
+                    Không thể tải sản phẩm
+                  </h2>
+                  <p id="catalog-error-message" role="alert">
+                    Vui lòng thử lại.
+                  </p>
+                  <button id="retry-products" type="button" class="btn btn-primary">
+                    Thử lại
+                  </button>
+                </div>
+                <div id="product-grid" class="product-grid" aria-busy="true">
+                </div>
+                <div id="empty-state" class="catalog-message" hidden>
+                  <h2>
+                    Chưa có laptop phù hợp
+                  </h2>
+                  <p>
+                    Thử đổi thương hiệu, từ khóa hoặc mức giá.
+                  </p>
+                  <button id="empty-reset" type="button" class="btn btn-primary">
+                    Xem tất cả laptop
+                  </button>
+                </div>
+                <p id="results-summary" class="results-summary" role="status">
+                </p>
+              </div>
+            </div>
+          </section>
+        </section>
+        <section id="product-detail" hidden aria-label="Chi tiết sản phẩm" tabindex="-1">
+        </section>
+        <section id="commerce-view" hidden aria-label="Thanh toán và đơn hàng"></section>
+      </main>
+      <section class="newsletter" aria-labelledby="newsletter-title">
+        <div class="shell newsletter-inner">
+          <h2 id="newsletter-title">
+            Kết nối cùng T-TECH
+          </h2>
+          <form id="newsletter-form">
+            <label class="sr-only" for="newsletter-email">
+              Địa chỉ email của bạn
+            </label>
+            <input type="email" id="newsletter-email" name="email" placeholder="Email của bạn" autocomplete="email" required maxlength="254" aria-describedby="newsletter-note">
+            <button type="submit">
+              Đăng ký
+            </button>
+          </form>
+          <p id="newsletter-note" role="status">
+            Bản trải nghiệm — chưa hỗ trợ gửi bản tin.
+          </p>
+        </div>
+      </section>
+      <footer id="about" class="site-footer">
+        <div class="shell footer-grid">
+          <nav aria-labelledby="footer-customer">
+            <h2 id="footer-customer">
+              Dành cho bạn
+            </h2>
+            <a href="#products" data-show-all>
+              Tất cả laptop
+            </a>
+            <a href="#products" data-collection="gaming">
+              Laptop Gaming
+            </a>
+            <a href="#products" data-collection="office">
+              Laptop văn phòng
+            </a>
+            <a href="#products" data-collection="deals">
+              Laptop ưu đãi
+            </a>
+            <button type="button" data-open-auth>
+              Tài khoản của bạn
+            </button>
+          </nav>
+          <nav aria-labelledby="footer-services">
+            <h2 id="footer-services">
+              Dịch vụ
+            </h2>
+            <a href="#support">
+              Tư vấn cấu hình
+            </a>
+            <a href="#support">
+              Thông tin bảo hành
+            </a>
+            <a href="#support">
+              Hướng dẫn mua hàng
+            </a>
+            <a href="#blog">
+              Góc công nghệ
+            </a>
+          </nav>
+          <section id="support" aria-labelledby="footer-help">
+            <h2 id="footer-help">
+              Hỗ trợ khách hàng
+            </h2>
+            <details>
+              <summary>
+                Làm sao chọn đúng laptop?
+              </summary>
+              <p>
+                Xác định nhu cầu học tập, làm việc hoặc gaming; sau đó đối chiếu CPU, GPU, RAM, SSD và màn hình theo đúng mã máy.
+              </p>
+            </details>
+            <details>
+              <summary>
+                Giỏ hàng được lưu ở đâu?
+              </summary>
+              <p>
+                Giỏ hàng được lưu trên trình duyệt bạn đang sử dụng. Bạn có thể thêm sản phẩm và thay đổi số lượng trước khi xem tổng tiền.
+              </p>
+            </details>
+            <details>
+              <summary>
+                Có thể thanh toán ngay không?
+              </summary>
+              <p>
+                Bạn có thể đặt hàng và xem lịch sử trong tài khoản. Các phương thức khả dụng được hiển thị tại bước đặt hàng; trạng thái thanh toán được xác nhận từ backend.
+              </p>
+            </details>
+          </section>
+          <section aria-labelledby="footer-about">
+            <h2 id="footer-about">
+              Về T-TECH
+            </h2>
+            <p>
+              Công nghệ cho mọi đam mê.
+            </p>
+            <p>
+              Khám phá laptop phù hợp với học tập, công việc và sáng tạo.
+            </p>
+            <a href="#home">
+              Khám phá cửa hàng
+            </a>
+          </section>
+          <nav id="contact" aria-labelledby="footer-links">
+            <h2 id="footer-links">
+              Liên kết hữu ích
+            </h2>
+            <a href="#categories">
+              Thương hiệu laptop
+            </a>
+            <a href="#blog">
+              Kinh nghiệm chọn máy
+            </a>
+            <a href="#support">
+              Câu hỏi thường gặp
+            </a>
+            <a href="#support">
+              Liên hệ
+              &
+              hỗ trợ
+            </a>
+          </nav>
+        </div>
+        <div class="footer-signature">
+          <a class="brand" href="#home" aria-label="T-TECH — Trang chủ">
+            <span class="brand-emblem">
+              T
+            </span>
+            <span>
+              T-TECH
+              <small>
+                Công nghệ cho mọi đam mê.
+              </small>
+            </span>
+          </a>
+          <p>
+            Giá, thông số và hình ảnh phục vụ trải nghiệm demo.
+          </p>
+        </div>
+        <div class="footer-bottom">
+          <div class="shell">
+            <p>
+              ©
+              <span id="year">
+              </span>
+              T-TECH. Công nghệ cho mọi đam mê.
+            </p>
+            <a href="#home">
+              Về đầu trang ↑
+            </a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <dialog id="wishlist-modal" aria-labelledby="wishlist-title">
+      <div class="drawer-heading">
+        <h2 id="wishlist-title">
+          Sản phẩm yêu thích
+        </h2>
+        <button type="button" data-close="wishlist-modal" aria-label="Đóng danh sách yêu thích">
+          <svg class="icon" aria-hidden="true">
+            <use href="#i-close"/>
+          </svg>
+        </button>
+      </div>
+      <div id="wishlist-items" class="product-grid">
+      </div>
+      <p id="wishlist-feedback" class="wishlist-feedback" role="status" hidden>
+      </p>
+      <p id="wishlist-empty" class="catalog-message">
+        Chưa có sản phẩm yêu thích. Nhấn biểu tượng trái tim để lưu chiếc laptop bạn muốn.
+      </p>
+    </dialog>
+    <dialog id="filter-modal" aria-labelledby="filter-modal-title">
+      <div class="drawer-heading">
+        <h2 id="filter-modal-title">
+          Bộ lọc sản phẩm
+        </h2>
+        <button type="button" data-close="filter-modal" aria-label="Đóng bộ lọc">
+          <svg class="icon" aria-hidden="true">
+            <use href="#i-close"/>
+          </svg>
+        </button>
+      </div>
+      <div id="drawer-filter-slot">
+      </div>
+      <div class="drawer-footer">
+        <button type="button" class="btn btn-primary" data-close="filter-modal">
+          Xem kết quả
+        </button>
+      </div>
+    </dialog>
+    <!-- Native dialog: giữ focus trong modal, hỗ trợ bàn phím và Escape. -->
+    <dialog id="auth-modal" aria-labelledby="auth-title" aria-describedby="auth-note">
+      <div class="p-6 sm:p-8">
+        <div class="flex items-start justify-between gap-4 mb-6">
+          <div>
+            <p class="text-[10px] font-bold tracking-widest text-red-600 mb-2">
+              CHÀO MỪNG ĐẾN T-TECH
+            </p>
+            <h2 id="auth-title" class="font-bold text-2xl">
+              Đăng nhập
+            </h2>
+          </div>
+          <button type="button" data-close="auth-modal" class="rounded-full bg-slate-100 p-2 hover:bg-red-50" aria-label="Đóng cửa sổ tài khoản">
+            <svg class="icon">
+              <use href="#i-close"/>
+            </svg>
+          </button>
+        </div>
+        <div class="flex bg-slate-100 rounded-lg p-1 mb-6" role="group" aria-label="Chọn biểu mẫu tài khoản">
+          <button id="login-tab" type="button" data-auth-mode="login" aria-pressed="true" class="flex-1 py-2 rounded-md text-sm font-semibold bg-white text-red-600 shadow-xs">
+            Đăng nhập
+          </button>
+          <button id="register-tab" type="button" data-auth-mode="register" aria-pressed="false" class="flex-1 py-2 rounded-md text-sm font-semibold text-slate-500">
+            Đăng ký
+          </button>
+        </div>
+        <form id="auth-form" novalidate>
+          <div id="name-field" class="mb-4" hidden>
+            <label for="auth-name" class="block text-xs font-semibold mb-2">
+              Họ và tên
+            </label>
+            <input id="auth-name" name="name" class="field" autocomplete="name" maxlength="80" placeholder="Nhập họ và tên" disabled aria-describedby="auth-name-error">
+            <p id="auth-name-error" class="auth-field-error" aria-live="polite" hidden></p>
+          </div>
+          <label for="auth-email" class="block text-xs font-semibold mb-2">
+            Email
+          </label>
+          <input id="auth-email" name="email" type="email" class="field mb-4" autocomplete="email" required maxlength="254" placeholder="ban@example.com" aria-describedby="auth-email-error">
+            <p id="auth-email-error" class="auth-field-error" aria-live="polite" hidden></p>
+          <label for="auth-password" class="block text-xs font-semibold mb-2">
+            Mật khẩu
+          </label>
+          <div class="relative mb-4">
+            <input id="auth-password" name="password" type="password" class="field pr-16" autocomplete="current-password" required minlength="8" maxlength="128" aria-describedby="password-hint auth-password-error" placeholder="Ít nhất 8 ký tự">
+            <button id="password-toggle" type="button" aria-label="Hiện mật khẩu" aria-pressed="false" class="absolute right-3 top-3 text-xs text-slate-500">
+              Hiện
+            </button>
+          </div>
+          <p id="auth-password-error" class="auth-field-error" aria-live="polite" hidden></p>
+          <p id="password-hint" class="text-[11px] text-slate-500 -mt-2 mb-4">
+            Mật khẩu cần có ít nhất 8 ký tự.
+          </p>
+          <div id="confirm-field" class="mb-4" hidden>
+            <label for="auth-confirm" class="block text-xs font-semibold mb-2">
+              Nhập lại mật khẩu
+            </label>
+            <div class="relative">
+            <input id="auth-confirm" name="confirm" type="password" class="field pr-16" autocomplete="new-password" minlength="8" maxlength="128" placeholder="Nhập lại mật khẩu" disabled aria-describedby="auth-confirm-error">
+              <button id="confirm-toggle" type="button" aria-label="Hiện mật khẩu xác nhận" aria-pressed="false" class="absolute right-3 top-3 text-xs text-slate-500">Hiện</button>
+            </div>
+            <p id="auth-confirm-error" class="auth-field-error" aria-live="polite" hidden></p>
+          </div>
+          <button id="auth-submit" type="submit" class="w-full bg-red-600 hover:bg-red-700 text-white font-bold text-sm rounded-lg py-3">
+            Đăng nhập
+          </button>
+          <p id="auth-feedback" class="text-sm text-green-700 mt-4 leading-relaxed" role="status">
+          </p>
+          <p id="auth-note" class="text-[11px] text-slate-500 leading-relaxed mt-4">
+            Mật khẩu được bảo vệ trên máy chủ. Phiên đăng nhập được lưu bằng cookie, không lưu mật khẩu trên trình duyệt.
+          </p>
+        </form>
+      </div>
+    </dialog>
+    <dialog id="account-modal" aria-labelledby="account-title">
+      <section class="p-6 sm:p-8">
+        <header class="flex items-center justify-between gap-4 mb-6">
+          <h2 id="account-title" class="font-bold text-2xl">Tài khoản của tôi</h2>
+          <button type="button" data-close="account-modal" aria-label="Đóng thông tin tài khoản"><svg class="icon" aria-hidden="true"><use href="#i-close"/></svg></button>
+        </header>
+        <dl class="account-details">
+          <div><dt>Họ tên</dt><dd id="profile-name"></dd></div>
+          <div><dt>Email</dt><dd id="profile-email"></dd></div>
+          <div id="profile-phone-row" hidden><dt>Số điện thoại</dt><dd id="profile-phone"></dd></div>
+          <div><dt>Vai trò</dt><dd id="profile-role"></dd></div>
+          <div><dt>Trạng thái</dt><dd id="profile-status"></dd></div>
+        </dl>
+        <section id="admin-summary" aria-labelledby="admin-title" hidden>
+          <h3 id="admin-title" class="font-semibold mt-6 mb-2">Tổng quan quản trị</h3>
+          <p id="admin-feedback" role="status"></p>
+          <section id="payment-admin" aria-label="Đối soát thanh toán"><h3>Đối soát ngân hàng</h3><button id="payment-admin-load" type="button" class="btn btn-secondary">Tải / Làm mới giao dịch</button><label for="payment-admin-filter">Lọc giao dịch</label><select id="payment-admin-filter" class="field"><option value="all">Tất cả</option><option value="matched">Đã đối soát</option><option value="unpaid">Đơn chưa thanh toán</option><option value="amount_mismatch">Sai số tiền</option><option value="unknown_order">Không tìm thấy đơn</option><option value="duplicate">Gửi lặp / Trùng mã</option><option value="review">Cần kiểm tra</option></select><p id="payment-admin-feedback" role="status"></p><section id="payment-admin-results" aria-label="Kết quả đối soát"></section></section>
+        </section>
+        <p id="account-feedback" class="auth-field-error" role="status"></p>
+        <button id="profile-logout" type="button" class="btn btn-secondary mt-6">Đăng xuất</button>
+      </section>
+    </dialog>
+    <dialog id="cart-modal" aria-labelledby="cart-title">
+      <div class="p-5 sm:p-7">
+        <div class="flex items-center justify-between gap-4 mb-2">
+          <div>
+            <p class="text-[10px] tracking-widest text-red-600 font-bold mb-1">
+              LỰA CHỌN CỦA BẠN
+            </p>
+            <h2 id="cart-title" class="text-xl font-bold">
+              Giỏ hàng
+            </h2>
+          </div>
+          <button type="button" data-close="cart-modal" class="rounded-full bg-slate-100 p-2 hover:bg-red-50" aria-label="Đóng giỏ hàng">
+            <svg class="icon">
+              <use href="#i-close"/>
+            </svg>
+          </button>
+        </div>
+          <label id="cart-selection" class="order-confirm"><input id="cart-select-all" type="checkbox"> Chọn tất cả · Đã chọn <span id="cart-selected-count">0</span> sản phẩm</label>
+          <div id="cart-items">
+        </div>
+        <div id="cart-empty" class="text-center py-10">
+          <svg class="icon w-12 h-12 mx-auto text-red-500 mb-4">
+            <use href="#i-cart"/>
+          </svg>
+          <h3 class="font-bold">
+            Giỏ hàng đang trống
+          </h3>
+          <p class="text-sm text-slate-500 mt-2">
+            Thêm một chiếc laptop bạn yêu thích nhé.
+          </p>
+          <button type="button" data-close="cart-modal" class="text-red-600 font-semibold mt-5">
+            Tiếp tục khám phá →
+          </button>
+        </div>
+        <div id="cart-summary" hidden>
+            <button type="button" class="text-action" data-coupon-open>Nhập / chọn mã khuyến mãi</button>
+          <div class="flex justify-between gap-3 items-center pt-5">
+            <span class="font-semibold">
+              Tạm tính
+            </span>
+            <strong id="cart-total" class="text-xl text-red-600">
+            </strong>
+          </div>
+          <p class="text-[11px] text-slate-500 mt-2">
+            Phí vận chuyển được tính tại bước thanh toán. Đơn được lưu khi bạn xác nhận đặt hàng.
+          </p>
+            <section id="cart-pricing" aria-live="polite" aria-label="Ưu đãi và tổng thanh toán"></section>
+          <div class="grid grid-cols-2 gap-3 mt-5">
+            <button type="button" data-close="cart-modal" class="border border-slate-200 rounded-lg py-3 text-xs sm:text-sm font-semibold">
+              Mua thêm sản phẩm
+            </button>
+            <button id="checkout" type="button" class="bg-red-600 hover:bg-red-700 text-white rounded-lg py-3 text-xs sm:text-sm font-bold">
+              Thanh toán
+            </button>
+          </div>
+          <p id="checkout-feedback" class="text-sm text-slate-600 mt-4 leading-relaxed" role="status">
+          </p>
+        </div>
+      </div>
+      <p id="dialog-toast" role="status" hidden>
+      </p>
+    </dialog>
+      <dialog id="coupon-modal" aria-labelledby="coupon-title">
+        <section class="p-5 sm:p-7">
+          <header class="flex items-center justify-between gap-4 mb-2">
+            <h2 id="coupon-title" class="text-xl font-bold">Nhập hoặc chọn mã khuyến mãi</h2>
+            <button type="button" data-close="coupon-modal" class="btn btn-secondary" aria-label="Đóng mã khuyến mãi">×</button>
+          </header>
+          <form id="coupon-form">
+            <label for="coupon-code" class="checkout-help">Mã khuyến mãi</label>
+            <input id="coupon-code" class="field" maxlength="40" required autocomplete="off" aria-describedby="coupon-message">
+            <button id="coupon-apply" type="submit" class="btn btn-primary">Áp dụng</button>
+          </form>
+          <p id="coupon-message" class="checkout-help" role="status"></p>
+          <section id="coupon-list" class="checkout-items" aria-label="Mã khuyến mãi khả dụng"></section>
+          <button type="button" id="coupon-remove" class="text-action">Bỏ mã đang áp dụng</button>
+        </section>
+      </dialog>
+    <div id="toast" class="toast" role="status" aria-live="polite" aria-atomic="true">
+    </div>
+    <noscript>
+      <p style="padding:20px;background:#fff0f0;color:#991b1b">
+        Vui lòng bật JavaScript để hiển thị sản phẩm, bộ lọc và giỏ hàng.
+      </p>
+    </noscript>
+  </body>
+</html>

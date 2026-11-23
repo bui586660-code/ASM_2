@@ -72,12 +72,23 @@
     }
 
     async function fetchProductData() {
+      // 1. Tự động dùng dữ liệu tĩnh nhúng sẵn (không cần bật terminal hay server backend)
+      if (Array.isArray(window.TTECH_PRODUCTS) && window.TTECH_PRODUCTS.length > 0) {
+        return window.TTECH_PRODUCTS;
+      }
       const controller = new AbortController();
       const timer = setTimeout(() => controller.abort(), 6000);
       try {
         const response = await fetch(PRODUCTS_API, { cache:'no-store', signal:controller.signal });
         if (!response.ok) throw new Error('Không tải được dữ liệu (HTTP ' + response.status + ').');
+        if ([204,205].includes(response.status) || !/^application\/(?:[\w.+-]+\+)?json(?:\s*;|$)/i.test(response.headers.get('Content-Type') || '')) throw new Error('Dữ liệu phải chứa danh sách products.');
         return await response.json();
+      } catch (error) {
+        try {
+          const staticRes = await fetch('./data/products.json');
+          if (staticRes.ok) return await staticRes.json();
+        } catch {}
+        throw error;
       } finally { clearTimeout(timer); }
     }
 
@@ -104,6 +115,7 @@
         cart.clear(); loadCart(); renderCart(); renderProducts(); renderHomeProducts(); updateWishlistBadge();
         $('#cart-open').disabled = false;
       } catch (error) {
+        console.warn('Product request rejected:', error.name);
         $('#product-count').textContent = 'Chưa tải được sản phẩm';
         $('#catalog-error-message').textContent = 'Vui lòng thử lại.';
         $('#catalog-error').hidden = false;

@@ -13,7 +13,13 @@
       "gpu": "NVIDIA GeForce RTX 3050 6GB GDDR6",
       "ram": "16GB DDR5-4800",
       "ssd": "512GB SSD",
-      "screen": "15.6″ · 1920 x 1080 (FullHD) · IPS · 144Hz"
+      "screen": "15.6″ · 1920 x 1080 (FullHD) · IPS · 144Hz",
+      "images": [
+        "./assets/images/laptop-lenovo-loq-15arp10e-83s000devn-angle-1.png",
+        "./assets/images/laptop-lenovo-loq-15arp10e-83s000devn-angle-2.png",
+        "./assets/images/laptop-lenovo-loq-15arp10e-83s000devn-angle-3.png",
+        "./assets/images/laptop-lenovo-loq-15arp10e-83s000devn-angle-4.png"
+      ]
     },
     {
       "id": 2,
@@ -28,7 +34,13 @@
       "gpu": "NVIDIA GeForce RTX 3050 6GB",
       "ram": "16GB DDR5 4800",
       "ssd": "512GB SSD",
-      "screen": "15.6″ · 1920 x 1080 (FullHD) · 144Hz"
+      "screen": "15.6″ · 1920 x 1080 (FullHD) · 144Hz",
+      "images": [
+        "./assets/images/laptop-lenovo-loq-15irx9-83dv003cvn-cu-tray-xuoc-angle-1.png",
+        "./assets/images/laptop-lenovo-loq-15irx9-83dv003cvn-cu-tray-xuoc-angle-2.png",
+        "./assets/images/laptop-lenovo-loq-15irx9-83dv003cvn-cu-tray-xuoc-angle-3.png",
+        "./assets/images/laptop-lenovo-loq-15irx9-83dv003cvn-cu-tray-xuoc-angle-4.png"
+      ]
     },
     {
       "id": 3,
@@ -43,7 +55,13 @@
       "gpu": "NVIDIA GeForce RTX 3050 6GB GDDR6",
       "ram": "16GB DDR5-4800",
       "ssd": "512GB SSD",
-      "screen": "15.6″ · 1920 x 1080 (FullHD) · IPS · 144Hz"
+      "screen": "15.6″ · 1920 x 1080 (FullHD) · IPS · 144Hz",
+      "images": [
+        "./assets/images/laptop-lenovo-loq-15arp10e-83s0007avn-angle-1.png",
+        "./assets/images/laptop-lenovo-loq-15arp10e-83s0007avn-angle-2.png",
+        "./assets/images/laptop-lenovo-loq-15arp10e-83s0007avn-angle-3.png",
+        "./assets/images/laptop-lenovo-loq-15arp10e-83s0007avn-angle-4.png"
+      ]
     },
     {
       "id": 4,
@@ -58,7 +76,13 @@
       "gpu": "NVIDIA GeForce RTX 3050 6GB GDDR6",
       "ram": "16GB DDR5-4800",
       "ssd": "512GB SSD",
-      "screen": "15.6″ · 1920 x 1080 (FullHD) · IPS · 144Hz"
+      "screen": "15.6″ · 1920 x 1080 (FullHD) · IPS · 144Hz",
+      "images": [
+        "./assets/images/laptop-lenovo-loq-essential-15arp10e-83s0000dvn-angle-1.png",
+        "./assets/images/laptop-lenovo-loq-essential-15arp10e-83s0000dvn-angle-2.png",
+        "./assets/images/laptop-lenovo-loq-essential-15arp10e-83s0000dvn-angle-3.png",
+        "./assets/images/laptop-lenovo-loq-essential-15arp10e-83s0000dvn-angle-4.png"
+      ]
     },
     {
       "id": 5,
@@ -73,7 +97,13 @@
       "gpu": "NVIDIA GeForce RTX 5050 8GB GDDR7",
       "ram": "16GB DDR5-5600",
       "ssd": "512GB SSD",
-      "screen": "15.3″ · 1920 x 1200 (WUXGA) · IPS · 165Hz"
+      "screen": "15.3″ · 1920 x 1200 (WUXGA) · IPS · 165Hz",
+      "images": [
+        "./assets/images/laptop-lenovo-loq-15ahp11-83tn0040vn-angle-1.png",
+        "./assets/images/laptop-lenovo-loq-15ahp11-83tn0040vn-angle-2.png",
+        "./assets/images/laptop-lenovo-loq-15ahp11-83tn0040vn-angle-3.png",
+        "./assets/images/laptop-lenovo-loq-15ahp11-83tn0040vn-angle-4.png"
+      ]
     },
     {
       "id": 6,
@@ -88,7 +118,13 @@
       "gpu": "NVIDIA GeForce RTX 5060 8GB GDDR7",
       "ram": "16GB DDR5-5600",
       "ssd": "512GB SSD",
-      "screen": "15.3″ · 1920 x 1200 (WUXGA) · IPS · 165Hz"
+      "screen": "15.3″ · 1920 x 1200 (WUXGA) · IPS · 165Hz",
+      "images": [
+        "./assets/images/laptop-lenovo-loq-15iph11-83sl000lvn-angle-1.png",
+        "./assets/images/laptop-lenovo-loq-15iph11-83sl000lvn-angle-2.png",
+        "./assets/images/laptop-lenovo-loq-15iph11-83sl000lvn-angle-3.png",
+        "./assets/images/laptop-lenovo-loq-15iph11-83sl000lvn-angle-4.png"
+      ]
     },
     {
       "id": 7,
@@ -103,7 +139,13 @@
       "gpu": "NVIDIA GeForce RTX 5060 8GB GDDR7",
       "ram": "32GB DDR5-5600",
       "ssd": "1TB SSD",
-      "screen": "16″ · 2560 x 1600 (WQXGA) · OLED · 240Hz"
+      "screen": "16″ · 2560 x 1600 (WQXGA) · OLED · 240Hz",
+      "images": [
+        "./assets/images/laptop-lenovo-legion-7-16iax10-83ky001uvn-angle-1.png",
+        "./assets/images/laptop-lenovo-legion-7-16iax10-83ky001uvn-angle-2.png",
+        "./assets/images/laptop-lenovo-legion-7-16iax10-83ky001uvn-angle-3.png",
+        "./assets/images/laptop-lenovo-legion-7-16iax10-83ky001uvn-angle-4.png"
+      ]
     },
     {
       "id": 8,
@@ -118,7 +160,13 @@
       "gpu": "NVIDIA GeForce RTX 5060 8GB GDDR7",
       "ram": "16GB DDR5-5600",
       "ssd": "512GB SSD",
-      "screen": "15.1″ · 2560 x 1600 (WQXGA) · OLED · 165Hz"
+      "screen": "15.1″ · 2560 x 1600 (WQXGA) · OLED · 165Hz",
+      "images": [
+        "./assets/images/laptop-lenovo-legion-5-15ahp11-83q7001jvn-angle-1.png",
+        "./assets/images/laptop-lenovo-legion-5-15ahp11-83q7001jvn-angle-2.png",
+        "./assets/images/laptop-lenovo-legion-5-15ahp11-83q7001jvn-angle-3.png",
+        "./assets/images/laptop-lenovo-legion-5-15ahp11-83q7001jvn-angle-4.png"
+      ]
     },
     {
       "id": 9,
@@ -133,7 +181,13 @@
       "gpu": "NVIDIA GeForce RTX 5060 8GB GDDR7",
       "ram": "16GB DDR5-5600",
       "ssd": "512GB SSD",
-      "screen": "15.3″ · 2560 x 1600 (WQXGA) · OLED · 165Hz"
+      "screen": "15.3″ · 2560 x 1600 (WQXGA) · OLED · 165Hz",
+      "images": [
+        "./assets/images/laptop-lenovo-legion-5-15iph11-83rw0023vn-angle-1.png",
+        "./assets/images/laptop-lenovo-legion-5-15iph11-83rw0023vn-angle-2.png",
+        "./assets/images/laptop-lenovo-legion-5-15iph11-83rw0023vn-angle-3.png",
+        "./assets/images/laptop-lenovo-legion-5-15iph11-83rw0023vn-angle-4.png"
+      ]
     },
     {
       "id": 10,
@@ -148,7 +202,13 @@
       "gpu": "NVIDIA GeForce RTX 5060 8GB GDDR7",
       "ram": "24GB DDR5-5600",
       "ssd": "512GB SSD",
-      "screen": "15.3″ · 2560 x 1600 (WQXGA) · OLED · 165Hz"
+      "screen": "15.3″ · 2560 x 1600 (WQXGA) · OLED · 165Hz",
+      "images": [
+        "./assets/images/laptop-lenovo-legion-5-15iax11-83vk00a2vn-angle-1.png",
+        "./assets/images/laptop-lenovo-legion-5-15iax11-83vk00a2vn-angle-2.png",
+        "./assets/images/laptop-lenovo-legion-5-15iax11-83vk00a2vn-angle-3.png",
+        "./assets/images/laptop-lenovo-legion-5-15iax11-83vk00a2vn-angle-4.png"
+      ]
     },
     {
       "id": 11,
@@ -163,7 +223,13 @@
       "gpu": "NVIDIA GeForce RTX 5050 8GB GDDR7",
       "ram": "16GB DDR5-5200",
       "ssd": "512GB SSD",
-      "screen": "16″ · 2560 x 1600 (WQXGA) · IPS · 240Hz"
+      "screen": "16″ · 2560 x 1600 (WQXGA) · IPS · 240Hz",
+      "images": [
+        "./assets/images/laptop-asus-rog-strix-g16-g614ph-s5101w-angle-1.png",
+        "./assets/images/laptop-asus-rog-strix-g16-g614ph-s5101w-angle-2.png",
+        "./assets/images/laptop-asus-rog-strix-g16-g614ph-s5101w-angle-3.png",
+        "./assets/images/laptop-asus-rog-strix-g16-g614ph-s5101w-angle-4.png"
+      ]
     },
     {
       "id": 12,
@@ -178,7 +244,13 @@
       "gpu": "NVIDIA GeForce RTX 5080 16GB GDDR7",
       "ram": "32GB LPDDR5X 8533",
       "ssd": "1TB SSD",
-      "screen": "16″ · 2560 x 1600 (2.5K) · OLED · 240Hz"
+      "screen": "16″ · 2560 x 1600 (2.5K) · OLED · 240Hz",
+      "images": [
+        "./assets/images/laptop-asus-rog-zephyrus-g16-gu606aw-tb121w-angle-1.png",
+        "./assets/images/laptop-asus-rog-zephyrus-g16-gu606aw-tb121w-angle-2.png",
+        "./assets/images/laptop-asus-rog-zephyrus-g16-gu606aw-tb121w-angle-3.png",
+        "./assets/images/laptop-asus-rog-zephyrus-g16-gu606aw-tb121w-angle-4.png"
+      ]
     },
     {
       "id": 13,
@@ -194,7 +266,13 @@
       "ram": "32GB LPDDR5X 8533",
       "ssd": "1TB SSD",
       "screen": "14″ · 2880 x 1800 · OLED · 120Hz",
-      "demo": true
+      "demo": true,
+      "images": [
+        "./assets/images/laptop-asus-rog-zephyrus-g14-gu405aw-sy029w-angle-1.png",
+        "./assets/images/laptop-asus-rog-zephyrus-g14-gu405aw-sy029w-angle-2.png",
+        "./assets/images/laptop-asus-rog-zephyrus-g14-gu405aw-sy029w-angle-3.png",
+        "./assets/images/laptop-asus-rog-zephyrus-g14-gu405aw-sy029w-angle-4.png"
+      ]
     },
     {
       "id": 14,
@@ -210,7 +288,13 @@
       "ram": "16GB DDR5-5600",
       "ssd": "512GB SSD",
       "screen": "15.6″ · 1920 x 1080 (FullHD) · IPS · 144Hz",
-      "demo": true
+      "demo": true,
+      "images": [
+        "./assets/images/laptop-asus-tuf-gaming-a15-fa506ncg-hn329w-angle-1.png",
+        "./assets/images/laptop-asus-tuf-gaming-a15-fa506ncg-hn329w-angle-2.png",
+        "./assets/images/laptop-asus-tuf-gaming-a15-fa506ncg-hn329w-angle-3.png",
+        "./assets/images/laptop-asus-tuf-gaming-a15-fa506ncg-hn329w-angle-4.png"
+      ]
     },
     {
       "id": 15,
@@ -226,7 +310,13 @@
       "ram": "16GB DDR5-4800",
       "ssd": "512GB SSD",
       "screen": "15.6″ · 1920 x 1080 (FullHD) · IPS · 144Hz",
-      "demo": true
+      "demo": true,
+      "images": [
+        "./assets/images/laptop-asus-tuf-gaming-a15-fa506ncg-hn390w-angle-1.png",
+        "./assets/images/laptop-asus-tuf-gaming-a15-fa506ncg-hn390w-angle-2.png",
+        "./assets/images/laptop-asus-tuf-gaming-a15-fa506ncg-hn390w-angle-3.png",
+        "./assets/images/laptop-asus-tuf-gaming-a15-fa506ncg-hn390w-angle-4.png"
+      ]
     },
     {
       "id": 16,
@@ -242,7 +332,13 @@
       "ram": "16GB DDR5-5600",
       "ssd": "512GB SSD",
       "screen": "16″ · 1920 x 1200 (WUXGA) · IPS · 144Hz",
-      "demo": true
+      "demo": true,
+      "images": [
+        "./assets/images/laptop-asus-tuf-gaming-f16-fx608jhi-tu209w-angle-1.png",
+        "./assets/images/laptop-asus-tuf-gaming-f16-fx608jhi-tu209w-angle-2.png",
+        "./assets/images/laptop-asus-tuf-gaming-f16-fx608jhi-tu209w-angle-3.png",
+        "./assets/images/laptop-asus-tuf-gaming-f16-fx608jhi-tu209w-angle-4.png"
+      ]
     },
     {
       "id": 17,
@@ -258,7 +354,13 @@
       "ram": "16GB DDR5 5600",
       "ssd": "512GB SSD",
       "screen": "15.6″ · 1920 x 1080 (FullHD) · IPS · 144Hz",
-      "demo": true
+      "demo": true,
+      "images": [
+        "./assets/images/laptop-msi-cyborg-15-a13uc-2082vn-angle-1.png",
+        "./assets/images/laptop-msi-cyborg-15-a13uc-2082vn-angle-2.png",
+        "./assets/images/laptop-msi-cyborg-15-a13uc-2082vn-angle-3.png",
+        "./assets/images/laptop-msi-cyborg-15-a13uc-2082vn-angle-4.png"
+      ]
     },
     {
       "id": 18,
@@ -274,7 +376,13 @@
       "ram": "16GB DDR5 5200MHz",
       "ssd": "1TB SSD",
       "screen": "15.6″ · 1920 x 1080 (FullHD) · IPS · 144Hz",
-      "demo": true
+      "demo": true,
+      "images": [
+        "./assets/images/laptop-msi-katana-15-b13vek-2440vn-angle-1.png",
+        "./assets/images/laptop-msi-katana-15-b13vek-2440vn-angle-2.png",
+        "./assets/images/laptop-msi-katana-15-b13vek-2440vn-angle-3.png",
+        "./assets/images/laptop-msi-katana-15-b13vek-2440vn-angle-4.png"
+      ]
     },
     {
       "id": 19,
@@ -290,7 +398,13 @@
       "ram": "32GB DDR5-7200",
       "ssd": "1TB SSD",
       "screen": "16″ · 2560 x 1600 (QHD+) · OLED · 240Hz",
-      "demo": true
+      "demo": true,
+      "images": [
+        "./assets/images/laptop-msi-stealth-16-ai-b3wg-008vn-angle-1.png",
+        "./assets/images/laptop-msi-stealth-16-ai-b3wg-008vn-angle-2.png",
+        "./assets/images/laptop-msi-stealth-16-ai-b3wg-008vn-angle-3.png",
+        "./assets/images/laptop-msi-stealth-16-ai-b3wg-008vn-angle-4.png"
+      ]
     },
     {
       "id": 20,
@@ -306,7 +420,13 @@
       "ram": "16GB DDR5-5600",
       "ssd": "512GB SSD",
       "screen": "15.6″ · 1920 x 1080 (FullHD) · IPS · 144Hz",
-      "demo": true
+      "demo": true,
+      "images": [
+        "./assets/images/laptop-msi-cyborg-15-a13uc-2088vn-angle-1.png",
+        "./assets/images/laptop-msi-cyborg-15-a13uc-2088vn-angle-2.png",
+        "./assets/images/laptop-msi-cyborg-15-a13uc-2088vn-angle-3.png",
+        "./assets/images/laptop-msi-cyborg-15-a13uc-2088vn-angle-4.png"
+      ]
     },
     {
       "id": 21,
@@ -322,7 +442,13 @@
       "ram": "16GB DDR5 5200",
       "ssd": "512GB SSD",
       "screen": "15.6″ · 1920 x 1080 (FullHD) · IPS · 180Hz",
-      "demo": true
+      "demo": true,
+      "images": [
+        "./assets/images/laptop-acer-gaming-nitro-v-15-propanel-anv15-52-50va-angle-1.png",
+        "./assets/images/laptop-acer-gaming-nitro-v-15-propanel-anv15-52-50va-angle-2.png",
+        "./assets/images/laptop-acer-gaming-nitro-v-15-propanel-anv15-52-50va-angle-3.png",
+        "./assets/images/laptop-acer-gaming-nitro-v-15-propanel-anv15-52-50va-angle-4.png"
+      ]
     },
     {
       "id": 22,
@@ -338,7 +464,13 @@
       "ram": "16GB DDR5 5200",
       "ssd": "512GB SSD",
       "screen": "15.6″ · 1920 x 1080 (FullHD) · IPS · 180Hz",
-      "demo": true
+      "demo": true,
+      "images": [
+        "./assets/images/laptop-acer-gaming-nitro-v-15-propanel-anv15-52-50va-angle-1.png",
+        "./assets/images/laptop-acer-gaming-nitro-v-15-propanel-anv15-52-50va-angle-2.png",
+        "./assets/images/laptop-acer-gaming-nitro-v-15-propanel-anv15-52-50va-angle-3.png",
+        "./assets/images/laptop-acer-gaming-nitro-v-15-propanel-anv15-52-50va-angle-4.png"
+      ]
     },
     {
       "id": 23,
@@ -354,7 +486,13 @@
       "ram": "16GB DDR4 3200",
       "ssd": "512GB SSD",
       "screen": "15.6″ · 1920 x 1080 (FullHD) · IPS · 144Hz",
-      "demo": true
+      "demo": true,
+      "images": [
+        "./assets/images/laptop-acer-gaming-aspire-7-a715-59g-59rd-angle-1.png",
+        "./assets/images/laptop-acer-gaming-aspire-7-a715-59g-59rd-angle-2.png",
+        "./assets/images/laptop-acer-gaming-aspire-7-a715-59g-59rd-angle-3.png",
+        "./assets/images/laptop-acer-gaming-aspire-7-a715-59g-59rd-angle-4.png"
+      ]
     },
     {
       "id": 24,
@@ -370,7 +508,13 @@
       "ram": "16GB DDR5 6400",
       "ssd": "512GB SSD",
       "screen": "16″ · 2560 x 1600 (2K) · OLED · 165Hz",
-      "demo": true
+      "demo": true,
+      "images": [
+        "./assets/images/laptop-acer-predator-helios-neo-16s-phn16s-i51-98cx-angle-1.png",
+        "./assets/images/laptop-acer-predator-helios-neo-16s-phn16s-i51-98cx-angle-2.png",
+        "./assets/images/laptop-acer-predator-helios-neo-16s-phn16s-i51-98cx-angle-3.png",
+        "./assets/images/laptop-acer-predator-helios-neo-16s-phn16s-i51-98cx-angle-4.png"
+      ]
     },
     {
       "id": 25,
@@ -386,7 +530,13 @@
       "ram": "64GB DDR5",
       "ssd": "2TB SSD",
       "screen": "16″ · 2560 x 1600 (2K) · OLED · 240Hz",
-      "demo": true
+      "demo": true,
+      "images": [
+        "./assets/images/laptop-acer-gaming-predator-helios-neo-16s-ai-phn16s-71-95ms-angle-1.png",
+        "./assets/images/laptop-acer-gaming-predator-helios-neo-16s-ai-phn16s-71-95ms-angle-2.png",
+        "./assets/images/laptop-acer-gaming-predator-helios-neo-16s-ai-phn16s-71-95ms-angle-3.png",
+        "./assets/images/laptop-acer-gaming-predator-helios-neo-16s-ai-phn16s-71-95ms-angle-4.png"
+      ]
     },
     {
       "id": 26,
@@ -402,7 +552,13 @@
       "ram": "16GB DDR4 3200MHz",
       "ssd": "512GB SSD",
       "screen": "15.6″ · 1920 x 1080 (FullHD) · IPS · 144Hz",
-      "demo": true
+      "demo": true,
+      "images": [
+        "./assets/images/laptop-hp-victus-15-fa2731tx-b85lnpa-angle-1.png",
+        "./assets/images/laptop-hp-victus-15-fa2731tx-b85lnpa-angle-2.png",
+        "./assets/images/laptop-hp-victus-15-fa2731tx-b85lnpa-angle-3.png",
+        "./assets/images/laptop-hp-victus-15-fa2731tx-b85lnpa-angle-4.png"
+      ]
     },
     {
       "id": 27,
@@ -418,7 +574,13 @@
       "ram": "16GB DDR5 5200MHz",
       "ssd": "512GB SSD",
       "screen": "15.6″ · 1920 x 1080 (FullHD) · IPS · 144Hz",
-      "demo": true
+      "demo": true,
+      "images": [
+        "./assets/images/laptop-hp-victus-15-fa2451tx-d17wppa-angle-1.png",
+        "./assets/images/laptop-hp-victus-15-fa2451tx-d17wppa-angle-2.png",
+        "./assets/images/laptop-hp-victus-15-fa2451tx-d17wppa-angle-3.png",
+        "./assets/images/laptop-hp-victus-15-fa2451tx-d17wppa-angle-4.png"
+      ]
     },
     {
       "id": 28,
@@ -434,7 +596,13 @@
       "ram": "16GB DDR5-5600",
       "ssd": "512GB SSD",
       "screen": "15.6″ · 1920 x 1080 (FullHD) · IPS · 144Hz",
-      "demo": true
+      "demo": true,
+      "images": [
+        "./assets/images/laptop-hp-victus-15-fb3116ax-bx8u4pa-angle-1.png",
+        "./assets/images/laptop-hp-victus-15-fb3116ax-bx8u4pa-angle-2.png",
+        "./assets/images/laptop-hp-victus-15-fb3116ax-bx8u4pa-angle-3.png",
+        "./assets/images/laptop-hp-victus-15-fb3116ax-bx8u4pa-angle-4.png"
+      ]
     },
     {
       "id": 29,
@@ -450,7 +618,13 @@
       "ram": "16GB DDR5-5600",
       "ssd": "512GB SSD",
       "screen": "16″ · 1920 x 1200 (WUXGA) · IPS · 165Hz",
-      "demo": true
+      "demo": true,
+      "images": [
+        "./assets/images/laptop-hp-gaming-omen-16-am0176tx-bx9d3pa-angle-1.png",
+        "./assets/images/laptop-hp-gaming-omen-16-am0176tx-bx9d3pa-angle-2.png",
+        "./assets/images/laptop-hp-gaming-omen-16-am0176tx-bx9d3pa-angle-3.png",
+        "./assets/images/laptop-hp-gaming-omen-16-am0176tx-bx9d3pa-angle-4.png"
+      ]
     },
     {
       "id": 30,
@@ -466,7 +640,13 @@
       "ram": "16GB DDR5-4800",
       "ssd": "512GB SSD",
       "screen": "16.1″ · 1920 x 1080 (FullHD) · IPS · 165Hz",
-      "demo": true
+      "demo": true,
+      "images": [
+        "./assets/images/laptop-hp-victus-16-r0376tx-ay8z2pa-angle-1.png",
+        "./assets/images/laptop-hp-victus-16-r0376tx-ay8z2pa-angle-2.png",
+        "./assets/images/laptop-hp-victus-16-r0376tx-ay8z2pa-angle-3.png",
+        "./assets/images/laptop-hp-victus-16-r0376tx-ay8z2pa-angle-4.png"
+      ]
     },
     {
       "id": 31,
@@ -482,7 +662,12 @@
       "ram": "16GB DDR5",
       "ssd": "512GB SSD M.2 PCIe NVMe Gen 4",
       "screen": "15.3\" WUXGA 1920 x 1200, 165Hz, 300 nits, 62.5% sRGB",
-      "demo": true
+      "demo": true,
+      "images": [
+        "./assets/images/dell-alienware-15-da15265-ryzen-5-220-angle-1.jpg",
+        "./assets/images/dell-alienware-15-da15265-ryzen-5-220-angle-2.jpg",
+        "./assets/images/dell-alienware-15-da15265-ryzen-5-220-angle-3.jpg"
+      ]
     },
     {
       "id": 32,
@@ -546,7 +731,11 @@
       "ram": "16GB",
       "ssd": "512GB SSD",
       "screen": "13.6″ · 2560 x 1664 · Liquid Retina",
-      "demo": true
+      "demo": true,
+      "images": [
+        "./assets/images/macbook-air-13-m5-10-cpu-8-gpu-16gb-512gb-angle-1.png",
+        "./assets/images/macbook-air-13-m5-10-cpu-8-gpu-16gb-512gb-angle-2.jpg"
+      ]
     },
     {
       "id": 36,
@@ -562,7 +751,11 @@
       "ram": "16GB",
       "ssd": "256GB SSD",
       "screen": "13.6″ · 2560 x 1664 · Liquid Retina",
-      "demo": true
+      "demo": true,
+      "images": [
+        "./assets/images/apple-macbook-air-13-m4-10cpu-8gpu-16gb-256gb-2025-angle-1.png",
+        "./assets/images/apple-macbook-air-13-m4-10cpu-8gpu-16gb-256gb-2025-angle-2.png"
+      ]
     },
     {
       "id": 37,
@@ -578,7 +771,11 @@
       "ram": "16GB",
       "ssd": "512GB SSD",
       "screen": "13.6″ · 2560 x 1664 · Liquid Retina",
-      "demo": true
+      "demo": true,
+      "images": [
+        "./assets/images/macbook-air-13-inch-m5-10-cpu-8-gpu-16gb-512gb-2026-sac-70w-angle-1.png",
+        "./assets/images/macbook-air-13-inch-m5-10-cpu-8-gpu-16gb-512gb-2026-sac-70w-angle-2.jpg"
+      ]
     },
     {
       "id": 38,
@@ -594,7 +791,11 @@
       "ram": "16GB",
       "ssd": "512GB SSD",
       "screen": "13.6″ · 2560 x 1664 · Liquid Retina",
-      "demo": true
+      "demo": true,
+      "images": [
+        "./assets/images/macbook-air-13-inch-m5-10-cpu-8-gpu-16gb-512gb-2026-sac-70w-angle-1.png",
+        "./assets/images/macbook-air-13-inch-m5-10-cpu-8-gpu-16gb-512gb-2026-sac-70w-angle-2.jpg"
+      ]
     },
     {
       "id": 39,
@@ -610,7 +811,11 @@
       "ram": "16GB",
       "ssd": "512GB SSD",
       "screen": "13.6″ · 2560 x 1664 · Liquid Retina",
-      "demo": true
+      "demo": true,
+      "images": [
+        "./assets/images/macbook-air-m2-2022-16gb-512gb-angle-1.jpg",
+        "./assets/images/macbook-air-m2-2022-16gb-512gb-angle-2.jpg"
+      ]
     }
   ],
   "users": [
@@ -621,15 +826,43 @@
       "passwordHash": "scrypt$65b86a588d2e0efc4f7e18ea90fe2518$002021af4aad338b89e7acbf51249795f20f905861f35ad4e32bcd1e6858a2dcc3db24af49d41213b791f5ce4cda554b1590ac829638cff6987c100b86a8cc16",
       "role": "user",
       "status": "active",
-      "createdAt": "2026-10-08T08:22:14.043Z"
+      "createdAt": "2026-10-08T08:22:14.043Z",
+      "phone": "0911236639",
+      "birthday": "2007-11-11",
+      "gender": "male",
+      "address": "123"
+    },
+    {
+      "id": "b0b2cf07-0c0a-456a-ac02-9cf519c8e022",
+      "name": "bui tai",
+      "email": "kemgen102@gmail.com",
+      "passwordHash": "scrypt$48f29a5f670a891d6e13e594df6d212d$1a4564e58d99bddbc44ade68384e12b62f032772a8b5e42e54e7a2a92242ebe013c695dbc02e4a8d0fbcb4de96827f4184181327e1a9674df7ec49d52ed3a01d",
+      "role": "user",
+      "status": "active",
+      "createdAt": "2026-10-10T08:22:42.445Z"
+    },
+    {
+      "id": "6bff1606-678a-41f9-aa62-9d0c5a1f13a7",
+      "name": "Vibetech",
+      "email": "123@gmail.com",
+      "passwordHash": "scrypt$3e58dbad960e1568f499b7c5d31cc404$c1b3f583ed31fdbf2317ad73a0b9ef60ee57f75671351de3b29f2f0936aea786c63f0a54af52c4a48321dc4b2b66371ab2008fd00ea0b9cd8441142f7374f990",
+      "role": "user",
+      "status": "active",
+      "createdAt": "2026-10-21T06:47:23.344Z"
     }
   ],
   "authSessions": [
     {
-      "tokenHash": "9a0eef5ee99de0a3c5507d5fb8d8dcd9619a201fc7571e44c6dbe65e2e99853a",
+      "tokenHash": "9f1847ec8571b4c91576be985e4007aaae80f17af620dc58ee25fe40e63bf924",
       "userId": "75c2b2eb-82eb-4ffa-a3d0-accb913e5348",
-      "createdAt": "2026-10-08T17:59:48.181Z",
-      "expiresAt": "2026-10-15T17:59:48.181Z"
+      "createdAt": "2026-10-20T13:46:50.011Z",
+      "expiresAt": "2026-10-27T13:46:50.011Z"
+    },
+    {
+      "tokenHash": "51c56fc676d1e7ab2927403f2096a4b0f4478a9872ce34a3cc9fa3a31bc1f568",
+      "userId": "75c2b2eb-82eb-4ffa-a3d0-accb913e5348",
+      "createdAt": "2026-10-21T08:24:27.651Z",
+      "expiresAt": "2026-10-28T08:24:27.651Z"
     }
   ],
   "orders": [
@@ -708,6 +941,290 @@
       "status": "pending",
       "idempotencyKey": "d354fb02-20bf-41d9-a558-50158b225b1a",
       "requestHash": "8915967003304b618b0785dffd714ca1fd4a1370fbe46733a25aa8308b67558b"
+    },
+    {
+      "id": "ORD-865E5859-548A-44CB-A742-3076146B32FE",
+      "userId": "75c2b2eb-82eb-4ffa-a3d0-accb913e5348",
+      "createdAt": "2026-10-09T14:13:50.218Z",
+      "customer": {
+        "fullName": "Phát Tài",
+        "phone": "0911236639",
+        "email": "bui586660@gmail.com",
+        "province": "TP. Hồ Chí Minh",
+        "district": "GÒ VẤP",
+        "ward": "AN HỘI ĐÔNG",
+        "address": "12 Nguyễn Huệ, Quận 1, TP. Hồ Chí Minh",
+        "note": "kjewfh"
+      },
+      "items": [
+        {
+          "productId": "18",
+          "name": "Laptop MSI Katana 15 B13VEK-2440VN",
+          "image": "./assets/images/laptop-msi-katana-15-b13vek-2440vn.png",
+          "price": 21990000,
+          "quantity": 1,
+          "subtotal": 21990000
+        }
+      ],
+      "subtotal": 21990000,
+      "shippingFee": 0,
+      "discount": 0,
+      "total": 21990000,
+      "paymentMethod": "cod",
+      "paymentStatus": "unpaid",
+      "status": "pending",
+      "idempotencyKey": "b5ab3fe7-2df4-4ffd-9aa9-be86936ac01b",
+      "requestHash": "500580420e7c9864f990002854ea3680905e794bd0f46958cf6f52ff9167fba1"
+    },
+    {
+      "id": "ORD-A3AF8DD8-30BF-493F-A9B2-808222F04BC4",
+      "userId": "b0b2cf07-0c0a-456a-ac02-9cf519c8e022",
+      "createdAt": "2026-10-10T08:23:12.493Z",
+      "customer": {
+        "fullName": "bui tai",
+        "phone": "0911236639",
+        "email": "kemgen102@gmail.com",
+        "province": "TP. Hồ Chí Minh",
+        "district": "GÒ VẤP",
+        "ward": "AN HỘI ĐÔNG",
+        "address": "23r34t4g",
+        "note": ""
+      },
+      "items": [
+        {
+          "productId": "1",
+          "name": "Laptop Lenovo LOQ 15ARP10E 83S000DEVN",
+          "image": "./assets/images/laptop-lenovo-loq-15arp10e-83s000devn.png",
+          "price": 25990000,
+          "quantity": 1,
+          "subtotal": 25990000
+        }
+      ],
+      "subtotal": 25990000,
+      "shippingFee": 0,
+      "discount": 0,
+      "total": 25990000,
+      "paymentMethod": "cod",
+      "paymentStatus": "unpaid",
+      "status": "pending",
+      "idempotencyKey": "5382443d-208e-4c80-8ad8-dc7fba6d4ee3",
+      "requestHash": "5cf9ae51f0555eac06575932a42576b32ea282988591fe50cd47a245dc13f487"
+    },
+    {
+      "id": "ORD-8B726ABB-2DFC-4CA3-83B1-16AF7E333E64",
+      "userId": "b0b2cf07-0c0a-456a-ac02-9cf519c8e022",
+      "createdAt": "2026-10-10T14:25:48.978Z",
+      "customer": {
+        "fullName": "bui tai",
+        "phone": "0911236639",
+        "email": "kemgen102@gmail.com",
+        "province": "TP. Hồ Chí Minh",
+        "district": "GÒ VẤP",
+        "ward": "AN HỘI ĐÔNG",
+        "address": "12 Nguyễn Huệ, Quận 1, TP. Hồ Chí Minh",
+        "note": ""
+      },
+      "items": [
+        {
+          "productId": "23",
+          "name": "Laptop Acer Gaming Aspire 7 A715-59G-59RD",
+          "image": "./assets/images/laptop-acer-gaming-aspire-7-a715-59g-59rd.png",
+          "originalPrice": 45990000,
+          "price": 39990000,
+          "quantity": 1,
+          "subtotal": 39990000
+        }
+      ],
+      "subtotal": 39990000,
+      "originalSubtotal": 45990000,
+      "productDiscount": 6000000,
+      "shippingFee": 0,
+      "discount": 0,
+      "coupon": null,
+      "total": 39990000,
+      "paymentMethod": "cod",
+      "paymentStatus": "unpaid",
+      "status": "pending",
+      "idempotencyKey": "8bad08bd-4da4-40bc-a5a7-1b3448aef8cb",
+      "requestHash": "f7590516e3508e9499db0840bd369d9d4a2f6a203ae3a0147f2d2327af226cdf"
+    },
+    {
+      "id": "ORD-A6C0E322-36FC-48DF-BBF0-BA3D13906FB1",
+      "userId": "75c2b2eb-82eb-4ffa-a3d0-accb913e5348",
+      "createdAt": "2026-10-20T13:47:14.884Z",
+      "customer": {
+        "fullName": "Phát Tài",
+        "phone": "0911236639",
+        "email": "bui586660@gmail.com",
+        "province": "Thành phố Hồ Chí Minh",
+        "district": "Thành phố Hồ Chí Minh",
+        "ward": "AN HỘI ĐÔNG",
+        "address": "748/55, Thống Nhất, Gò Vấp",
+        "note": ""
+      },
+      "items": [
+        {
+          "productId": "1",
+          "name": "Laptop Lenovo LOQ 15ARP10E 83S000DEVN",
+          "image": "./assets/images/laptop-lenovo-loq-15arp10e-83s000devn.png",
+          "originalPrice": 28990000,
+          "price": 25990000,
+          "quantity": 1,
+          "subtotal": 25990000
+        }
+      ],
+      "subtotal": 25990000,
+      "originalSubtotal": 28990000,
+      "productDiscount": 3000000,
+      "shippingFee": 0,
+      "discount": 0,
+      "coupon": null,
+      "total": 25990000,
+      "paymentMethod": "cod",
+      "paymentStatus": "unpaid",
+      "status": "pending",
+      "idempotencyKey": "c074f6e3-ac84-4be2-8c04-7c9ededf6064",
+      "requestHash": "f2ba41058f199734724e8d5ba7a6daf2e2ab323ac0929f1ad89f6e4acc59ddd0"
+    },
+    {
+      "id": "ORD-8B6AC4D9-856D-4A15-AE57-73D6DDA1947C",
+      "userId": "6bff1606-678a-41f9-aa62-9d0c5a1f13a7",
+      "createdAt": "2026-10-21T06:50:46.238Z",
+      "customer": {
+        "fullName": "Vibetech",
+        "phone": "0911236639",
+        "email": "123@gmail.com",
+        "province": "Thành phố Hồ Chí Minh",
+        "district": "Thành phố Hồ Chí Minh",
+        "ward": "23d",
+        "address": "748/55, Thống Nhất, Gò Vấp",
+        "note": ""
+      },
+      "items": [
+        {
+          "productId": "39",
+          "name": "Apple MacBook Air M2 2024 8CPU 10GPU 16GB 512GB",
+          "image": "./assets/images/macbook-air-m2-2022-16gb-512gb.jpg",
+          "originalPrice": 45990000,
+          "price": 39990000,
+          "quantity": 1,
+          "subtotal": 39990000
+        }
+      ],
+      "subtotal": 39990000,
+      "originalSubtotal": 45990000,
+      "productDiscount": 6000000,
+      "shippingFee": 0,
+      "discount": 0,
+      "coupon": null,
+      "total": 39990000,
+      "paymentMethod": "cod",
+      "paymentStatus": "unpaid",
+      "status": "pending",
+      "idempotencyKey": "ab79fcc2-5ef0-4c0e-97ac-6f1280b97263",
+      "requestHash": "750461a7e599afa2c3eb40ee7dd874298a325220238bf8d8699ca281d740e6d7"
+    },
+    {
+      "id": "ORD-E11F6706-B587-4266-9011-7D0E29BCEF2D",
+      "userId": "6bff1606-678a-41f9-aa62-9d0c5a1f13a7",
+      "createdAt": "2026-10-21T06:53:07.169Z",
+      "customer": {
+        "fullName": "Vibetec",
+        "phone": "0911236639",
+        "email": "123@gmail.com",
+        "province": "Thành phố Hồ Chí Minh",
+        "district": "Thành phố Hồ Chí Minh",
+        "ward": "AN HỘI ĐÔNG",
+        "address": "748/55, Thống Nhất, Gò Vấp",
+        "note": "123"
+      },
+      "items": [
+        {
+          "productId": "8",
+          "name": "Laptop Lenovo Legion 5 15AHP11 83Q7001JVN",
+          "image": "./assets/images/laptop-lenovo-legion-5-15ahp11-83q7001jvn.png",
+          "originalPrice": 45990000,
+          "price": 42990000,
+          "quantity": 2,
+          "subtotal": 85980000
+        }
+      ],
+      "subtotal": 85980000,
+      "originalSubtotal": 91980000,
+      "productDiscount": 6000000,
+      "shippingFee": 0,
+      "discount": 0,
+      "coupon": null,
+      "total": 85980000,
+      "paymentMethod": "cod",
+      "paymentStatus": "unpaid",
+      "status": "pending",
+      "idempotencyKey": "001b1835-3d42-4fe1-9fd4-4c4f6a248865",
+      "requestHash": "1d626ff5f7e53ce269065389aa2e9556d5e01f9cd1a1ed368c181f687e9f11c7"
+    },
+    {
+      "id": "ORD-53821752-F565-47BD-B075-6AAAB788CD7E",
+      "userId": "75c2b2eb-82eb-4ffa-a3d0-accb913e5348",
+      "createdAt": "2026-10-21T08:26:03.619Z",
+      "customer": {
+        "fullName": "Ngoc Vang",
+        "phone": "0911236639",
+        "email": "nv9@gmail.com",
+        "province": "An Giang",
+        "district": "Hồng Ngự",
+        "ward": "An Bình A",
+        "address": "103, Tăng Duy Phước",
+        "note": "0"
+      },
+      "items": [
+        {
+          "productId": "14",
+          "name": "Laptop ASUS TUF Gaming A15 FA506NCG-HN329W",
+          "image": "./assets/images/laptop-asus-tuf-gaming-a15-fa506ncg-hn329w.png",
+          "originalPrice": 32990000,
+          "price": 28990000,
+          "quantity": 1,
+          "subtotal": 28990000
+        },
+        {
+          "productId": "20",
+          "name": "Laptop MSI Cyborg 15 A13UC-2088VN",
+          "image": "./assets/images/laptop-msi-cyborg-15-a13uc-2088vn.png",
+          "originalPrice": 45990000,
+          "price": 39990000,
+          "quantity": 1,
+          "subtotal": 39990000
+        }
+      ],
+      "subtotal": 68980000,
+      "originalSubtotal": 78980000,
+      "productDiscount": 10000000,
+      "shippingFee": 0,
+      "discount": 0,
+      "coupon": null,
+      "total": 68980000,
+      "paymentMethod": "cod",
+      "paymentStatus": "unpaid",
+      "status": "pending",
+      "idempotencyKey": "c72ed4df-b291-426d-ae4f-4a7268986a33",
+      "requestHash": "54fbeb9f4ff9a1a5e23fb4f9c9051239f7bf78fbd1e3d942e8d59d4f32dd625f"
+    }
+  ],
+  "payments": [],
+  "paymentAudit": [],
+  "metadata": [
+    {
+      "id": "sqlite-to-json-v1",
+      "source": "D:\\JS-NANGCAO\\ASM\\Backend\\ttech.sqlite",
+      "migratedAt": "2026-10-21T08:08:59.159Z",
+      "counts": {
+        "users": 3,
+        "authSessions": 3,
+        "orders": 8,
+        "payments": 0,
+        "paymentAudit": 0,
+        "metadata": 0
+      }
     }
   ]
 }

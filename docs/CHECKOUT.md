@@ -1,4 +1,4 @@
-> **Cập nhật 09/10/2026:** Backend mặc định đã chuyển sang SQLite sau migration; `db.json` được giữ nguyên làm nguồn cũ. Chuyển khoản MB/VietQR và webhook SePay đã có code, nhưng mặc định tắt khi chưa cấu hình secret. Không chạy JSON Server. Đọc [hướng dẫn thanh toán, chạy server và migration](PAYMENTS.md) thay cho các mô tả thanh toán demo/lưu JSON trước đây bên dưới.
+> **Cập nhật 21/10/2026:** Đơn hàng, phiên và thanh toán được lưu trong `Backend/db.json`. `ttech.sqlite` chỉ là dữ liệu cũ để đối chiếu; xem [PAYMENTS.md](PAYMENTS.md) để biết cách chuyển dữ liệu và giới hạn lưu JSON.
 
 # T-TECH Checkout — thiết kế và kế hoạch triển khai
 
@@ -52,7 +52,7 @@ Chỉnh `Backend/promotions.json`, sau đó khởi động lại backend. Đây 
 
 ### Phạm vi code và kiểm thử mới
 
-- `Backend/promotions.cjs`, `promotions.json`: quy tắc và cấu hình. `orders.cjs`, `server.cjs`: quote/lưu đơn và nạp cấu hình; giữ endpoint cũ, không đổi schema SQLite hay dữ liệu sản phẩm.
+- `Backend/promotions.cjs`, `promotions.json`: quy tắc và cấu hình. `orders.cjs`, `server.cjs`: quote/lưu đơn và nạp cấu hình; giữ endpoint cũ và dữ liệu sản phẩm.
 - `frontend/assets/js/ttech.js`: chọn sản phẩm và giữ giỏ chưa mua; `checkout.js`: mã khuyến mãi, tổng tiền, chống phản hồi cũ; `index.html`: control chọn và dialog.
 - `orders-api.cjs`, `promotions.cjs`, `checkout-ui.cjs`: mã sai/hết hạn/giới hạn, chống dùng quá lượt đồng thời, tính tiền, chọn một phần giỏ, reload, bỏ/chọn lại mã và phản hồi cũ không xóa mã mới. Dữ liệu kiểm thử được cách ly khỏi database thực.
 

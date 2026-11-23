@@ -5,8 +5,8 @@ const path = require('node:path');
 const os = require('node:os');
 const http = require('node:http');
 const { randomBytes } = require('node:crypto');
-const { migrate, openDatabase } = require('../../Backend/storage.cjs');
 const { createServer } = require('../../Backend/server.cjs');
+const { openJsonDatabase } = require('../../Backend/json-storage.cjs');
 
 (async () => {
   const directory = await fs.mkdtemp(path.join(os.tmpdir(), 'ttech-checkout-ui-'));
@@ -26,11 +26,9 @@ const { createServer } = require('../../Backend/server.cjs');
   });
   await new Promise(resolve => staticServer.listen(0, '127.0.0.1', resolve));
   const origin = `http://127.0.0.1:${staticServer.address().port}`;
-  const sqlitePath = path.join(directory, 'store.sqlite');
-  await migrate(dbPath, sqlitePath);
-  const store = openDatabase(sqlitePath);
+  const readStore = async () => JSON.parse(await fs.readFile(dbPath, 'utf8'));
   const webhookSecret=randomBytes(32).toString('hex');
-  const backend = await createServer({ dbPath, sqlitePath, payments:{enabled:true, secret:webhookSecret}, origins: [origin], rateLimitMax: 100 });
+  const backend = await createServer({ dbPath, payments:{enabled:true, secret:webhookSecret}, origins: [origin], rateLimitMax: 100 });
   await new Promise(resolve => backend.listen(0, '127.0.0.1', resolve));
   const api = `http://127.0.0.1:${backend.address().port}`;
   const browser = await chromium.launch();
@@ -64,7 +62,7 @@ const { createServer } = require('../../Backend/server.cjs');
     await page.locator('#order-payment').filter({hasText:'0911236639'}).waitFor();
     assert.match(await page.locator('#payment-status').innerText(),/Chờ thanh toán/);
     await page.locator('#qr-error').waitFor();
-    const order=(await store.read()).orders[0];assert.equal(order.senderBank,'VCB');assert.equal(order.payment.accountNumber,'0911236639');
+    const order=(await readStore()).orders[0];assert.equal(order.senderBank,'VCB');assert.equal(order.payment.accountNumber,'0911236639');
     await page.reload();await page.locator('#payment-status').filter({hasText:'Chờ thanh toán'}).waitFor();
     await page.evaluate(()=>{Object.defineProperty(navigator,'clipboard',{configurable:true,value:{writeText:async()=>{throw Error('denied')}}})});
     await page.locator('[data-payment-copy="accountNumber"]').click();await page.locator('#payment-feedback').filter({hasText:'Không thể sao chép'}).waitFor();
@@ -79,11 +77,11 @@ const { createServer } = require('../../Backend/server.cjs');
     const signature=require('node:crypto').createHmac('sha256',webhookSecret).update(timestamp+'.'+raw).digest('hex');
     const received=await fetch(api+'/api/webhooks/sepay',{method:'POST',headers:{'Content-Type':'application/json','X-SePay-Timestamp':timestamp,'X-SePay-Signature':'sha256='+signature},body:raw});assert.equal(received.status,200);
     await page.locator('[data-payment-refresh]').click();await page.locator('#payment-status').filter({hasText:'Đã thanh toán'}).waitFor();assert.equal(await page.locator('#payment-qr').count(),0);
-    await store.update(data=>{data.users[0].role='admin'});
+    await openJsonDatabase(dbPath).update(data=>{data.users[0].role='admin'});
     await page.reload();await page.locator('#auth-open').click();await page.locator('#account-admin').click();await page.locator('#payment-admin-load').click();await page.locator('.payment-receipt').waitFor();
     assert.match(await page.locator('#payment-admin-results').innerText(),/90001/);
     await page.locator('#payment-admin-filter').selectOption('unpaid');assert.equal(await page.locator('.payment-receipt').count(),0);
     assert.deepEqual(runtimeErrors,[]);assert.deepEqual(await fs.readFile(path.resolve(__dirname,'../../Backend/db.json')),original);
     console.log('PASS: bank checkout, sender selection, canonical receiver, reload, copy feedback, QR outage, signed receipt/status, admin, mobile, no runtime errors.');
-  } finally {store.close();await browser.close();await new Promise(r=>backend.close(r));await new Promise(r=>staticServer.close(r));await fs.rm(directory,{recursive:true});}
+  } finally {await browser.close();await new Promise(r=>backend.close(r));await new Promise(r=>staticServer.close(r));await fs.rm(directory,{recursive:true});}
 })().catch(error=>{console.error(error);process.exitCode=1});

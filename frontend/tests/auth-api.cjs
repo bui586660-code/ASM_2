@@ -32,7 +32,7 @@ async function fixture(t, options = {}) {
         ...(cookie ? { Cookie: cookie } : {}), ...customHeaders },
       body: data === undefined ? undefined : JSON.stringify(data)
     });
-    return { status: response.status, data: await response.json(), headers: response.headers,
+    return { status: response.status, data: response.status === 204 ? null : await response.json(), headers: response.headers,
       cookie: response.headers.get('set-cookie')?.split(';')[0] };
   }
   return { request, dbPath, read: async () => JSON.parse(await fs.readFile(dbPath, 'utf8')),
@@ -58,11 +58,73 @@ test('registration normalizes email, hashes passwords, and preserves existing co
 test('registration rejects invalid fields and client-controlled privileges', async t => {
   const f = await fixture(t), secret = password();
   const valid = { name: 'Test', email: 'test@example.com', password: secret, confirm: secret };
-  for (const bad of [{ name: '   ' }, { email: 'not-email' }, { password: 'short', confirm: 'short' }, { confirm: 'different' }, { role: 'admin' }, { status: 'active' }]) {
+  for (const bad of [{ name: '   ' }, { email: 'not-email' }, { password: 'short', confirm: 'short' }, { password: '        ', confirm: '        ' }, { confirm: 'different' }, { role: 'admin' }, { status: 'active' }, { isAdmin: true }, { emailVerified: true }]) {
     const response = await f.request('/api/auth/register', 'POST', { ...valid, ...bad });
     assert.equal(response.status, 400);
   }
   assert.equal((await f.read()).users.length, 0);
+});
+
+test('profile updates only the session owner, persists and never exposes credentials', async t => {
+  const f = await fixture(t), secret = password();
+  for (const email of ['owner@example.com', 'other@example.com']) await f.request('/api/auth/register', 'POST', {name:'Profile User',email,password:secret,confirm:secret});
+  const login = await f.request('/api/auth/login', 'POST', {email:'owner@example.com',password:secret});
+  const before = await f.read();
+  const changes = {name:'  Updated   Name  ',phone:'0912345678',birthday:'2000-02-29',gender:'other',address:'  123 Test Street  '};
+  const saved = await f.request('/api/auth/me', 'PATCH', changes, login.cookie);
+  assert.equal(saved.status, 200);
+  assert.equal(saved.data.user.name, 'Updated Name');
+  assert.equal(saved.data.user.address, '123 Test Street');
+  assert.equal(saved.data.user.birthday, changes.birthday);
+  assert.equal(saved.data.user.emailVerified, false);
+  assert.ok(!JSON.stringify(saved.data).includes('password'));
+  assert.deepEqual((await f.read()).users[1], before.users[1]);
+  assert.deepEqual((await f.read()).products, before.products);
+  await f.restart();
+  const me = await f.request('/api/auth/me', 'GET', undefined, login.cookie);
+  assert.deepEqual(me.data.user, saved.data.user);
+  const cleared = await f.request('/api/auth/me', 'PATCH', {phone:'',birthday:'',gender:'',address:''}, login.cookie);
+  assert.equal(cleared.status, 200);
+  assert.equal(cleared.data.user.name, 'Updated Name');
+  assert.equal(cleared.data.user.phone || '', '');
+  await f.request('/api/auth/logout','POST',{},login.cookie);
+  assert.equal((await f.request('/api/auth/me','PATCH',{name:'Guest'},login.cookie)).status,401);
+});
+
+test('profile rejects invalid values, identity changes and privilege escalation atomically', async t => {
+  const f=await fixture(t),secret=password();
+  await f.request('/api/auth/register','POST',{name:'Owner',email:'owner@example.com',password:secret,confirm:secret});
+  const login=await f.request('/api/auth/login','POST',{email:'owner@example.com',password:secret});
+  const before=await f.read();
+  assert.equal((await f.request('/api/auth/me','GET')).status,401);
+  assert.equal((await f.request('/api/auth/me','PATCH',{name:'Guest'})).status,401);
+  for(const changes of [{},{name:' '},{name:12},{name:'x'.repeat(81)},{phone:'abc'},{phone:{}},{birthday:'2001-02-29'},{birthday:'2999-01-01'},{gender:'admin'},{address:[]},{address:'x'.repeat(501)},
+    {role:'admin'},{isAdmin:true},{id:'other'},{userId:'other'},{email:'other@example.com'},{status:'active'},{emailVerified:true},{passwordHash:'fake'},{password:'replacement'}]){
+    const response=await f.request('/api/auth/me','PATCH',changes,login.cookie);
+    assert.equal(response.status,400,JSON.stringify(changes));
+  }
+  assert.deepEqual(await f.read(),before,'Rejected updates must not mutate any data');
+  const preflight=await f.request('/api/auth/me','OPTIONS',undefined,undefined,{'Access-Control-Request-Method':'PATCH'});
+  assert.equal(preflight.status,204);
+  assert.match(preflight.headers.get('access-control-allow-methods'),/PATCH/);
+  assert.equal((await f.request('/api/auth/me','PATCH',{name:'Untrusted'},login.cookie,{Origin:'https://untrusted.example'})).status,403);
+  await fs.writeFile(f.dbPath+'.lock','fixture');
+  assert.equal((await f.request('/api/auth/me','PATCH',{name:'Not saved'},login.cookie)).status,503);
+  await fs.unlink(f.dbPath+'.lock');
+  assert.deepEqual(await f.read(),before);
+});
+
+test('profile fields persist with the JSON store and survive restart', async t => {
+  const f=await fixture(t),secret=password();
+  await f.request('/api/auth/register','POST',{name:'JSON User',email:'json@example.com',password:secret,confirm:secret});
+  const login=await f.request('/api/auth/login','POST',{email:'json@example.com',password:secret});
+  const changed=await f.request('/api/auth/me','PATCH',{name:'SQLite Updated',address:'Address fixture',birthday:'1999-10-19'},login.cookie);
+  assert.equal(changed.status,200);
+  await f.restart();
+  const result=await f.request('/api/auth/me','GET',undefined,login.cookie);
+  assert.equal(result.status,200);
+  assert.deepEqual(result.data.user,changed.data.user);
+  assert.deepEqual((await f.request('/products')).data,products);
 });
 
 test('case-insensitive duplicate email is rejected, including concurrent registrations', async t => {

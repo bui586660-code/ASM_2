@@ -10,7 +10,6 @@ function configuration(input={}) {
   return Object.freeze(config);
 }
 module.exports=function paymentRoutes({db,currentUser,requireAdmin,send,readBody,ApiError,config}) {
-  if(config.enabled&&db.kind!=='sqlite')throw Error('Bank payments require a verified SQLite migration');
   const available=()=>({bank:config.enabled,qr:config.enabled,cod:config.codEnabled});
   function initialize(order,body) {
     if(!available()[body.paymentMethod])throw new ApiError(503,'Phương thức thanh toán này hiện chưa sẵn sàng. Vui lòng chọn phương thức khác.');

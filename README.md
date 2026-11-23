@@ -1,4 +1,4 @@
-> **Cập nhật 09/10/2026:** Backend mặc định đã chuyển sang SQLite sau migration; `db.json` được giữ nguyên làm nguồn cũ. Chuyển khoản MB/VietQR và webhook SePay đã có code, nhưng mặc định tắt khi chưa cấu hình secret. Không chạy JSON Server. Đọc [hướng dẫn thanh toán, chạy server và migration](docs/PAYMENTS.md) thay cho các mô tả thanh toán demo/lưu JSON trước đây bên dưới.
+> **Cập nhật 21/10/2026:** Backend dùng `Backend/db.json` làm nguồn dữ liệu nghiệp vụ duy nhất. `ttech.sqlite` và các file WAL chỉ là dữ liệu cũ để đối chiếu, không được server nạp hoặc ghi. Chuyển khoản MB/VietQR và webhook SePay vẫn mặc định tắt khi chưa cấu hình secret.
 
 # T-TECH
 
@@ -9,8 +9,10 @@ Website thương mại điện tử laptop với danh sách/chi tiết sản ph�
 ```text
 ASM/
 ├── Backend/
-│   ├── db.json          # products, users, authSessions, orders
+│   ├── db.json          # products, users, sessions, orders, payments, audit
 │   ├── server.cjs       # API sản phẩm + authentication
+│   ├── json-storage.cjs # JSON read/write queue and file lock
+│   ├── migrate-sqlite-to-json.cjs # one-time legacy data import
 │   └── orders.cjs       # Quote, tạo đơn, lịch sử
 ├── frontend/
 │   ├── index.html
@@ -44,6 +46,14 @@ python -m http.server 8000 --bind 127.0.0.1 --directory frontend
 ```
 
 Mở **http://127.0.0.1:8000/**. Giữ hai server chạy. Dừng JSON Server cũ trước khi chạy backend mới; không chạy JSON Server trực tiếp trên database có tài khoản.
+
+Nếu đây là lần đầu chuyển từ bản SQLite trước đó, chạy một lần khi backend cũ đã dừng:
+
+```powershell
+npm.cmd run migrate:sqlite-to-json
+```
+
+Lệnh tạo bản sao lưu `db.json.pre-sqlite-to-json-*.bak`, gộp dữ liệu SQLite chưa có vào `db.json`, rồi ghi marker để không nhập lặp.
 
 ## Công nghệ
 

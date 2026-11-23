@@ -5,10 +5,11 @@ const fs = require('node:fs/promises');
 const path = require('node:path');
 const { randomBytes, randomUUID, scrypt, timingSafeEqual, createHash } = require('node:crypto');
 const { promisify } = require('node:util');
+const { JsonStoreError, openJsonDatabase } = require('./json-storage.cjs');
 const deriveKey = promisify(scrypt);
 const SCRYPT = { N: 32768, r: 8, p: 3, maxmem: 64 * 1024 * 1024 };
 const COOKIE = 'ttech_session';
-const DEFAULT_ORIGINS = ['http://127.0.0.1:5501', 'http://localhost:5501', 'http://127.0.0.1:8000', 'http://localhost:8000'];
+const DEFAULT_ORIGINS = ['http://127.0.0.1:5500', 'http://localhost:5500', 'http://127.0.0.1:5501', 'http://localhost:5501', 'http://127.0.0.1:8000', 'http://localhost:8000'];
 const digest = token => createHash('sha256').update(token).digest('hex');
 const normalizeEmail = value => typeof value === 'string' ? value.trim().toLowerCase() : '';
 
@@ -16,50 +17,11 @@ class ApiError extends Error {
   constructor(status, message, fields) { super(message); this.status = status; this.fields = fields; }
 }
 
-function database(dbPath) {
-  let pending = Promise.resolve();
-  async function read() {
-    const data = JSON.parse(await fs.readFile(dbPath, 'utf8'));
-    if (!Array.isArray(data.products)) throw new Error('Database products collection is invalid');
-    for (const key of ['users', 'authSessions', 'orders']) {
-      if (data[key] === undefined) data[key] = [];
-      if (!Array.isArray(data[key])) throw new Error(`Database ${key} collection is invalid`);
-    }
-    return data;
-  }
-  function update(mutator) {
-    const result = pending.then(async () => {
-      // Share an exclusive write lock with CLI/other processes, not just this queue.
-      const lockPath = dbPath + '.lock';
-      let lock;
-      try { lock = await fs.open(lockPath, 'wx', 0o600); }
-      catch (error) {
-        if (error.code === 'EEXIST') throw new ApiError(503, 'Dữ liệu đang được cập nhật. Vui lòng thử lại.');
-        throw error;
-      }
-      const temporary = dbPath + '.' + randomUUID() + '.tmp';
-      try {
-        const data = await read();
-        const value = await mutator(data);
-        await fs.writeFile(temporary, JSON.stringify(data, null, 2) + '\n', { mode: 0o600, flag: 'wx' });
-        await fs.rename(temporary, dbPath);
-        return value;
-      } finally {
-        await fs.unlink(temporary).catch(error => { if (error.code !== 'ENOENT') console.error('Temporary database cleanup failed:', error.code); });
-        await lock.close();
-        await fs.unlink(lockPath);
-      }
-    });
-    // The caller receives failures; a failed write must not poison later transactions.
-    pending = result.catch(() => undefined);
-    return result;
-  }
-  return { read, update };
-}
-
 function publicUser(user) {
-  const { id, name, email, phone, role, status, createdAt } = user;
-  return { id, name, email, ...(phone ? { phone } : {}), role, status, createdAt };
+  const { id, name, email, phone, birthday, gender, address, role, status, createdAt } = user;
+  return { id, name, email, ...(phone ? { phone } : {}),
+    ...(typeof birthday === 'string' ? { birthday } : {}), ...(typeof gender === 'string' ? { gender } : {}),
+    ...(typeof address === 'string' ? { address } : {}), emailVerified: user.emailVerified === true, role, status, createdAt };
 }
 
 async function hashPassword(password) {
@@ -78,14 +40,36 @@ async function verifyPassword(password, encoded) {
 function validateCredentials(body, register) {
   const email = normalizeEmail(body.email), fields = {};
   const password = typeof body.password === 'string' ? body.password : '';
-  const name = typeof body.name === 'string' ? body.name.trim() : '';
+  const name = typeof body.name === 'string' ? body.name.trim().replace(/\s+/g, ' ') : '';
   if (!email || email.length > 254 || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) fields.email = 'Email không hợp lệ.';
-  if (password.length < 8 || password.length > 128) fields.password = 'Mật khẩu phải có từ 8 đến 128 ký tự.';
+  if (!password.trim() || password.length < 8 || password.length > 128) fields.password = 'Mật khẩu phải có từ 8 đến 128 ký tự.';
   if (register && (!name || name.length > 80)) fields.name = 'Vui lòng nhập họ tên, tối đa 80 ký tự.';
   if (register && body.confirm !== password) fields.confirm = 'Mật khẩu xác nhận không khớp.';
-  if (['role', 'status', 'id', 'passwordHash'].some(key => Object.hasOwn(body, key))) throw new ApiError(400, 'Dữ liệu tài khoản không hợp lệ.');
+  const allowed = register ? ['name', 'email', 'password', 'confirm'] : ['email', 'password'];
+  if (Object.keys(body).some(key => !allowed.includes(key))) throw new ApiError(400, 'Dữ liệu tài khoản không hợp lệ.');
   if (Object.keys(fields).length) throw new ApiError(400, 'Vui lòng kiểm tra thông tin đã nhập.', fields);
   return { name, email, password };
+}
+
+function validateProfile(body) {
+  const allowed = ['name', 'phone', 'birthday', 'gender', 'address'], fields = {}, changes = {};
+  if (!Object.keys(body).length || Object.keys(body).some(key => !allowed.includes(key))) throw new ApiError(400, 'Chỉ được cập nhật các trường thông tin cá nhân cho phép.');
+  for (const key of Object.keys(body)) {
+    if (typeof body[key] !== 'string') { fields[key] = 'Thông tin không hợp lệ.'; continue; }
+    const value = key === 'name' ? body[key].trim().replace(/\s+/g, ' ') : body[key].trim();
+    changes[key] = value;
+    if (key === 'name' && (!value || value.length > 80)) fields[key] = 'Vui lòng nhập họ tên, tối đa 80 ký tự.';
+    if (key === 'phone' && value && !/^(?:0|\+84)\d{9}$/.test(value)) fields[key] = 'Số điện thoại không hợp lệ. Nhập 10 số bắt đầu bằng 0 hoặc dùng +84.';
+    if (key === 'birthday' && value) {
+      const date = new Date(value + 'T00:00:00Z');
+      const today = new Date().toLocaleDateString('en-CA', { timeZone: 'Asia/Ho_Chi_Minh' });
+      if (!/^\d{4}-\d{2}-\d{2}$/.test(value) || !Number.isFinite(date.getTime()) || date.toISOString().slice(0,10) !== value || value < '1900-01-01' || value > today) fields[key] = 'Ngày sinh không hợp lệ.';
+    }
+    if (key === 'gender' && !['', 'male', 'female', 'other'].includes(value)) fields[key] = 'Vui lòng chọn giới tính hợp lệ.';
+    if (key === 'address' && value.length > 500) fields[key] = 'Địa chỉ tối đa 500 ký tự.';
+  }
+  if (Object.keys(fields).length) throw new ApiError(400, 'Vui lòng kiểm tra thông tin đã nhập.', fields);
+  return changes;
 }
 
 async function readBody(request) {
@@ -141,18 +125,14 @@ function createLimiter(maximum) {
 
 async function createServer(options = {}) {
   const dbPath = path.resolve(options.dbPath || process.env.TTECH_DB_PATH || path.join(__dirname, 'db.json'));
-  const sqlitePath = options.sqlitePath || process.env.TTECH_SQLITE_PATH || (!options.dbPath && !process.env.TTECH_DB_PATH ? path.join(__dirname, 'ttech.sqlite') : null);
   const paymentConfig = require('./payments.cjs').configuration(options.payments);
-  if (paymentConfig.enabled && !sqlitePath) throw new Error('Bank payments require a verified SQLite migration');
-  const db = sqlitePath ? require('./storage.cjs').openDatabase(path.resolve(sqlitePath)) : database(dbPath);
+  const db = openJsonDatabase(dbPath);
   const origins = new Set(options.origins || process.env.FRONTEND_ORIGINS?.split(',').map(value => value.trim()) || DEFAULT_ORIGINS);
   const sessionTtlMs = options.sessionTtlMs ?? 7 * 24 * 60 * 60 * 1000;
   const secure = options.secureCookies ?? process.env.NODE_ENV === 'production';
   const limit = createLimiter(options.rateLimitMax ?? 20);
   const dummyHash = await hashPassword(randomBytes(32).toString('hex'));
-  const initial = db.kind === 'sqlite' ? await db.read() : JSON.parse(await fs.readFile(dbPath, 'utf8'));
-  await db.read();
-  if (!initial.users || !initial.authSessions || !initial.orders) await db.update(() => undefined);
+  await db.update(() => undefined);
 
   function cookie(response, token = '') {
     response.setHeader('Set-Cookie', `${COOKIE}=${token}; Path=/api; HttpOnly; SameSite=Strict; Max-Age=${token ? Math.max(1, Math.floor(sessionTtlMs / 1000)) : 0}${secure ? '; Secure' : ''}`);
@@ -171,7 +151,7 @@ async function createServer(options = {}) {
     }
     if (!['GET', 'HEAD', 'OPTIONS'].includes(request.method) && !origin) throw new ApiError(403, 'Nguồn truy cập không được phép.');
     response.setHeader('Access-Control-Allow-Headers', 'Content-Type');
-    response.setHeader('Access-Control-Allow-Methods', 'GET,POST,OPTIONS');
+    response.setHeader('Access-Control-Allow-Methods', 'GET,POST,PATCH,OPTIONS');
   }
 
   async function register(body, response) {
@@ -227,6 +207,17 @@ async function createServer(options = {}) {
     if (request.method === 'GET' && pathname === '/api/auth/me') {
       return send(response, 200, { user: publicUser(currentUser(await db.read(), request)) });
     }
+    if (request.method === 'PATCH' && pathname === '/api/auth/me') {
+      currentUser(await db.read(), request);
+      const changes = validateProfile(await readBody(request));
+      const user = await db.update(data => {
+        // Recheck session inside the write transaction; never accept a client user ID.
+        const user = currentUser(data, request);
+        Object.assign(user, changes);
+        return publicUser(user);
+      });
+      return send(response, 200, { user, message: 'Cập nhật thông tin thành công.' });
+    }
     if (request.method === 'GET' && pathname === '/api/auth/session') {
       const data = await db.read();
       try { return send(response, 200, { user: publicUser(currentUser(data, request)) }); }
@@ -265,9 +256,9 @@ async function createServer(options = {}) {
       else { cors(request, response); await route(request, response); }
     }
     catch (error) {
-      if (!(error instanceof ApiError)) console.error('API request failed:', error.code || error.name);
+      if (!(error instanceof ApiError) && !(error instanceof JsonStoreError)) console.error('API request failed:', error.code || error.name);
       if (!response.headersSent && !response.destroyed) send(response, error.status || 500, {
-        message: error instanceof ApiError ? error.message : 'Máy chủ đang gặp sự cố. Vui lòng thử lại.',
+        message: error instanceof ApiError || error instanceof JsonStoreError ? error.message : 'Máy chủ đang gặp sự cố. Vui lòng thử lại.',
         ...(error.fields ? { fields: error.fields } : {})
       });
     }
@@ -285,7 +276,7 @@ if (require.main === module) {
     if (process.argv[2] === '--promote') {
       const email = normalizeEmail(process.argv[3]);
       if (!email) throw new Error('Usage: node server.cjs --promote registered-email');
-      const db = process.env.TTECH_DB_PATH && !process.env.TTECH_SQLITE_PATH ? database(path.resolve(process.env.TTECH_DB_PATH)) : require('./storage.cjs').openDatabase(path.resolve(process.env.TTECH_SQLITE_PATH || path.join(__dirname, 'ttech.sqlite')));
+      const db = openJsonDatabase(path.resolve(process.env.TTECH_DB_PATH || path.join(__dirname, 'db.json')));
       await db.update(data => {
         const user = data.users.find(user => normalizeEmail(user.email) === email && user.status === 'active');
         if (!user) throw new Error('Register an active account before promoting it');

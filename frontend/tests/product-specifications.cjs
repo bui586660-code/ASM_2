@@ -39,7 +39,27 @@ const path = require('node:path');
     await page.locator('#detail-specifications tbody tr').first().waitFor();
     assert.equal(await page.locator('#detail-specifications tbody tr').count(), 5);
     assert.equal(await page.locator('.gallery-thumbnail').count(), 2);
+    // Product transport failures keep the existing error/loading UI and support retry.
+    for (const failure of ['http', 'html', 'empty', 'malformed', 'network']) {
+      await page.unroute('**/products');
+      await page.route('**/products', route => {
+        if (failure === 'network') return route.abort();
+        if (failure === 'empty') return route.fulfill({ status: 204 });
+        if (failure === 'http') return route.fulfill({ status: 503, json: { message: 'unavailable' } });
+        return route.fulfill({ contentType: failure === 'html' ? 'text/html' : 'application/json', body: failure === 'html' ? '<html>unavailable</html>' : '{broken' });
+      });
+      await page.goto('http://127.0.0.1:8000/#products');
+      await page.reload();
+      await page.locator('#catalog-error').waitFor();
+      assert.equal(await page.locator('#catalog-loading').isHidden(), true);
+      assert.equal(await page.locator('#product-grid').getAttribute('aria-busy'), 'false');
+      assert.doesNotMatch(await page.locator('#catalog-error').innerText(), /localhost|Failed to fetch|SyntaxError|HTTP/);
+      await page.unroute('**/products');
+      await page.route('**/products', route => route.fulfill({ json: products }));
+      await page.locator('#retry-products').click();
+      await page.locator('#product-grid .product-card').first().waitFor();
+    }
     assert.deepEqual(errors, []);
-    console.log('PASS: detailed specifications, escaping, gallery, fallback and mobile');
+    console.log('PASS: detailed specifications, escaping, gallery, fallback, mobile, product HTTP/non-JSON/204/malformed/network errors and retry');
   } finally { await browser.close(); }
 })().catch(error => { console.error(error); process.exitCode = 1; });

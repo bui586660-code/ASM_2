@@ -1,4 +1,4 @@
-> **Cập nhật 09/10/2026:** Backend mặc định đã chuyển sang SQLite sau migration; `db.json` được giữ nguyên làm nguồn cũ. Chuyển khoản MB/VietQR và webhook SePay đã có code, nhưng mặc định tắt khi chưa cấu hình secret. Không chạy JSON Server. Đọc [hướng dẫn thanh toán, chạy server và migration](../docs/PAYMENTS.md) thay cho các mô tả thanh toán demo/lưu JSON trước đây bên dưới.
+> **Cập nhật 21/10/2026:** Backend dùng `../Backend/db.json` làm nguồn dữ liệu nghiệp vụ duy nhất. Không chạy JSON Server đồng thời với `node Backend/server.cjs`; server Node hiện là API duy nhất trên cổng 3000.
 
 # T-TECH Frontend
 
@@ -14,7 +14,7 @@ Từ root workspace `D:\JS-NANGCAO`, chạy backend Node.js (Node 22+; đã ki�
 npm.cmd start
 ```
 
-Hoặc từ `ASM`: `node Backend/server.cjs`. Dừng JSON Server cũ nếu đang chiếm cổng 3000. Backend giữ API sản phẩm và xác thực; dữ liệu hoạt động nằm trong `Backend/ttech.sqlite`.
+Hoặc từ `ASM`: `node Backend/server.cjs`. Dừng JSON Server cũ nếu đang chiếm cổng 3000. Backend giữ API sản phẩm và xác thực; dữ liệu hoạt động nằm trong `Backend/db.json`.
 
 Khởi động lại Live Server sau khi đổi cấu hình `.vscode/settings.json`, mở **http://127.0.0.1:5501/**. Web root phải là `ASM/frontend`, không phải thư mục chứa database. Phương án khác:
 
@@ -55,7 +55,7 @@ Danh sách đầy đủ ở `#products`; tìm kiếm ở `#catalog-results`; chi
 
 ## Dữ liệu và chức năng giữ nguyên
 
-API: `http://localhost:3000/products`, từ SQLite đã nhập dữ liệu JSON (39 sản phẩm lúc migration). Giữ nguyên mảng products, schema sản phẩm, thông số, giá, endpoint và file ảnh; database bổ sung users/authSessions/orders. Ảnh lỗi dùng SVG dự phòng. Ánh xạ đường dẫn ảnh cũ `../Images/` sang `./assets/images/` vẫn được giữ.
+API: `http://localhost:3000/products`, đọc từ `Backend/db.json` (39 sản phẩm). Giữ nguyên mảng products, schema sản phẩm, thông số, giá, endpoint và file ảnh; database bổ sung users/authSessions/orders/payments. Ảnh lỗi dùng SVG dự phòng. Ánh xạ đường dẫn ảnh cũ `../Images/` sang `./assets/images/` vẫn được giữ.
 
 - Lọc thương hiệu, khoảng giá, tên/brand; sort theo thứ tự dữ liệu hoặc giá tăng/giảm.
 - Gaming/Văn phòng dùng cách phân loại GPU đã có; Khuyến mãi dùng giá giảm hợp lệ. Các nhóm filter cấu hình chưa được hỗ trợ vẫn ghi rõ giới hạn.

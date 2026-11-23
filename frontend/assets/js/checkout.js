@@ -249,7 +249,10 @@
       if (error.status === 401) { quote = null; checkoutError('Phiên đăng nhập đã hết hạn. Vui lòng đăng nhập lại.','retry'); }
       if (error.status === 409) {
         // A committed response may have been lost; look it up before changing the quote.
-        if (await recoverPending(version).catch(() => false)) return;
+        if (await recoverPending(version).catch(recoveryError => {
+          console.warn('Order recovery unavailable:', recoveryError.status || 'network/response');
+          return false;
+        })) return;
         if (!owned(version)) return;
         busy = false; await refreshQuote();
       }

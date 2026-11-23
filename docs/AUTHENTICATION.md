@@ -1,6 +1,34 @@
-> **Cập nhật 09/10/2026:** Backend mặc định đã chuyển sang SQLite sau migration; `db.json` được giữ nguyên làm nguồn cũ. Chuyển khoản MB/VietQR và webhook SePay đã có code, nhưng mặc định tắt khi chưa cấu hình secret. Không chạy JSON Server. Đọc [hướng dẫn thanh toán, chạy server và migration](PAYMENTS.md) thay cho các mô tả thanh toán demo/lưu JSON trước đây bên dưới.
+> **Cập nhật 21/10/2026:** Tài khoản và phiên được đọc/ghi trong `Backend/db.json`. `ttech.sqlite` chỉ là bản dữ liệu cũ; xem [PAYMENTS.md](PAYMENTS.md) để biết cách nhập một lần và giới hạn JSON.
 
 # T-TECH authentication
+
+## Cập nhật 19/10/2026: kết nối backend và chỉnh sửa hồ sơ
+
+Lỗi đăng ký thực tế do cổng 3000 đang chạy JSON Server (`json-server db.json`), không phải `Backend/server.cjs`. `/products` vẫn trả 200 nhưng `/api/auth/session` và các route authentication không tồn tại. Preflight của JSON Server trả `Access-Control-Allow-Origin: *` mà không cho credentials, nên request cookie của trình duyệt bị chặn. Đã dừng đúng tiến trình JSON Server và chạy backend T-TECH hiện có; không migration hoặc ghi đè dữ liệu.
+
+Chạy từ `D:\JS-NANGCAO`: `npm.cmd start`. Hoặc từ `ASM`: `node Backend/server.cjs`. Chỉ chạy một backend trên cổng 3000. Frontend dùng Live Server, web root `ASM/frontend`, tại `http://127.0.0.1:5501/`. `/api/health` phải trả `service: "ttech-auth"` và `ok: true`. Không dùng JSON Server thay thế backend này.
+
+Workspace `.vscode/settings.json` đã sửa `liveServer.settings.root` từ `/` thành `/ASM/frontend`. Cần Stop/Start Live Server để áp dụng; không phục vụ toàn bộ workspace vì có file backend/database. Khi kiểm tra, phiên Live Server cũ vẫn dùng root workspace: trang `/ASM/frontend/index.html` gọi session có cookie và products thành công, không có lỗi JavaScript. URL `/` của cấu hình mới cần kiểm tra lại sau khi khởi động lại extension.
+
+Backend mặc định dùng `Backend/db.json`. Không cần biến môi trường mới cho hồ sơ; giữ nguyên cấu hình `PORT`, `HOST`, `TTECH_DB_PATH`, origin và payment hiện tại. Không thay đổi cấu hình thanh toán để kiểm tra authentication.
+
+### API và dữ liệu
+
+- Giữ nguyên POST `/api/auth/register`, `/api/auth/login`, `/api/auth/logout`, GET `/api/auth/session`, `/api/auth/me` và API sản phẩm/đơn hàng/thanh toán.
+- Thêm PATCH `/api/auth/me`: chỉ nhận `name`, `phone`, `birthday`, `gender`, `address`; chỉ sửa người dùng sở hữu session. Mọi trường khác (email, ID, role, isAdmin, status, emailVerified, password...) đều bị từ chối. Session và trạng thái tài khoản được kiểm tra lại trong transaction ghi.
+- `name`: bắt buộc, chuẩn hóa khoảng trắng, tối đa 80 ký tự. `phone`: tùy chọn, `0` + 9 chữ số hoặc `+84` + 9 chữ số. `birthday`: tùy chọn, ngày hợp lệ từ năm 1900 đến ngày hiện tại ở Việt Nam. `gender`: chuỗi rỗng, `male`, `female`, `other`. `address`: tùy chọn, tối đa 500 ký tự. Trường tùy chọn có thể xóa bằng chuỗi rỗng.
+- Response vẫn `{ user }` (PATCH có thêm `message`); bổ sung các trường hồ sơ và `emailVerified` từ dữ liệu backend. Không có xác minh email giả: tài khoản không có cờ xác minh hiển thị “Chưa xác minh”.
+- Giữ password hash scrypt có salt, session cookie HttpOnly/SameSite=Strict, token hash trong database. Không lưu mật khẩu/session token vào localStorage hoặc sessionStorage. Các trường hồ sơ được lưu trong payload người dùng hiện có, không thêm database hay migration.
+
+### Sử dụng và kiểm thử
+
+Đăng nhập → tên tài khoản → Tài khoản của tôi → Chỉnh sửa → Lưu. Hủy chỉnh sửa khôi phục thông tin đã lưu. Request lỗi giữ bản nháp và bật lại nút lưu. Chống gửi lặp; đóng modal hoặc đổi phiên không cho response cũ ghi đè hồ sơ. Phiên hết hạn yêu cầu đăng nhập lại rồi tiếp tục mở hồ sơ.
+
+Các test API kiểm tra validation đăng ký/hồ sơ, trùng email, session/role, chặn sửa người khác, lỗi database, JSON restart, hồi quy đơn hàng và thanh toán. Test dùng database và tài khoản ngẫu nhiên trong thư mục tạm; không cung cấp mật khẩu test cố định hoặc tạo đơn thật.
+
+Lệnh chạy từ root workspace: `npm.cmd run test:auth`, `npm.cmd run test:auth-ui`, `npm.cmd run test:orders`, `npm.cmd run test:payments`. Các test UI checkout/payment tạo screenshot, nên chạy trong thư mục tạm nếu muốn giữ ảnh tài liệu hiện có.
+
+Chưa triển khai gửi email xác minh, đổi email, quên/đổi mật khẩu. Trước production cần HTTPS, cấu hình origin theo tên miền thật, quản lý bí mật và sao lưu/kiểm soát truy cập database. Không dùng kết quả test webhook giả lập làm bằng chứng giao dịch ngân hàng thật.
 
 ## Khảo sát và quyết định
 

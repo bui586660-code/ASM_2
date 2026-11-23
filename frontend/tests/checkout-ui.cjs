@@ -5,7 +5,6 @@ const path = require('node:path');
 const os = require('node:os');
 const http = require('node:http');
 const { randomBytes } = require('node:crypto');
-const { migrate, openDatabase } = require('../../Backend/storage.cjs');
 const { createServer } = require('../../Backend/server.cjs');
 
 (async () => {
@@ -26,10 +25,8 @@ const { createServer } = require('../../Backend/server.cjs');
   });
   await new Promise(resolve => staticServer.listen(0, '127.0.0.1', resolve));
   const origin = `http://127.0.0.1:${staticServer.address().port}`;
-  const sqlitePath = path.join(directory, 'store.sqlite');
-  await migrate(dbPath, sqlitePath);
-  const store = openDatabase(sqlitePath);
-  const backend = await createServer({ dbPath, sqlitePath, promotions:{coupons:[{code:'TEST500',type:'fixed',value:500000,active:true,minSubtotal:20000000,perUserLimit:1},{code:'TEST100',type:'fixed',value:100000,active:true}]}, payments:{enabled:true, secret:randomBytes(32).toString('hex')}, origins: [origin], rateLimitMax: 100 });
+  const readStore = async () => JSON.parse(await fs.readFile(dbPath, 'utf8'));
+  const backend = await createServer({ dbPath, promotions:{coupons:[{code:'TEST500',type:'fixed',value:500000,active:true,minSubtotal:20000000,perUserLimit:1},{code:'TEST100',type:'fixed',value:100000,active:true}]}, payments:{enabled:true, secret:randomBytes(32).toString('hex')}, origins: [origin], rateLimitMax: 100 });
   await new Promise(resolve => backend.listen(0, '127.0.0.1', resolve));
   const api = `http://127.0.0.1:${backend.address().port}`;
   const browser = await chromium.launch();
@@ -147,7 +144,7 @@ const { createServer } = require('../../Backend/server.cjs');
     await page.locator('#place-order').evaluate(button=>{button.click();button.click()});
     await page.locator('#order-success-title').waitFor();
     assert.equal(await page.locator('#cart-count').innerText(),'1','Unselected product stays in cart');
-    let db=(await store.read());
+    let db=(await readStore());
     assert.equal(db.orders.length,1);
     assert.equal(db.orders[0].total,expected-500000);
     assert.equal(db.orders[0].coupon.code,'TEST500');
@@ -208,7 +205,7 @@ const { createServer } = require('../../Backend/server.cjs');
     await page.locator('#order-success-title').waitFor();
     await duplicate.locator('#order-success-title').waitFor();
     await duplicate.close();
-    db=(await store.read());
+    db=(await readStore());
     assert.equal(db.orders.length,2,'Recovery must not create duplicate order');
     assert.equal(await page.locator('#cart-count').innerText(),'2','Keep quantities and products added while placing order');
     // Route B must not be dropped while the authorization callback for route A waits.
@@ -258,7 +255,7 @@ const { createServer } = require('../../Backend/server.cjs');
     assert.equal(await page.locator('.order-history-card').count(),0);
     assert.equal(await page.locator('#commerce-view').innerText().then(t=>t.includes('123 Đường thử nghiệm')),false);
     assert.deepEqual(runtimeErrors,[]);
-    assert.deepEqual((await store.read()).products,products);
+    assert.deepEqual((await readStore()).products,products);
     assert.deepEqual(await fs.readFile(path.resolve(__dirname,'../../Backend/db.json')),original);
     console.log('PASS: cart quantity/remove/persist, protected checkout, field/payment/confirmation validation, canonical totals, double-submit, success/detail/history/reload, empty cart, lost-response recovery, 320–1440px, unchanged real database.');
   } finally {
@@ -266,7 +263,6 @@ const { createServer } = require('../../Backend/server.cjs');
       for (const page of context.pages()) await page.unrouteAll({behavior:'ignoreErrors'});
       await context.unrouteAll({behavior:'ignoreErrors'});
     }
-    store.close();
     await browser.close();
     await Promise.all([new Promise(r=>backend.close(r)),new Promise(r=>staticServer.close(r))]);
     assert.equal(path.dirname(directory),os.tmpdir());await fs.rm(directory,{recursive:true});

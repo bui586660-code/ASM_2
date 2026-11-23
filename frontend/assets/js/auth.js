@@ -7,6 +7,8 @@
   let ui, user = null, mode = 'login', busy = false, pendingAction = null;
   let formController, refreshPromise, revision = 0, loggingOut = false;
   const touched = new Set();
+  const profileFields = ['name', 'phone', 'birthday', 'gender', 'address'];
+  let profileVersion = 0, profileIntent = 0, profileBusy = false, profileController, profileSnapshot = null;
   const channel = typeof BroadcastChannel === 'function' ? new BroadcastChannel('ttech-auth') : null;
 
   class AuthError extends Error {
@@ -25,16 +27,21 @@
         method, credentials: 'include', cache: 'no-store', signal: controller.signal,
         ...(body !== undefined ? { headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) } : {})
       });
+      // Keep HTTP status even when an error response has no usable JSON body.
+      const invalidResponse = new AuthError('Máy chủ trả về dữ liệu không hợp lệ. Vui lòng thử lại.', response.ok ? 0 : response.status);
+      if ([204, 205].includes(response.status) || !/^application\/(?:[\w.+-]+\+)?json(?:\s*;|$)/i.test(response.headers.get('Content-Type') || '')) throw invalidResponse;
+      // Reading the stream can fail due to network/timeout; only parsing failures are invalid JSON.
+      const text = await response.text();
       let data;
-      try { data = await response.json(); }
-      catch { throw new AuthError('Máy chủ trả về dữ liệu không hợp lệ. Vui lòng thử lại.'); }
-      if (!data || typeof data !== 'object' || Array.isArray(data)) throw new AuthError('Máy chủ trả về dữ liệu không hợp lệ. Vui lòng thử lại.');
+      try { data = JSON.parse(text); }
+      catch { throw invalidResponse; }
+      if (!data || typeof data !== 'object' || Array.isArray(data)) throw invalidResponse;
       if (!response.ok) {
         const messages = { 401: 'Email hoặc mật khẩu không chính xác.', 403: 'Bạn không có quyền truy cập chức năng này.',
           404: 'Dịch vụ tài khoản chưa sẵn sàng. Vui lòng thử lại.', 409: 'Email này đã được đăng ký.',
           429: 'Bạn thử quá nhiều lần. Vui lòng đợi một lúc rồi thử lại.' };
-        const orderMessage = (route.startsWith('/orders') || route.startsWith('/admin/payments')) && [400,401,404,409,503].includes(response.status) && typeof data.message === 'string' ? data.message : null;
-        throw new AuthError(orderMessage || messages[response.status] || 'Không thể xử lý yêu cầu. Vui lòng thử lại.', response.status,
+        const orderMessage = (route.startsWith('/orders') || route.startsWith('/admin/payments') || route === '/auth/me') && [400,401,404,409,503].includes(response.status) && typeof data.message === 'string' ? data.message : null;
+        throw new AuthError(orderMessage || messages[response.status] || (response.status >= 500 ? 'Máy chủ đang gặp sự cố. Vui lòng thử lại.' : 'Không thể xử lý yêu cầu. Vui lòng thử lại.'), response.status,
           response.status === 400 || response.status === 409 ? data.fields : {});
       }
       return data;
@@ -55,8 +62,9 @@
       typeof value.email !== 'string' || !['user', 'admin'].includes(value.role) || value.status !== 'active') {
       throw new AuthError('Máy chủ trả về dữ liệu tài khoản không hợp lệ. Vui lòng thử lại.');
     }
-    const { id, name, email, role, status, phone } = value;
-    return { id, name, email, role, status, ...(typeof phone === 'string' ? { phone } : {}) };
+    const { id, name, email, role, status } = value;
+    const extras = Object.fromEntries(['phone','birthday','gender','address','createdAt'].filter(key => typeof value[key] === 'string').map(key => [key,value[key]]));
+    return { id, name, email, role, status, ...extras, emailVerified: value.emailVerified === true };
   }
 
   function setMenu(open) {
@@ -66,6 +74,7 @@
 
   function setUser(value) {
     const changed = JSON.stringify(user) !== JSON.stringify(value);
+    if (!value || (user && value.id !== user.id)) resetProfile();
     user = value;
     $('#account-name').textContent = user ? user.name : 'Đăng nhập / Đăng ký';
     $('#auth-open').setAttribute('aria-label', user ? 'Tài khoản: ' + user.name : 'Đăng nhập / Đăng ký');
@@ -117,7 +126,7 @@
     let message = '';
     if (name === 'name' && !value.trim()) message = 'Vui lòng nhập họ tên.';
     if (name === 'email' && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value.trim())) message = 'Email không hợp lệ.';
-    if (name === 'password' && value.length < 8) message = 'Mật khẩu phải có ít nhất 8 ký tự.';
+    if (name === 'password' && (!value.trim() || value.length < 8)) message = 'Mật khẩu phải có ít nhất 8 ký tự.';
     if (name === 'confirm' && (!value || value !== $('#auth-password').value)) message = 'Mật khẩu xác nhận không khớp.';
     const maximum = name === 'name' ? 80 : name === 'email' ? 254 : 128;
     if (value.trim().length > maximum) message = 'Thông tin vượt quá độ dài cho phép (' + maximum + ' ký tự).';
@@ -190,7 +199,7 @@
     event.preventDefault();
     if (busy) return;
     $('#auth-email').value = $('#auth-email').value.trim().toLowerCase();
-    $('#auth-name').value = $('#auth-name').value.trim();
+    $('#auth-name').value = $('#auth-name').value.trim().replace(/\s+/g, ' ');
     const results = fields.map(name => { touched.add(name); return validate(name); });
     if (results.includes(false)) { $('#auth-' + fields[results.indexOf(false)]).focus(); return; }
     const email = $('#auth-email').value;
@@ -239,33 +248,132 @@
     finally { loggingOut = false; $('#account-logout').disabled = false; $('#profile-logout').disabled = false; }
   }
 
+  function profileFeedback(message = '', error = false) {
+    $('#account-feedback').textContent = message;
+    $('#account-feedback').dataset.error = String(error);
+  }
+  function setProfileBusy(value) {
+    profileBusy = value;
+    $('#profile-form').setAttribute('aria-busy', String(value));
+    $('#profile-form').querySelectorAll('input,select,textarea,button').forEach(input => { input.disabled = value; });
+    $('#profile-save').textContent = value ? 'Đang lưu...' : 'Lưu thay đổi';
+  }
+  function profileFieldError(key, message = '') {
+    $('#profile-input-' + key).setCustomValidity(message);
+    $('#profile-input-' + key).setAttribute('aria-invalid', String(Boolean(message)));
+    $('#profile-' + key + '-error').textContent = message;
+    $('#profile-' + key + '-error').hidden = !message;
+  }
+  function resetProfile() {
+    profileVersion++; profileController?.abort(); profileController = null; profileSnapshot = null;
+    setProfileBusy(false); $('#profile-form').reset(); $('#profile-form').hidden = true;
+    $('#profile-view').hidden = true; $('#profile-edit').hidden = true; $('#profile-retry').hidden = true;
+    [...profileFields,'email','email-status','createdAt','role','status'].forEach(key => { $('#profile-' + key).textContent = ''; });
+    profileFields.forEach(key => profileFieldError(key));
+    profileFeedback(); $('#admin-summary').hidden = true;
+  }
+  const ownsProfile = (version, id) => version === profileVersion && user?.id === id && $('#account-modal').open;
+  function renderProfile(account) {
+    profileSnapshot = account;
+    const date = value => value && Number.isFinite(Date.parse(value)) ? new Date(value).toLocaleDateString('vi-VN', {timeZone:'UTC'}) : 'Chưa cập nhật';
+    const values = {name:account.name,email:account.email,phone:account.phone,birthday:date(account.birthday),
+      gender:({male:'Nam',female:'Nữ',other:'Khác'})[account.gender],address:account.address,createdAt:date(account.createdAt),
+      role:account.role === 'admin' ? 'Quản trị viên' : 'Khách hàng',status:'Đang hoạt động'};
+    Object.entries(values).forEach(([key,value]) => { $('#profile-' + key).textContent = value || 'Chưa cập nhật'; });
+    $('#profile-email-status').textContent = account.emailVerified ? 'Đã xác minh' : 'Chưa xác minh email';
+    $('#profile-phone-row').hidden = false;
+  }
+  function editProfile(editing) {
+    if (!profileSnapshot || profileBusy) return;
+    profileFields.forEach(key => { $('#profile-input-' + key).value = profileSnapshot[key] || ''; profileFieldError(key); });
+    $('#profile-input-birthday').max = new Date().toLocaleDateString('en-CA', {timeZone:'Asia/Ho_Chi_Minh'});
+    $('#profile-form').hidden = !editing; $('#profile-view').hidden = editing; $('#profile-edit').hidden = editing;
+    profileFeedback();
+    if (editing) $('#profile-input-name').focus();
+  }
+  function validateProfileField(key) {
+    const input = $('#profile-input-' + key), value = input.value.trim();
+    let message = '';
+    if (key === 'name' && (!value || value.length > 80)) message = 'Vui lòng nhập họ tên, tối đa 80 ký tự.';
+    if (key === 'phone' && value && !/^(?:0|\+84)\d{9}$/.test(value)) message = 'Số điện thoại không hợp lệ. Nhập 10 số bắt đầu bằng 0 hoặc dùng +84.';
+    if (key === 'birthday' && (input.validity.badInput || (value && (value < '1900-01-01' || value > input.max)))) message = 'Ngày sinh không hợp lệ.';
+    if (key === 'gender' && !['','male','female','other'].includes(value)) message = 'Vui lòng chọn giới tính hợp lệ.';
+    if (key === 'address' && value.length > 500) message = 'Địa chỉ tối đa 500 ký tự.';
+    profileFieldError(key,message); return !message;
+  }
+  function expiredProfile() {
+    setUser(null); pendingAction = () => profile(); show('login', true);
+    feedback('Phiên đăng nhập đã hết hạn. Vui lòng đăng nhập lại.', true);
+  }
+  async function saveProfile(event) {
+    event.preventDefault();
+    if (profileBusy || !profileSnapshot) return;
+    $('#profile-input-name').value = $('#profile-input-name').value.trim().replace(/\s+/g, ' ');
+    const valid = profileFields.map(validateProfileField);
+    if (valid.includes(false)) { $('#profile-input-' + profileFields[valid.indexOf(false)]).focus(); return; }
+    const version = profileVersion, id = profileSnapshot.id;
+    const controller = profileController = new AbortController();
+    const body = Object.fromEntries(profileFields.map(key => [key,$('#profile-input-' + key).value.trim()]));
+    revision++; setProfileBusy(true); profileFeedback();
+    try {
+      const account = parseUser(await request('/auth/me', {method:'PATCH',body,signal:controller.signal}));
+      if (!ownsProfile(version,id)) return;
+      if (account.id !== id) throw new AuthError('Máy chủ trả về dữ liệu tài khoản không hợp lệ. Vui lòng thử lại.');
+      revision++; setUser(account); renderProfile(account); setProfileBusy(false); editProfile(false);
+      profileFeedback('Cập nhật thông tin thành công.'); channel?.postMessage('changed');
+    } catch (error) {
+      if (!ownsProfile(version,id) || error.name === 'AbortError') return;
+      if (error.status === 401) { expiredProfile(); return; }
+      profileFeedback(error.message,true);
+      profileFields.forEach(key => { if (typeof error.fields?.[key] === 'string') profileFieldError(key,error.fields[key]); });
+    } finally {
+      if (profileController === controller) { profileController = null; setProfileBusy(false); }
+    }
+  }
   function profile(admin = false) {
-    return requireLogin(async () => {
-      const account = parseUser(await request('/auth/me'));
-      setUser(account); setMenu(false);
-      $('#profile-name').textContent = account.name;
-      $('#profile-email').textContent = account.email;
-      $('#profile-phone').textContent = account.phone || '';
-      $('#profile-phone-row').hidden = !account.phone;
-      $('#profile-role').textContent = account.role === 'admin' ? 'Quản trị viên' : 'Khách hàng';
-      $('#profile-status').textContent = 'Đang hoạt động';
-      $('#account-feedback').textContent = '';
-      $('#admin-summary').hidden = !admin;
-      $('#admin-feedback').textContent = '';
-      ui.openModal($('#account-modal'));
-      if (admin) {
-        $('#admin-feedback').textContent = 'Đang tải...';
-        try {
-          const summary = await request('/admin/summary');
-          if (!Number.isInteger(summary.productCount) || !Number.isInteger(summary.userCount)) throw new AuthError('Không thể tải tổng quan quản trị.');
-          $('#admin-feedback').textContent = summary.productCount + ' sản phẩm · ' + summary.userCount + ' tài khoản';
-        } catch (error) { $('#admin-feedback').textContent = error.message; }
-      }
+    const intent = ++profileIntent;
+    resetProfile();
+    return requireLogin(async current => {
+      if (intent !== profileIntent) return;
+      const version = profileVersion;
+      setMenu(false); ui.openModal($('#account-modal')); profileFeedback('Đang tải thông tin...');
+      const controller = profileController = new AbortController();
+      try {
+        const account = parseUser(await request('/auth/me', {signal:controller.signal}));
+        if (!ownsProfile(version,current.id)) return;
+        if (account.id !== current.id) throw new AuthError('Máy chủ trả về dữ liệu tài khoản không hợp lệ. Vui lòng thử lại.');
+        setUser(account); renderProfile(account); editProfile(false);
+        $('#admin-summary').hidden = !admin || account.role !== 'admin';
+        if (admin && account.role === 'admin') {
+          $('#admin-feedback').textContent = 'Đang tải...';
+          try {
+            const summary = await request('/admin/summary', {signal:controller.signal});
+            if (!ownsProfile(version,current.id)) return;
+            if (!Number.isInteger(summary.productCount) || !Number.isInteger(summary.userCount)) throw new AuthError('Không thể tải tổng quan quản trị.');
+            $('#admin-feedback').textContent = summary.productCount + ' sản phẩm · ' + summary.userCount + ' tài khoản';
+          } catch (error) { if (ownsProfile(version,current.id) && error.name !== 'AbortError') $('#admin-feedback').textContent = error.message; }
+        }
+      } catch (error) {
+        if (!ownsProfile(version,current.id) || error.name === 'AbortError') return;
+        if (error.status === 401) { expiredProfile(); return; }
+        profileFeedback(error.message,true); $('#profile-retry').hidden = false;
+      } finally { if (profileController === controller) profileController = null; }
     });
   }
 
   function init(helpers) {
     ui = helpers;
+    $('#profile-form').addEventListener('submit',saveProfile);
+    $('#profile-edit').addEventListener('click',() => editProfile(true));
+    $('#profile-cancel').addEventListener('click',() => editProfile(false));
+    $('#profile-retry').addEventListener('click',() => profile());
+    $('#account-modal').addEventListener('close',() => { profileIntent++; resetProfile(); });
+    profileFields.forEach(key => {
+      $('#profile-input-' + key).addEventListener('blur',event => {
+        if (!event.relatedTarget?.closest('button')) validateProfileField(key);
+      });
+      $('#profile-input-' + key).addEventListener('input',() => { if ($('#profile-input-' + key).getAttribute('aria-invalid') === 'true') validateProfileField(key); });
+    });
     $('#auth-open').addEventListener('click', () => user ? setMenu($('#account-menu').hidden) : show());
     document.querySelectorAll('[data-open-auth]').forEach(button => button.addEventListener('click', () => user ? profile() : show()));
     document.querySelectorAll('[data-auth-mode]').forEach(button => button.addEventListener('click', () => { if (!busy) setMode(button.dataset.authMode); }));

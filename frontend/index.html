@@ -23,6 +23,7 @@
     </style>
     <link rel="stylesheet" href="./assets/css/ttech.css">
     <link rel="stylesheet" href="./assets/css/checkout.css">
+    <script src="./assets/js/products-data.js" defer></script>
     <script src="./assets/js/auth.js" defer></script>
     <script src="./assets/js/payments.js" defer></script>
     <script src="./assets/js/checkout.js" defer></script>
@@ -1348,19 +1349,44 @@ SOFTWARE.
           <h2 id="account-title" class="font-bold text-2xl">Tài khoản của tôi</h2>
           <button type="button" data-close="account-modal" aria-label="Đóng thông tin tài khoản"><svg class="icon" aria-hidden="true"><use href="#i-close"/></svg></button>
         </header>
-        <dl class="account-details">
+        <dl id="profile-view" class="account-details">
           <div><dt>Họ tên</dt><dd id="profile-name"></dd></div>
-          <div><dt>Email</dt><dd id="profile-email"></dd></div>
-          <div id="profile-phone-row" hidden><dt>Số điện thoại</dt><dd id="profile-phone"></dd></div>
+          <div><dt>Email</dt><dd><span id="profile-email"></span><small id="profile-email-status" class="block text-xs text-slate-500"></small></dd></div>
+          <div id="profile-phone-row"><dt>Số điện thoại</dt><dd id="profile-phone"></dd></div>
+          <div><dt>Ngày sinh</dt><dd id="profile-birthday"></dd></div>
+          <div><dt>Giới tính</dt><dd id="profile-gender"></dd></div>
+          <div><dt>Địa chỉ nhận hàng</dt><dd id="profile-address"></dd></div>
+          <div><dt>Ngày tạo</dt><dd id="profile-createdAt"></dd></div>
           <div><dt>Vai trò</dt><dd id="profile-role"></dd></div>
           <div><dt>Trạng thái</dt><dd id="profile-status"></dd></div>
         </dl>
+        <form id="profile-form" class="profile-form" novalidate hidden>
+          <label for="profile-input-name">Họ và tên</label>
+          <input id="profile-input-name" name="name" class="field" autocomplete="name" required maxlength="80" aria-describedby="profile-name-error">
+          <p id="profile-name-error" class="auth-field-error" aria-live="polite" hidden></p>
+          <label for="profile-input-phone">Số điện thoại</label>
+          <input id="profile-input-phone" name="phone" type="tel" class="field" autocomplete="tel" maxlength="12" aria-describedby="profile-phone-error">
+          <p id="profile-phone-error" class="auth-field-error" aria-live="polite" hidden></p>
+          <label for="profile-input-birthday">Ngày sinh</label>
+          <input id="profile-input-birthday" name="birthday" type="date" class="field" autocomplete="bday" min="1900-01-01" aria-describedby="profile-birthday-error">
+          <p id="profile-birthday-error" class="auth-field-error" aria-live="polite" hidden></p>
+          <label for="profile-input-gender">Giới tính</label>
+          <select id="profile-input-gender" name="gender" class="field" aria-describedby="profile-gender-error"><option value="">Chưa cập nhật</option><option value="male">Nam</option><option value="female">Nữ</option><option value="other">Khác</option></select>
+          <p id="profile-gender-error" class="auth-field-error" aria-live="polite" hidden></p>
+          <label for="profile-input-address">Địa chỉ nhận hàng</label>
+          <textarea id="profile-input-address" name="address" class="field" autocomplete="street-address" maxlength="500" rows="3" aria-describedby="profile-address-error"></textarea>
+          <p id="profile-address-error" class="auth-field-error" aria-live="polite" hidden></p>
+          <p class="text-xs text-slate-500 mt-4">Email đăng nhập và quyền tài khoản được giữ nguyên.</p>
+          <footer class="profile-actions"><button id="profile-save" type="submit" class="btn btn-primary">Lưu thay đổi</button><button id="profile-cancel" type="button" class="btn btn-secondary">Hủy</button></footer>
+        </form>
         <section id="admin-summary" aria-labelledby="admin-title" hidden>
           <h3 id="admin-title" class="font-semibold mt-6 mb-2">Tổng quan quản trị</h3>
           <p id="admin-feedback" role="status"></p>
           <section id="payment-admin" aria-label="Đối soát thanh toán"><h3>Đối soát ngân hàng</h3><button id="payment-admin-load" type="button" class="btn btn-secondary">Tải / Làm mới giao dịch</button><label for="payment-admin-filter">Lọc giao dịch</label><select id="payment-admin-filter" class="field"><option value="all">Tất cả</option><option value="matched">Đã đối soát</option><option value="unpaid">Đơn chưa thanh toán</option><option value="amount_mismatch">Sai số tiền</option><option value="unknown_order">Không tìm thấy đơn</option><option value="duplicate">Gửi lặp / Trùng mã</option><option value="review">Cần kiểm tra</option></select><p id="payment-admin-feedback" role="status"></p><section id="payment-admin-results" aria-label="Kết quả đối soát"></section></section>
         </section>
         <p id="account-feedback" class="auth-field-error" role="status"></p>
+        <button id="profile-retry" type="button" class="btn btn-secondary" hidden>Thử lại</button>
+        <button id="profile-edit" type="button" class="btn btn-primary mt-6" hidden>Chỉnh sửa thông tin</button>
         <button id="profile-logout" type="button" class="btn btn-secondary mt-6">Đăng xuất</button>
       </section>
     </dialog>

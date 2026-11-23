@@ -718,4 +718,9 @@ body { background:#f5f5f5; }
 .account-details>div { display:grid;grid-template-columns:100px minmax(0,1fr);gap:12px;padding:12px 0;border-bottom:1px solid var(--border); }
 .account-details dt { color:var(--secondary); }
 .account-details dd,#admin-feedback { overflow-wrap:anywhere; }
+.profile-form label { display:block;font-size:13px;font-weight:600;margin:16px 0 8px; }
+.profile-form .field[aria-invalid="true"] { border-color:var(--danger); }
+.profile-form[aria-busy="true"] { cursor:progress; }
+.profile-actions { display:flex;flex-wrap:wrap;gap:10px;margin-top:20px; }
+#account-feedback[data-error="false"] { color:var(--success); }
 @media (max-width:767px) { .header-actions #auth-open>span { display:none; }.account-menu { right:-50px; } }

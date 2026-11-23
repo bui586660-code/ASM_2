@@ -1,28 +1,30 @@
 # Chức năng từng file trong ASM
 
-Kiểm kê ngày 10/10/2026. Mã đang chạy là `frontend/index.html` → `auth.js`, `payments.js`, `checkout.js`, `ttech.js`; CSS là `ttech.css` và `checkout.css`. Backend vào qua `Backend/server.cjs`, dữ liệu mặc định là SQLite.
+Kiểm kê cập nhật 21/10/2026. Mã đang chạy là `frontend/index.html` → `auth.js`, `payments.js`, `checkout.js`, `ttech.js`; CSS là `ttech.css` và `checkout.css`. Backend vào qua `Backend/server.cjs`, dữ liệu nghiệp vụ mặc định là `db.json`.
 
 ## Mã nguồn, dữ liệu, cấu hình và tài liệu
 
 | File | Chức năng |
 |---|---|
 | `Backend/.env.example` | Mẫu cấu hình port, Origin, tài khoản MB và bật/tắt thanh toán; không chứa secret thật. |
-| `Backend/db.json` | Nguồn dữ liệu JSON trước migration; dùng cho migration và fixture test. Backend mặc định hiện dùng SQLite. |
+| `Backend/db.json` | Nguồn dữ liệu hoạt động duy nhất: products, users, authSessions, orders, payments, paymentAudit và metadata. |
+| `Backend/json-storage.cjs` | Hàng đợi ghi JSON, lock file, kiểm tra collection và ghi file tạm an toàn cho backend local. |
+| `Backend/migrate-sqlite-to-json.cjs` | Công cụ nhập một lần dữ liệu SQLite cũ vào db.json, tạo backup và marker chống nhập lặp. |
 | `Backend/db.json.pre-sqlite-96f4ea038021.bak` | Bản sao nguyên dữ liệu JSON trước migration; phục vụ đối chiếu/khôi phục, không phải file thừa. |
 | `Backend/orders.cjs` | Tính giá và phí vận chuyển phía server, kiểm tra đơn/tồn kho, chống đặt trùng, lưu và đọc lịch sử đơn theo chủ tài khoản. |
 | `Backend/promotions.cjs` | Kiểm tra mã giảm giá, điều kiện áp dụng, giới hạn lượt dùng và tính giảm tiền phía server. |
 | `Backend/promotions.json` | Cấu hình ưu đãi do chủ website quản lý; danh sách đang trống, không bật ưu đãi thật. Khởi động lại backend sau khi sửa. |
 | `Backend/payments.cjs` | Cấu hình MB, tạo thông tin VietQR, xác thực webhook SePay, đối soát tiền và xác nhận thủ công có audit cho admin. |
 | `Backend/server.cjs` | Entry backend Node HTTP: API sản phẩm, đăng ký/đăng nhập/phiên/đăng xuất, quyền admin, CORS và tích hợp route đơn hàng/thanh toán. |
-| `Backend/storage.cjs` | SQLite transaction, ràng buộc dữ liệu và công cụ migration từ JSON có backup/kiểm chứng. |
-| `Backend/ttech.sqlite` | Database hoạt động: sản phẩm, tài khoản, phiên, đơn, chi tiết đơn, giao dịch và nhật ký đối soát. |
-| `Backend/ttech.sqlite-shm` | Bộ nhớ chia sẻ/index WAL của SQLite; database tự quản lý khi hoạt động. |
-| `Backend/ttech.sqlite-wal` | Write-ahead log của SQLite; có thể chứa dữ liệu đã commit chưa chuyển vào file chính. Không xóa thủ công. |
+| `Backend/storage.cjs` | Adapter SQLite lịch sử, chỉ dùng bởi công cụ đối chiếu/migration cũ; server không nạp file này. |
+| `Backend/ttech.sqlite` | Dữ liệu SQLite cũ để đối chiếu/khôi phục có kiểm soát; không phải database đang hoạt động. |
+| `Backend/ttech.sqlite-shm` | Tệp SQLite lịch sử đi kèm, giữ nguyên để đối chiếu. |
+| `Backend/ttech.sqlite-wal` | Tệp SQLite lịch sử đi kèm, giữ nguyên để đối chiếu. |
 | `README.md` | Hướng dẫn tổng quan, cấu trúc và cách khởi chạy project. |
-| `docs/AUTHENTICATION.md` | Tài liệu xác thực, tài khoản/quyền và kiểm thử; có ghi chú chuyển sang SQLite. |
+| `docs/AUTHENTICATION.md` | Tài liệu xác thực, tài khoản/quyền và kiểm thử trên db.json. |
 | `docs/CHECKOUT.md` | Thiết kế và lịch sử triển khai checkout; tài liệu thanh toán mới nằm trong PAYMENTS.md. |
 | `docs/FILE_GUIDE.md` | Bảng chức năng từng file và nhật ký dọn dẹp này. |
-| `docs/PAYMENTS.md` | Hướng dẫn SQLite/migration/rollback, MB/SePay, env, webhook, kiểm thử và giới hạn nghiệm thu Live. |
+| `docs/PAYMENTS.md` | Hướng dẫn db.json, nhập dữ liệu SQLite cũ, MB/SePay, env, webhook, kiểm thử và giới hạn nghiệm thu Live. |
 | `docs/PRODUCT_DATA_SOURCES.md` | Nguồn đối chiếu mã máy, thông số và ảnh sản phẩm. |
 | `frontend/README.md` | Hướng dẫn frontend, giao diện, route, dữ liệu và kiểm thử. |
 | `frontend/assets/css/checkout.css` | Style checkout, thông tin đơn hàng, chuyển khoản/QR và panel quản trị thanh toán. |
@@ -37,7 +39,7 @@ Kiểm kê ngày 10/10/2026. Mã đang chạy là `frontend/index.html` → `aut
 | `frontend/tests/checkout-ui.cjs` | Kiểm thử giỏ hàng → đặt đơn → lịch sử, reload, mất response và race giữa các tab. |
 | `frontend/tests/motion.cjs` | Kiểm thử hover/motion, không dịch layout, reduced motion và cảm ứng. |
 | `frontend/tests/orders-api.cjs` | Kiểm thử quote, tổng tiền, tồn kho, chống trùng và quyền sở hữu đơn. |
-| `frontend/tests/payment-storage.cjs` | Kiểm thử migration, bảo toàn dữ liệu, rollback, uniqueness, thứ tự và mở lại SQLite. |
+| `frontend/tests/payment-storage.cjs` | Kiểm thử hàng đợi/lock JSON, bảo toàn collection và mở lại dữ liệu JSON. |
 | `frontend/tests/payments-api.cjs` | Kiểm thử HMAC/webhook, đối soát, giao dịch lặp/sai tiền, quyền admin, rollback và dữ liệu cũ. |
 | `frontend/tests/payments-ui.cjs` | Kiểm thử MB/VietQR, ngân hàng gửi, copy, lỗi QR, trạng thái thanh toán và admin trên trình duyệt. |
 | `frontend/tests/premium.cjs` | Kiểm thử slider tự chạy/dừng/swipe, bộ sưu tập, ưu đãi và responsive. |
